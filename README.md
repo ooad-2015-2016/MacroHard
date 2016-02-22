@@ -1,6 +1,6 @@
 # MacroHard ©
 
 Team members:
-  Muhamed Delalić
-  Šeila Bećirović
-  Edin Cerić
+  Muhamed Delalić (Sudska vlast)
+  Šeila Bećirović (Zakonodavna vlast)
+  Edin Cerić (Izvršna vlast)
