@@ -3,4 +3,4 @@
 Team members:
   Muhamed Delalic
   Seila Becirovic
-  Edin Ceric (C)
+  Edin Ceric
