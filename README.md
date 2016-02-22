@@ -1,6 +1,6 @@
 # MacroHard ©
 
 Team members:
-  Muhamed Delalic
-  Seila Becirovic
-  Edin Ceric
+  Muhamed Delalić
+  Šeila Bećirović
+  Edin Cerić
