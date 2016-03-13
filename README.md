@@ -16,6 +16,7 @@ Procesi
 Korisnik kreira vlastiti račun. Korisniku je omogućena pretraga muzike, filmova, serija i knjiga. Omogućeno je da pravi razne liste privatne i javne, te da ostavlja komentare i ocjene o istim medijima zabave. Omogućeno je čitanje i komentara drugih korisnika, te pregled listi drugih osoba.
 
 Funkcionalnosti:
+
 •	Mogućnost kreiranja i editovanja vlastitog računa
 
 •	Mogućnost pretrage baze podataka
@@ -34,5 +35,6 @@ Funkcionalnosti:
 
 Akteri:
 Korisnik usluga: Osoba koja kreira vlastiti account i ima mogućnost pretrage podataka, kreiranja listi, komentarisanja i pregleda komentara i listi drugih ljudi.
+
 Admin: Osoba koja ažurira podatke i održava bazu podataka.
 
