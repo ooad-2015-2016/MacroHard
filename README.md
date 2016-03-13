@@ -35,7 +35,7 @@ Funkcionalnosti:
 
 Akteri:
 
-Korisnik usluga: Osoba koja kreira vlastiti account i ima mogućnost pretrage podataka, kreiranja listi, komentarisanja i pregleda komentara i listi drugih ljudi.
+Korisnik usluga: Osoba koja kreira vlastiti account i ima mogućnost pretrage podataka, kreiranja listi, uređivanje listi, komentarisanja i pregleda komentara i listi drugih ljudi.
 
-Admin: Osoba koja ažurira podatke i održava bazu podataka.
+Admin: Osoba koja ažurira podatke, održava bazu podataka kao i reguliše sadržaj korisnika. 
 
