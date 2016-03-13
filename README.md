@@ -1,8 +1,11 @@
 # MacroHard ©
 
 MacroHard 
+
 •	Šeila Bećirović
+
 •	Edin Cerić
+
 •	Muhamed Delalić
 
 Naziv teme: ShEM
@@ -14,12 +17,19 @@ Korisnik kreira vlastiti račun. Korisniku je omogućena pretraga muzike, filmov
 
 Funkcionalnosti:
 •	Mogućnost kreiranja i editovanja vlastitog računa
+
 •	Mogućnost pretrage baze podataka
+
 •	Mogućnost kreiranja listi
+
 •	Mogućnost komentarisanja i ocjenjivanja određenog medija
+
 •	Mogućnost pregleda komentara i listi drugih ljudi
+
 •	Mogućnost share-ovanja via bluetooth
+
 •	Mogućnost upload-ovanja slika, i korištenja kamere za instant upload (za profile picture)
+
 •	Mogućnost barcode skeniranja
 
 Akteri:
