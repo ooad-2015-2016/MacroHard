@@ -1,0 +1,11 @@
+Primary Color: #D32F2F
+Dark Primary Color: #F44336
+Light Primary Color: #FFCDD2
+
+Accent Color: #009688
+
+Primary Text Color: #212121
+Secondary Text Color: #727272
+Divider Color: #B6B6B6
+
+Text/Icon Color: #FFFFFF
