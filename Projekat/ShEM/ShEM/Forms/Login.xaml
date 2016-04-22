@@ -19,7 +19,7 @@
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Grid.RowSpan="2" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Sign in" HorizontalAlignment="Center" Margin="880,0,910,172" Grid.Row="2" VerticalAlignment="Bottom" Height="112" Width="590" FontFamily="Open Sans" RenderTransformOrigin="0.636,-0.857" FontSize="46.667" Background="#FFD32F2F" Foreground="#FFFEFEFC"/>
         <Grid HorizontalAlignment="Left" Height="900" Margin="20,0,0,52" Grid.Row="2" VerticalAlignment="Bottom" Width="2360">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="868,63,892,0" TextWrapping="Wrap" Text="E-mail:" VerticalAlignment="Top" Height="60" Width="600" FontSize="46.667" Padding="50,0,0,0" FontFamily="Open Sans"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="868,119,892,0" TextWrapping="Wrap" Text="E-mail:" VerticalAlignment="Top" Height="60" Width="600" FontSize="46.667" Padding="50,0,0,0" FontFamily="Open Sans"/>
             <HyperlinkButton Content="Forgotten password?" HorizontalAlignment="Left" Margin="688,798,0,0" VerticalAlignment="Top" Height="92" Width="428" FontSize="46.667"/>
             <HyperlinkButton Content="Sign up!" HorizontalAlignment="Left" Margin="1352,807,0,0" VerticalAlignment="Top" FontSize="46.667"/>
         </Grid>
