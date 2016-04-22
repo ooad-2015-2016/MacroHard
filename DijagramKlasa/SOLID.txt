@@ -1,0 +1,41 @@
+Analiza dizajna dijagrama klasa ShEM putem SOLID principa
+
+U datom izvještaju vršimo analizu dizajna dijagrama klasa projekta ShEM.
+Pažnju posveæujemo SOLID principa raðenim na predavanjima.
+
+1. Princip pojedinaène odgovornosti (eng. Single Responsibility Principle-SRP) glasi:
+KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU.
+
+Naš dijagram klasa se pridržava SRP principa, iz razloga što su sve klase odvojene i svaka ima svoje zadatke i time se sprijeèavaju
+zavisne promjene u klasama. Odvajanjem Utility klasa, apstrakcijom klase artikal te implementacijom više interfejsa je postignuto 
+zadovoljavanje SRP principa.
+
+2.Otvoreno zatvoren princip ( eng. Open Closed Principle-OCP) glasi:
+ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA
+NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE.
+
+S obzirom na naèin implementacije projekta i rada sa API-jima, potreba za zadovoljavanjem ovog principa je velika. Nažalost ovaj princip 
+nije zadovojlen na naèin na koji bi trebao biti. Artikli se sastoje od podataka koje se nalaze u bazi podataka odgovarajuæih API-ja. Promjene 
+API-ja bi izazvale probleme.
+
+3. Liskov princip zamjene (eng. Liskov Substitution Principle-LSP) glasi:
+PODTIPOVI MORAJU BITI ZAMJENJIVI NJIHOVIM OSNOVNIM TIPOVIMA.
+
+Sve naslijeðene klase iz klase Artikal se mogu zamijeniti klasom Artikal. Svi "artikli" sadrže sve potrebne metode, koje su iskoristive u 
+svim sluèajevima.
+
+4.Princip izoliranja interfejsa (eng. Interface Segregation Principle-ISP) glasi:
+KLIJENTI NE TREBA DA OVISE O METODAMA KOJE NEÆE UPOTREBLJAVATI.
+
+Svi interfejsi omoguæavaju da korisnik ne ovisi o konkretnim metodama klasa.
+
+5. Princip inverzije ovisnosti (eng. Dependency Inversion Principle-DIP) glasi:
+	A. MODULI VISOKOG NIVOA NE BI TREBALI OVISITI OD MODULA NISKOG NIVOA.
+OBA BI TREBALO DA OVISE OD APSTRAKCIJA.
+	B. MODULI NE BI TREBALI OVISITI OD DETALJA. DETALJI BI TREBALI BITI OVISNI OD
+APSTRAKCIJA.
+
+Poštivanje ovog principa se može najviše primijetiti u klasama Komentar i Kolekcija. Pored toga poštivanje se primijeti i definisanjem 
+apstraktne klase Artikal.
+
+
