@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="ShEM.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShEM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-460,0,0,-200" RenderTransformOrigin="0.524,0.497">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="880,0,900,672" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Height="100" Width="600" RenderTransformOrigin="-0.311,2.781" VerticalContentAlignment="Bottom"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Center" Margin="880,0,910,466" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Height="100" Width="590" RenderTransformOrigin="0.497,0.458"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="880,365,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="60" Width="494" FontSize="46.667" FontFamily="Open Sans" Padding="50,0,0,0"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Sign in" HorizontalAlignment="Center" Margin="880,0,910,172" Grid.Row="2" VerticalAlignment="Bottom" Height="112" Width="590" FontFamily="Open Sans" RenderTransformOrigin="0.636,-0.857" FontSize="46.667" Background="#FFF44332" Foreground="#FFFEFEFC"/>
+        <Grid HorizontalAlignment="Left" Height="900" Margin="20,0,0,52" Grid.Row="2" VerticalAlignment="Bottom" Width="2360">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="868,63,892,0" TextWrapping="Wrap" Text="E-mail:" VerticalAlignment="Top" Height="60" Width="600" FontSize="46.667" Padding="50,0,0,0" FontFamily="Open Sans"/>
+            <HyperlinkButton Content="Forgotten password?" HorizontalAlignment="Left" Margin="688,798,0,0" VerticalAlignment="Top" Height="92" Width="428" FontSize="46.667"/>
+            <HyperlinkButton Content="Sign up!" HorizontalAlignment="Left" Margin="1352,807,0,0" VerticalAlignment="Top" FontSize="46.667"/>
+        </Grid>
+        <Rectangle Fill="#FFF44336" HorizontalAlignment="Left" Height="274" Margin="0,10,0,0" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="2370"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="700,52,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="174" Width="986" FontSize="133.333" TextAlignment="Center" Foreground="#FFFEFEFE" FontFamily="AR BLANCA">
+        	<Run Text="Shem"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+
+    </Grid>
+</Page>
