@@ -21,6 +21,18 @@
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
       <PackagePath>entrypoint\ShEM.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
+      <PackagePath>EntityFramework.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Relational\7.0.0-beta6\lib\dotnet\EntityFramework.Relational.dll">
+      <PackagePath>EntityFramework.Relational.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.SQLite\7.0.0-beta6\lib\dotnet\EntityFramework.Sqlite.dll">
+      <PackagePath>EntityFramework.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Ix-Async\1.2.4\lib\portable-windows8+net45+wp8\System.Interactive.Async.dll">
+      <PackagePath>System.Interactive.Async.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
     </AppxPackagedFile>
@@ -30,8 +42,50 @@
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.0.0\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CodeAnalysis.Common\1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.dll">
+      <PackagePath>Microsoft.CodeAnalysis.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CodeAnalysis.CSharp\1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.CSharp.dll">
+      <PackagePath>Microsoft.CodeAnalysis.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Data.Sqlite\1.0.0-beta6\runtimes\win10-x86\native\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Data.Sqlite\1.0.0-beta6\lib\dotnet\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Caching.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Caching.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Caching.Memory\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Caching.Memory.dll">
+      <PackagePath>Microsoft.Framework.Caching.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.dll">
+      <PackagePath>Microsoft.Framework.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Configuration.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration.Binder\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.Binder.dll">
+      <PackagePath>Microsoft.Framework.Configuration.Binder.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.DependencyInjection\1.0.0-beta6\lib\dotnet\Microsoft.Framework.DependencyInjection.dll">
+      <PackagePath>Microsoft.Framework.DependencyInjection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.DependencyInjection.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Logging\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Logging.dll">
+      <PackagePath>Microsoft.Framework.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Logging.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Logging.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.OptionsModel\1.0.0-beta6\lib\dotnet\Microsoft.Framework.OptionsModel.dll">
+      <PackagePath>Microsoft.Framework.OptionsModel.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -74,6 +128,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Remotion.Linq\2.0.0-alpha-004\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
+      <PackagePath>Remotion.Linq.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -345,6 +402,9 @@
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
+      <PackagePath>EntityFramework.Commands.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -371,6 +431,9 @@
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
+      <PackagePath>EntityFramework.Commands.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
       <PackagePath>ShEM.xr.xml</PackagePath>

@@ -22,13 +22,29 @@
     <AppXManifest Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-22T14:06:26.639</Modified>
+      <Modified>2016-04-24T12:48:14.126</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
       <PackagePath>entrypoint\ShEM.exe</PackagePath>
-      <Modified>2016-04-22T14:06:25.088</Modified>
+      <Modified>2016-04-24T12:48:13.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
+      <PackagePath>EntityFramework.Core.dll</PackagePath>
+      <Modified>2016-04-24T08:24:55.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Relational\7.0.0-beta6\lib\dotnet\EntityFramework.Relational.dll">
+      <PackagePath>EntityFramework.Relational.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.SQLite\7.0.0-beta6\lib\dotnet\EntityFramework.Sqlite.dll">
+      <PackagePath>EntityFramework.Sqlite.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.347</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Ix-Async\1.2.4\lib\portable-windows8+net45+wp8\System.Interactive.Async.dll">
+      <PackagePath>System.Interactive.Async.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -42,9 +58,65 @@
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
       <Modified>2016-03-13T20:19:26.624</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CodeAnalysis.Common\1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.dll">
+      <PackagePath>Microsoft.CodeAnalysis.dll</PackagePath>
+      <Modified>2016-04-24T08:28:10.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CodeAnalysis.CSharp\1.0.0\lib\portable-net45+win8\Microsoft.CodeAnalysis.CSharp.dll">
+      <PackagePath>Microsoft.CodeAnalysis.CSharp.dll</PackagePath>
+      <Modified>2016-04-24T08:28:11.798</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
       <Modified>2016-03-13T20:19:45.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Data.Sqlite\1.0.0-beta6\runtimes\win10-x86\native\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2016-04-24T08:24:54.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Data.Sqlite\1.0.0-beta6\lib\dotnet\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+      <Modified>2016-04-24T08:24:53.449</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Caching.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Caching.Abstractions.dll</PackagePath>
+      <Modified>2016-04-24T08:25:00.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Caching.Memory\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Caching.Memory.dll">
+      <PackagePath>Microsoft.Framework.Caching.Memory.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.019</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.dll">
+      <PackagePath>Microsoft.Framework.Configuration.dll</PackagePath>
+      <Modified>2016-04-24T08:24:50.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Configuration.Abstractions.dll</PackagePath>
+      <Modified>2016-04-24T08:24:50.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Configuration.Binder\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Configuration.Binder.dll">
+      <PackagePath>Microsoft.Framework.Configuration.Binder.dll</PackagePath>
+      <Modified>2016-04-24T08:24:50.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.DependencyInjection\1.0.0-beta6\lib\dotnet\Microsoft.Framework.DependencyInjection.dll">
+      <PackagePath>Microsoft.Framework.DependencyInjection.dll</PackagePath>
+      <Modified>2016-04-24T08:25:00.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.DependencyInjection.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Logging\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Logging.dll">
+      <PackagePath>Microsoft.Framework.Logging.dll</PackagePath>
+      <Modified>2016-04-24T08:25:00.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.Logging.Abstractions\1.0.0-beta6\lib\dotnet\Microsoft.Framework.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Framework.Logging.Abstractions.dll</PackagePath>
+      <Modified>2016-04-24T08:25:00.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Framework.OptionsModel\1.0.0-beta6\lib\dotnet\Microsoft.Framework.OptionsModel.dll">
+      <PackagePath>Microsoft.Framework.OptionsModel.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -101,6 +173,10 @@
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-03-13T20:19:31.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\Remotion.Linq\2.0.0-alpha-004\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
+      <PackagePath>Remotion.Linq.dll</PackagePath>
+      <Modified>2016-04-24T08:24:51.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -462,6 +538,10 @@
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-03-13T20:18:23.449</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
+      <PackagePath>EntityFramework.Commands.xml</PackagePath>
+      <Modified>2016-04-24T08:26:54.791</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-10T20:09:42.000</Modified>
@@ -496,6 +576,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:09:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Edin\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
+      <PackagePath>EntityFramework.Commands.dll</PackagePath>
+      <Modified>2016-04-24T08:26:54.786</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
       <PackagePath>ShEM.xr.xml</PackagePath>
       <Modified>2016-04-22T14:06:24.527</Modified>
@@ -506,11 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-22T14:06:26.055</Modified>
+      <Modified>2016-04-24T12:09:35.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\Core\ShEM.exe">
       <PackagePath>ShEM.exe</PackagePath>
-      <Modified>2016-04-22T14:06:26.611</Modified>
+      <Modified>2016-04-24T12:48:14.123</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

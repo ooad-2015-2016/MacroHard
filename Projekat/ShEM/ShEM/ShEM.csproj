@@ -98,9 +98,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BazaPodataka\Models\DefaultKorisnik.cs" />
+    <Compile Include="BazaPodataka\Models\Korisnik.cs" />
+    <Compile Include="BazaPodataka\Models\KorisnikDBContext.cs" />
+    <Compile Include="BazaPodataka\Views\PictureConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160424124845_InitialMigration.cs" />
+    <Compile Include="Migrations\20160424124845_InitialMigration.designer.cs">
+      <DependentUpon>20160424124845_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\KorisnikDBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +150,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

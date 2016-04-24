@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShEM.BazaPodataka.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Data.Common;
+using Microsoft.Data.Entity;
 
 namespace ShEM
 {
@@ -33,6 +36,13 @@ namespace ShEM
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            //Dodato u konstruktor
+            using(var db = new KorisnikDBContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultKorisnik.Initialize(db);
+            }
         }
 
         /// <summary>
