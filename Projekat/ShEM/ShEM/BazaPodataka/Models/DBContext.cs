@@ -10,13 +10,15 @@ using System.IO;
 
 namespace ShEM.BazaPodataka.Models
 {
-    public class KorisnikDBContext : DbContext
+    public class DBContext : DbContext
     {
         public DbSet<Korisnik> korisnici { get; set; }
+        public DbSet<Komentar> Komentari { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optBuilder)
         {
-            string DBPath = "BazaKorisnika.db";
+
+            string DBPath = "ShEMBaza.db";
 
             try
             {
@@ -31,6 +33,7 @@ namespace ShEM.BazaPodataka.Models
         protected override void OnModelCreating(ModelBuilder modelBulider)
         {
             modelBulider.Entity<Korisnik>().Property(p => p.picture).HasColumnType("picture");
+            modelBulider.Entity<Komentar>().Property(p => p.CreatorPicture).HasColumnType("picture");
         }
     }
 }

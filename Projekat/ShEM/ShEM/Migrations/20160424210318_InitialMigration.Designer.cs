@@ -6,12 +6,12 @@ using ShEM.BazaPodataka.Models;
 
 namespace ShEMMigrations
 {
-    [ContextType(typeof(KorisnikDBContext))]
+    [ContextType(typeof(DBContext))]
     partial class InitialMigration
     {
         public override string Id
         {
-            get { return "20160424124845_InitialMigration"; }
+            get { return "20160424210318_InitialMigration"; }
         }
 
         public override string ProductVersion
@@ -24,6 +24,23 @@ namespace ShEMMigrations
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");
 
+            builder.Entity("ShEM.BazaPodataka.Models.Komentar", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CollectionID");
+
+                    b.Property<int>("CreatorId");
+
+                    b.Property<byte[]>("CreatorPicture")
+                        .Annotation("Relational:ColumnType", "picture");
+
+                    b.Property<string>("Text");
+
+                    b.Key("CommentId");
+                });
+
             builder.Entity("ShEM.BazaPodataka.Models.Korisnik", b =>
                 {
                     b.Property<int>("userID")
@@ -35,7 +52,7 @@ namespace ShEMMigrations
 
                     b.Property<string>("name");
 
-                    b.Property<int>("numberOfColections");
+                    b.Property<int>("numberOfCollections");
 
                     b.Property<byte[]>("picture")
                         .Annotation("Relational:ColumnType", "picture");

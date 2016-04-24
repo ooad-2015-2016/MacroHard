@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShEM.BazaPodataka.Models
 {
-    public class DefaultKorisnik
+    public class DefaultPodaci
     {
-        public static void Initialize(KorisnikDBContext context)
+        public static void Initialize(DBContext context)
         {
             if (!context.korisnici.Any())
             {
@@ -21,6 +21,18 @@ namespace ShEM.BazaPodataka.Models
                         lName = "doe",
                         //picture = 
                         numberOfCollections = 0
+                    }
+                    
+                );
+                context.SaveChanges();
+            }
+            if (!context.Komentari.Any())
+            {
+                context.Komentari.AddRange(
+                    new Komentar()
+                    {
+                        Text = "le dosada prava",
+
                     }
                 );
                 context.SaveChanges();

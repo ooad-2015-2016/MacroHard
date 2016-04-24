@@ -37,12 +37,14 @@ namespace ShEM
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
-            //Dodato u konstruktor
-            using(var db = new KorisnikDBContext())
-            {
-                db.Database.ApplyMigrations();
-                DefaultKorisnik.Initialize(db);
-            }
+            ////dodato u konstruktor
+            //using (var db = new DBContext())
+            //{
+            //    db.Database.ApplyMigrations();
+            //    DefaultPodaci.Initialize(db);
+            //}
+
+
         }
 
         /// <summary>
