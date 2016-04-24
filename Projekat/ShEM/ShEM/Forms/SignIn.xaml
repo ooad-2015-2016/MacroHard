@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="ShEM.SignIn"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShEM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="707,0,347,589" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Height="81" Width="482" RenderTransformOrigin="-0.311,2.781" VerticalContentAlignment="Bottom"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Center" Margin="715,0,347,446" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Height="80" Width="474" RenderTransformOrigin="0.497,0.458"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="715,504,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="48" Width="397" FontSize="46.667" FontFamily="Open Sans" Padding="50,0,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="723" Margin="39,0,-16,60" VerticalAlignment="Bottom" Width="1897" Grid.ColumnSpan="2">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="868,63,892,0" TextWrapping="Wrap" Text="E-mail:" VerticalAlignment="Top" Height="60" Width="600" FontSize="46.667" Padding="50,0,0,0" FontFamily="Open Sans"/>
+            <HyperlinkButton Content="Forgotten password?" HorizontalAlignment="Left" Margin="688,798,0,0" VerticalAlignment="Top" Height="92" Width="428" FontSize="46.667"/>
+            <HyperlinkButton Content="Sign up!" HorizontalAlignment="Left" Margin="1352,807,0,0" VerticalAlignment="Top" FontSize="46.667"/>
+        </Grid>
+        <Button x:Name="button1" Content="Sign in" HorizontalAlignment="Center" Margin="707,0,355,188" VerticalAlignment="Bottom" Height="90" Width="474" FontFamily="Open Sans" RenderTransformOrigin="0.636,-0.857" FontSize="46.667" Background="#FFD32F2F" Foreground="#FFFEFEFC"/>
+        <Button x:Name="button2" Content="   Back to login" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Height="220" VerticalAlignment="Top" Width="1920" Background="#FFD32F2F" Foreground="White" FontSize="66.667" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Page>
