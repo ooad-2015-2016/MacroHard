@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="ShEM.RecoverAcc2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShEM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Color x:Key="Color1">#FFD62E2D</Color>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="272" Stroke="Black" VerticalAlignment="Top" Width="1910"/>
+        <Button x:Name="button1" Content="Back to login" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="784" Height="122" FontFamily="Verdana" FontSize="50" Foreground="#FFFDFDFD" FontWeight="Bold">
+            <Button.Background>
+                <SolidColorBrush Color="#FFD62E2D"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textBox" FontFamily="Verdana" FontSize="25" HorizontalAlignment="Left" Margin="742,448,0,0" TextWrapping="Wrap" Text="Code" VerticalAlignment="Top" Width="400" Height="50"/>
+        <TextBox x:Name="textBox1" FontFamily="Verdana" FontSize="25" HorizontalAlignment="Left" Margin="742,571,0,0" TextWrapping="Wrap" Text="New password" VerticalAlignment="Top" RenderTransformOrigin="-0.014,-0.25" Width="400" Height="50"/>
+        <TextBox x:Name="textBox2" FontFamily="Verdana" FontSize="25" HorizontalAlignment="Left" Margin="742,683,0,0" TextWrapping="Wrap" Text="Re-type password" VerticalAlignment="Top" Width="400" Height="50"/>
+        <Button x:Name="button" Content="Button" FontFamily="Verdana" FontSize="25" HorizontalAlignment="Left" Margin="838,929,0,0" VerticalAlignment="Top" Width="200" Foreground="#FFFDFDFD">
+            <Button.Background>
+                <SolidColorBrush Color="#FFD62E2D"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="711,329,0,0" TextWrapping="Wrap" Text="A code has been sent to your e-mail." VerticalAlignment="Top" FontFamily="Verdana" FontSize="25"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="711,364,0,0" TextWrapping="Wrap" Text=" Enter your code and new password." VerticalAlignment="Top" RenderTransformOrigin="-0.484,-0.7" Height="46" FontFamily="Verdana" FontSize="25"/>
+    </Grid>
+</Page>
