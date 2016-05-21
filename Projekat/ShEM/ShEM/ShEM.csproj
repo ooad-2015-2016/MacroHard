@@ -98,10 +98,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BazaPodataka\Models\Artikal.cs" />
     <Compile Include="BazaPodataka\Models\DefaultPodaci.cs" />
+    <Compile Include="BazaPodataka\Models\Film.cs" />
+    <Compile Include="BazaPodataka\Models\Knjiga.cs" />
     <Compile Include="BazaPodataka\Models\Komentar.cs" />
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
+    <Compile Include="BazaPodataka\Models\Pjesma.cs" />
     <Compile Include="BazaPodataka\Views\PictureConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

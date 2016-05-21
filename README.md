@@ -1,11 +1,11 @@
-# MacroHard ©
+﻿# MacroHard ©
 
 
-•	Šeila Bećirović
+	• Šeila Bećirović
 
-•	Edin Cerić
+	• Edin Cerić
 
-•	Muhamed Delalić
+	• Muhamed Delalić
 
 Naziv teme: ShEM
 
@@ -13,38 +13,38 @@ Da li ste ikada željeli da imate aplikaciju pomoću koje ćete voditi računa o
 
 Procesi 
 
-• Korisnik kreira vlastiti račun. U procesu kreiranja vlastitog računa, on mora unijeti sljedeće podatke: ime, prezime, username, e-mail adresa, šifra, sigurnosna provjera šifre (case sensitive) i caption check. Pored ovoga korisnik može, ali ne mora upload-ovati profilnu fotografiju. Korisnik će dobiti mail za verifikaciju računa.
+	• Korisnik kreira vlastiti račun. U procesu kreiranja vlastitog računa, on mora unijeti sljedeće podatke: ime, prezime, username, e-mail adresa, šifra, sigurnosna provjera šifre (case sensitive) i caption check. Pored ovoga korisnik može, ali ne mora upload-ovati profilnu fotografiju. Korisnik će dobiti mail za verifikaciju računa.
 
-• Korisniku je omogućena pretraga muzike, filmova, serija i knjiga. Korisnik može pretraživati multimediju i bazu preko search textbox-a i raznim mogućnostima filtriranja podataka, kao i QR kodom.
+	• Korisniku je omogućena pretraga muzike, filmova, serija i knjiga. Korisnik može pretraživati multimediju i bazu preko search textbox-a i raznim mogućnostima filtriranja podataka, kao i QR kodom.
 
-• Korisniku je omogućena pretraga drugih korisnika, preko search textbox-a, te dodavanja korisnika u following.
+	• Korisniku je omogućena pretraga drugih korisnika, preko search textbox-a, te dodavanja korisnika u following.
 
-• Omogućeno je da pravi razne liste, privatne i javne, te da ostavlja ocjene istih medija zabave. Prilikom search-a i pregleda raznih objekata omogućena su dugmad ADD to specifičnoj kolekciji. Pored toga korisniku je omogućeno da klikom ili tap-om ocjeni objekat u zavisnosti od unaprijed određene skale. Korisnik također može brisati objekte iz kolekcije i da disable-a komentare drugih korisnika.
+	• Omogućeno je da pravi razne liste, privatne i javne, te da ostavlja ocjene istih medija zabave. Prilikom search-a i pregleda raznih objekata omogućena su dugmad ADD to specifičnoj kolekciji. Pored toga korisniku je omogućeno da klikom ili tap-om ocjeni objekat u zavisnosti od unaprijed određene skale. Korisnik također može brisati objekte iz kolekcije i da disable-a komentare drugih korisnika.
 
-• Omogućeno je čitanje komentara drugih korisnika, te pregled listi drugih osoba i komentarisanje istih. Korisnik ima pravo da komentariše liste samo osoba koje prati. 
+	• Omogućeno je čitanje komentara drugih korisnika, te pregled listi drugih osoba i komentarisanje istih. Korisnik ima pravo da komentariše liste samo osoba koje prati. 
 
 
 Funkcionalnosti:
 
-•	Mogućnost kreiranja i editovanja vlastitog računa
+	• Mogućnost kreiranja i editovanja vlastitog računa
 
-•	Mogućnost pretrage baze podataka
+	• Mogućnost pretrage baze podataka
 
-•	Mogućnost kreiranja listi
+	• Mogućnost kreiranja listi
 
-•	Mogućnost komentarisanja i ocjenjivanja određenog medija
+	• Mogućnost komentarisanja i ocjenjivanja određenog medija
 
-•	Mogućnost pregleda komentara i listi drugih ljudi
+	• Mogućnost pregleda komentara i listi drugih ljudi
 
-• Mogućnost praćenja drugih ljudi (followers i following)
+	• Mogućnost praćenja drugih ljudi (followers i following)
 
-•	Mogućnost share-ovanja via bluetooth
+	• Mogućnost share-ovanja via bluetooth
 
-•	Mogućnost upload-ovanja slika, i korištenja kamere za instant upload (za profile picture)
+	• Mogućnost upload-ovanja slika, i korištenja kamere za instant upload (za profile picture)
 
-•	Mogućnost QR skeniranja
+	• Mogućnost QR skeniranja
 
-•	Mogućnost pristupa statističkim podacima
+	• Mogućnost pristupa statističkim podacima
 
 
 Akteri:
