@@ -21,7 +21,7 @@
                 <SolidColorBrush Color="#FFD62E2D"/>
             </Button.Background>
         </Button>
-        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="272" Stroke="Black" VerticalAlignment="Top" Width="1910"/>
+        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="255" Stroke="Black" VerticalAlignment="Top" Width="1910"/>
         <Button x:Name="button1" Content="Back to login" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="784" Height="122" FontFamily="Verdana" FontSize="50" Foreground="#FFFDFDFD" FontWeight="Bold">
             <Button.Background>
                 <SolidColorBrush Color="#FFD62E2D"/>

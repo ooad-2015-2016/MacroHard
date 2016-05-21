@@ -21,7 +21,9 @@
         </Button>
         <HyperlinkButton Content="Forgotten Password?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="614,923,0,0" RenderTransformOrigin="1.796,6.688" Height="50" Width="257" FontFamily="Verdana" FontSize="25"/>
         <HyperlinkButton Content="Sign up!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1001,923,0,0" RenderTransformOrigin="1.796,6.688" Height="50" Width="250" FontFamily="Verdana" FontSize="25"/>
-        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="263" Margin="10,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="1900" />
+        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="263" Margin="0,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" />
+        <Rectangle Fill="#FF2ECCD3" HorizontalAlignment="Left" Height="96" Stroke="Black" VerticalAlignment="Top" Width="1920"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="746,164,0,0" TextWrapping="Wrap" Text="ShEM" VerticalAlignment="Top" FontSize="110" FontFamily="Verdana" Foreground="White" Width="400"/>
 
     </Grid>
 </Page>
