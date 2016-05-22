@@ -6,8 +6,11 @@ public class EnemyScript : MonoBehaviour {
 	public int damage = 1;
 	private bool hasSpawn;
 	private MoveScript moveScript;
+	private WeaponScript[] weapons;
 		void Awake()
 	{
+		// Retrieve the weapon only once
+		weapons = GetComponentsInChildren<WeaponScript>();
 		// Retrieve scripts to disable when not spawn
 		moveScript = GetComponent<MoveScript>();
 	}
@@ -19,6 +22,10 @@ public class EnemyScript : MonoBehaviour {
 		this.gameObject.GetComponent<Collider2D>().enabled=false;
 		// -- Moving
 		moveScript.enabled = false;
+		foreach (WeaponScript weapon in weapons)
+		{
+			weapon.enabled = false;
+		}
 	}
 
 	void Update()
@@ -30,6 +37,13 @@ public class EnemyScript : MonoBehaviour {
 				Spawn();
 			}
 		} else {
+			foreach (WeaponScript weapon in weapons)
+			{
+				if (weapon != null && weapon.enabled && weapon.CanAttack)
+				{
+					weapon.Attack(true);
+				}
+			}
 			if (this.gameObject.GetComponent<Renderer>().IsVisibleFrom(Camera.main) == false)
 			{
 				Destroy(gameObject);
@@ -45,5 +59,9 @@ public class EnemyScript : MonoBehaviour {
 		// -- Collider
 		this.gameObject.GetComponent<Collider2D>().enabled=true;	// -- Moving
 		moveScript.enabled = true;
+		foreach (WeaponScript weapon in weapons)
+		{
+			weapon.enabled = true;
+		}
 	}
 }

@@ -29,14 +29,39 @@ public class MenuScript : MonoBehaviour
 			buttonWidth,
 			buttonHeight
 		);
+		Rect buttonRect2 = new Rect(
+			3*Screen.width / 4 - (buttonWidth / 2 ),
+			(2*Screen.height / 3) - (buttonHeight ),
+			buttonWidth,
+			buttonHeight
+		);
+		Rect buttonRect3 = new Rect(
+			3*Screen.width / 4 - (buttonWidth / 2 ),
+			(3*Screen.height/3) - (buttonHeight ),
+			buttonWidth,
+			buttonHeight
+		);
 
 		// Draw a button to start the game
-		if(GUI.Button(buttonRect,"Start!"))
+		if(GUI.Button(buttonRect,"Normal mode"))
 		{
 			// On Click, load the first level.
 			// "Stage1" is the name of the first scene we created.
 			Application.LoadLevel("Stage1");
 
+		}
+		if(GUI.Button(buttonRect2,"Dubstep mode"))
+		{
+			// On Click, load the first level.
+			// "Stage1" is the name of the first scene we created.
+			Application.LoadLevel("Stage2");
+
+		}
+		if(GUI.Button(buttonRect3,"Exit"))
+		{
+			// On Click, load the first level.
+			// "Stage1" is the name of the first scene we created.
+			Application.Quit();
 		}
 	}
 }

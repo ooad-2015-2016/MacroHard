@@ -282,7 +282,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 204762190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2, y: -0.12, z: 0}
+  m_LocalPosition: {x: -5.1, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1.007579, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1186,7 +1186,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1633041092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: -0.5, z: 0}
+  m_LocalPosition: {x: -10.8, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1.007579, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb40cb6bbbc05544b4cf71ef6125739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 128144, guid: 29e734c532e9be949a1c3fffb8348d9d, type: 2}
+  enemyPrefab: {fileID: 174674, guid: 58967cdac85b46343b5da2c9bb102c09, type: 2}
   numEnemies: 30
   xMin: 10
   xMax: 85
@@ -1621,7 +1621,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099818421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9, y: -0.5, z: 0}
+  m_LocalPosition: {x: -10.8, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1.007579, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:

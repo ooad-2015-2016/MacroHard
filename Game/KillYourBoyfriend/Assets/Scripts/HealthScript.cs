@@ -12,8 +12,10 @@ public class HealthScript : MonoBehaviour {
 
 		if (hp <= 0)
 		{
+
 			// Dead!
 			Destroy(gameObject);
+
 		}
 	}
 	void OnTriggerEnter2D (Collider2D collider) {
@@ -25,8 +27,10 @@ public class HealthScript : MonoBehaviour {
 				hp-=shot.damage;
 				Destroy (shot.gameObject);
 
-				if (hp<=0)
-					Destroy(gameObject);
+				if (hp <= 0) {
+
+					Destroy (gameObject);
+				}
 			}
 		}
 	}

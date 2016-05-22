@@ -23,8 +23,11 @@ public class GameOverScript : MonoBehaviour
 			)
 		)
 		{
+			if (Application.loadedLevelName == "Stage1")
 			// Reload the level
-			Application.LoadLevel("Stage1");
+			Application.LoadLevel ("Stage1");
+			else
+				Application.LoadLevel ("Stage2");
 		}
 
 		if (
