@@ -11,12 +11,13 @@ GameObject:
   - 212: {fileID: 21241740}
   - 61: {fileID: 6134244}
   - 50: {fileID: 5001506}
-  - 114: {fileID: 11471678}
   - 114: {fileID: 11479988}
-  - 114: {fileID: 11473738}
+  - 114: {fileID: 11444470}
+  - 114: {fileID: 11450314}
+  - 114: {fileID: 11429322}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.67, y: -0.3, z: 0}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.9749536}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -60,12 +61,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 1
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 6, y: 11}
---- !u!114 &11471678
+  m_Size: {x: 7, y: 11}
+--- !u!114 &11429322
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -73,12 +74,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 170056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 735ed465fedc0324193d761cdf751bb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0436ef6a77efe7a4e99ecb194ec74dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  isEnemyShot: 0
---- !u!114 &11473738
+  speed: {x: 1, y: 1}
+  direction: {x: 1, y: 0}
+  isLinkedToCamera: 1
+  isLooping: 0
+--- !u!114 &11444470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fb851234af4164a8aed2bcda947290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 0
+  hp: 3
+--- !u!114 &11450314
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,8 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ca743227334b6498506ee44ca17e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 20}
-  hp: 3
+  speed: {x: 25, y: 25}
 --- !u!114 &11479988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97aa0327d99b01439f99686a1d2f930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 463924, guid: f8239686ea27bfc4c998529821a66d2b, type: 2}
+  shotPrefab: {fileID: 453514, guid: f8239686ea27bfc4c998529821a66d2b, type: 2}
   shootingRate: 0.1
 --- !u!212 &21241740
 SpriteRenderer:

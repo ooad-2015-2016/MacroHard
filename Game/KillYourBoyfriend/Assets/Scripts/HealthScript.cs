@@ -3,8 +3,19 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
-	public int hp = 2;
+
 	public bool isEnemy =true;
+	public int hp = 1;
+	public void Damage(int damageCount)
+	{
+		hp -= damageCount;
+
+		if (hp <= 0)
+		{
+			// Dead!
+			Destroy(gameObject);
+		}
+	}
 	void OnTriggerEnter2D (Collider2D collider) {
 		ShotScript shot = collider.gameObject.GetComponent<ShotScript> ();
 		if (shot !=null)
