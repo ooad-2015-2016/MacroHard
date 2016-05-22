@@ -12,7 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using ShEM.BazaPodataka.Static_variables;
+using System.ComponentModel;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -26,5 +27,16 @@ namespace ShEM.View
         {
             this.InitializeComponent();
         }
+
+        private string userInput;
+        private string pass;
+        StaticVariablesClass stc;
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            userInput = textBoxUsername.Text;
+            pass = textBoxPass.Text;
+        }
+
     }
 }

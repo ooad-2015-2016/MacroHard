@@ -117,7 +117,15 @@
       <DependentUpon>20160522074702_InitialMigrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DBContextModelSnapshot.cs" />
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\Collection.cs" />
+    <Compile Include="Model\Movie.cs" />
+    <Compile Include="Model\PictureConverter.cs" />
+    <Compile Include="Model\Song.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ObservableObject.cs" />
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -226,9 +234,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
