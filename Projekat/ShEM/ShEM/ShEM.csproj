@@ -102,6 +102,7 @@
     <Compile Include="BazaPodataka\Models\DefaultPodaci.cs" />
     <Compile Include="BazaPodataka\Models\Film.cs" />
     <Compile Include="BazaPodataka\Models\Knjiga.cs" />
+    <Compile Include="BazaPodataka\Models\Kolekcija.cs" />
     <Compile Include="BazaPodataka\Models\Komentar.cs" />
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
@@ -110,9 +111,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160424210318_InitialMigration.cs" />
-    <Compile Include="Migrations\20160424210318_InitialMigration.designer.cs">
-      <DependentUpon>20160424210318_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\20160522074702_InitialMigrations.cs" />
+    <Compile Include="Migrations\20160522074702_InitialMigrations.designer.cs">
+      <DependentUpon>20160522074702_InitialMigrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

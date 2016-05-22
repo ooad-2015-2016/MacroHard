@@ -2,7 +2,10 @@ WinMetadata\Windows.winmd
 EntityFramework.Commands.dll
 EntityFramework.Commands.xml
 ApplicationInsights.config
+Assets\AlbumImage.PNG
+Assets\BookCover.PNG
 Assets\LockScreenLogo.scale-200.png
+Assets\ShEMUser.PNG
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png

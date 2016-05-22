@@ -9,7 +9,7 @@ namespace ShEM.BazaPodataka.Models
 {
     public class Film : Artikal
     {
-        [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+   //     [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Director { get; set; } 
         public int Length { get; set; }
        

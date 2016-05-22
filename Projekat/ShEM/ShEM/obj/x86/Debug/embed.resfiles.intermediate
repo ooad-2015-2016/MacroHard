@@ -1,5 +1,11 @@
 App.xbf
-Forms\BackToLogin.xbf
+Forms\Book.xbf
+Forms\Feed.xbf
 Forms\Login.xbf
-Forms\SignIn.xbf
+Forms\Movie.xbf
+Forms\RecoverAcc1.xbf
+Forms\RecoverAcc2.xbf
+Forms\Register.xbf
+Forms\Song.xbf
+Forms\UserAcc.xbf
 MainPage.xbf

@@ -1,1 +1,1 @@
-C:\Users\User\Desktop\ETF II\OOAD\MacroHard\Projekat\ShEM\ShEM\ShEM.csproj;x86
+C:\Users\User\Desktop\Macro\Projekat\ShEM\ShEM\ShEM.csproj;x86

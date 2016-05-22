@@ -7,9 +7,19 @@ using ShEM.BazaPodataka.Models;
 namespace ShEMMigrations
 {
     [ContextType(typeof(DBContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    partial class InitialMigrations
     {
-        public override void BuildModel(ModelBuilder builder)
+        public override string Id
+        {
+            get { return "20160522074702_InitialMigrations"; }
+        }
+
+        public override string ProductVersion
+        {
+            get { return "7.0.0-beta6-13815"; }
+        }
+
+        public override void BuildTargetModel(ModelBuilder builder)
         {
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");

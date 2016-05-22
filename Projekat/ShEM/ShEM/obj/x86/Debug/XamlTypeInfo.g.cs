@@ -132,21 +132,41 @@ namespace ShEM.ShEM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "ShEM.BackToLogin";
+            _typeNameTable = new string[16];
+            _typeNameTable[0] = "ShEM.Book";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ShEM.Login";
-            _typeNameTable[4] = "ShEM.SignIn";
-            _typeNameTable[5] = "ShEM.MainPage";
+            _typeNameTable[3] = "Windows.UI.Color";
+            _typeNameTable[4] = "System.ValueType";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "Byte";
+            _typeNameTable[7] = "ShEM.Feed";
+            _typeNameTable[8] = "ShEM.Login";
+            _typeNameTable[9] = "ShEM.Movie";
+            _typeNameTable[10] = "ShEM.RecoverAcc1";
+            _typeNameTable[11] = "ShEM.RecoverAcc2";
+            _typeNameTable[12] = "ShEM.Register";
+            _typeNameTable[13] = "ShEM.Song";
+            _typeNameTable[14] = "ShEM.UserAcc";
+            _typeNameTable[15] = "ShEM.MainPage";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::ShEM.BackToLogin);
+            _typeTable = new global::System.Type[16];
+            _typeTable[0] = typeof(global::ShEM.Book);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ShEM.Login);
-            _typeTable[4] = typeof(global::ShEM.SignIn);
-            _typeTable[5] = typeof(global::ShEM.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Color);
+            _typeTable[4] = typeof(global::System.ValueType);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.Byte);
+            _typeTable[7] = typeof(global::ShEM.Feed);
+            _typeTable[8] = typeof(global::ShEM.Login);
+            _typeTable[9] = typeof(global::ShEM.Movie);
+            _typeTable[10] = typeof(global::ShEM.RecoverAcc1);
+            _typeTable[11] = typeof(global::ShEM.RecoverAcc2);
+            _typeTable[12] = typeof(global::ShEM.Register);
+            _typeTable[13] = typeof(global::ShEM.Song);
+            _typeTable[14] = typeof(global::ShEM.UserAcc);
+            _typeTable[15] = typeof(global::ShEM.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,10 +201,16 @@ namespace ShEM.ShEM_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BackToLogin() { return new global::ShEM.BackToLogin(); }
-        private object Activate_3_Login() { return new global::ShEM.Login(); }
-        private object Activate_4_SignIn() { return new global::ShEM.SignIn(); }
-        private object Activate_5_MainPage() { return new global::ShEM.MainPage(); }
+        private object Activate_0_Book() { return new global::ShEM.Book(); }
+        private object Activate_7_Feed() { return new global::ShEM.Feed(); }
+        private object Activate_8_Login() { return new global::ShEM.Login(); }
+        private object Activate_9_Movie() { return new global::ShEM.Movie(); }
+        private object Activate_10_RecoverAcc1() { return new global::ShEM.RecoverAcc1(); }
+        private object Activate_11_RecoverAcc2() { return new global::ShEM.RecoverAcc2(); }
+        private object Activate_12_Register() { return new global::ShEM.Register(); }
+        private object Activate_13_Song() { return new global::ShEM.Song(); }
+        private object Activate_14_UserAcc() { return new global::ShEM.UserAcc(); }
+        private object Activate_15_MainPage() { return new global::ShEM.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -196,9 +222,9 @@ namespace ShEM.ShEM_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ShEM.BackToLogin
+            case 0:   //  ShEM.Book
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_BackToLogin;
+                userType.Activator = Activate_0_Book;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -211,23 +237,89 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ShEM.Login
+            case 3:   //  Windows.UI.Color
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("A");
+                userType.AddMemberName("B");
+                userType.AddMemberName("G");
+                userType.AddMemberName("R");
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.ValueType
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Byte
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  ShEM.Feed
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Login;
+                userType.Activator = Activate_7_Feed;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  ShEM.SignIn
+            case 8:   //  ShEM.Login
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_SignIn;
+                userType.Activator = Activate_8_Login;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  ShEM.MainPage
+            case 9:   //  ShEM.Movie
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
+                userType.Activator = Activate_9_Movie;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  ShEM.RecoverAcc1
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_RecoverAcc1;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  ShEM.RecoverAcc2
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_RecoverAcc2;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  ShEM.Register
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_Register;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  ShEM.Song
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_Song;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  ShEM.UserAcc
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_UserAcc;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  ShEM.MainPage
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -236,11 +328,79 @@ namespace ShEM.ShEM_XamlTypeInfo
         }
 
 
+        private object get_0_Color_A(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.A;
+        }
+        private void set_0_Color_A(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.A = (global::System.Byte)Value;
+        }
+        private object get_1_Color_B(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.B;
+        }
+        private void set_1_Color_B(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.B = (global::System.Byte)Value;
+        }
+        private object get_2_Color_G(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.G;
+        }
+        private void set_2_Color_G(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.G = (global::System.Byte)Value;
+        }
+        private object get_3_Color_R(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.R;
+        }
+        private void set_3_Color_R(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.R = (global::System.Byte)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ShEM.ShEM_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::ShEM.ShEM_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Windows.UI.Color.A":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "A", "Byte");
+                xamlMember.Getter = get_0_Color_A;
+                xamlMember.Setter = set_0_Color_A;
+                break;
+            case "Windows.UI.Color.B":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "B", "Byte");
+                xamlMember.Getter = get_1_Color_B;
+                xamlMember.Setter = set_1_Color_B;
+                break;
+            case "Windows.UI.Color.G":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "G", "Byte");
+                xamlMember.Getter = get_2_Color_G;
+                xamlMember.Setter = set_2_Color_G;
+                break;
+            case "Windows.UI.Color.R":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "R", "Byte");
+                xamlMember.Getter = get_3_Color_R;
+                xamlMember.Setter = set_3_Color_R;
+                break;
+            }
             return xamlMember;
         }
     }

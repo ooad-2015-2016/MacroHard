@@ -9,7 +9,8 @@ namespace ShEM.BazaPodataka.Models
 {
    public class Knjiga : Artikal
     {
-        [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+     //   [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Author { get; set; }
+        public string Publisher { get; set; }
     }
 }

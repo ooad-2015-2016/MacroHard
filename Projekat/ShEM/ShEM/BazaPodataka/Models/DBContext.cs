@@ -14,6 +14,11 @@ namespace ShEM.BazaPodataka.Models
     {
         public DbSet<Korisnik> korisnici { get; set; }
         public DbSet<Komentar> Komentari { get; set; }
+        public DbSet<Kolekcija> Kolekcije { get; set; }
+        public DbSet<Film> Filmovi { get; set; }
+        public DbSet<Pjesma> Pjesme { get; set; }
+        public DbSet<Knjiga> Knjige { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optBuilder)
         {
@@ -34,6 +39,11 @@ namespace ShEM.BazaPodataka.Models
         {
             modelBulider.Entity<Korisnik>().Property(p => p.picture).HasColumnType("picture");
             modelBulider.Entity<Komentar>().Property(p => p.CreatorPicture).HasColumnType("picture");
+            modelBulider.Entity<Kolekcija>().Property(p => p.CollectionPicture).HasColumnType("picture");
+            modelBulider.Entity<Film>().Property(p => p.ArticlePicture).HasColumnType("picture");
+            modelBulider.Entity<Knjiga>().Property(p => p.ArticlePicture).HasColumnType("picture");
+            modelBulider.Entity<Pjesma>().Property(p => p.ArticlePicture).HasColumnType("picture");
+
         }
     }
 }

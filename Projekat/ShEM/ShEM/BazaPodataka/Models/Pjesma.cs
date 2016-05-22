@@ -9,7 +9,7 @@ namespace ShEM.BazaPodataka.Models
 {
     public class Pjesma : Artikal
     {
-        [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+      //  [System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Musician { get; set; }
         public double Length { get; set; }
         public string Album { get; set; }
