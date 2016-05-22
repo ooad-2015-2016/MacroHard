@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="ShEM.Movie"
+    x:Class="ShEM.View.BlankPage5"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ShEM"
+    xmlns:local="using:ShEM.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,7 +13,7 @@
                 <SolidColorBrush Color="#FFD32F2E"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="134,306,0,0" TextWrapping="Wrap" Text="Movie title" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="130,306,0,0" TextWrapping="Wrap" Text="Movie title" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="130,394,0,0" TextWrapping="Wrap" Text="Director" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="134,492,0,0" TextWrapping="Wrap" Text="Duration" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <Button x:Name="button" Content="Back to feed" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="40" Foreground="White" Background="#FFD32F2E"/>

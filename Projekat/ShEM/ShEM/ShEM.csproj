@@ -118,6 +118,39 @@
     </Compile>
     <Compile Include="Migrations\DBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Song.xaml.cs">
+      <DependentUpon>Song.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserAccount.xaml.cs">
+      <DependentUpon>UserAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Book.xaml.cs">
+      <DependentUpon>Book.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditAccount.xaml.cs">
+      <DependentUpon>EditAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewsFeed.xaml.cs">
+      <DependentUpon>NewsFeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Movie.xaml.cs">
+      <DependentUpon>Movie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RecoverAcc1.xaml.cs">
+      <DependentUpon>RecoverAcc1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RecoverAcc2.xaml.cs">
+      <DependentUpon>RecoverAcc2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsersFeed.xaml.cs">
+      <DependentUpon>UsersFeed.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -129,6 +162,7 @@
     <Content Include="Assets\AlbumImage.PNG" />
     <Content Include="Assets\BookCover.PNG" />
     <Content Include="Assets\ShEMUser.PNG" />
+    <Content Include="Assets\user.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -143,39 +177,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Forms\Book.xaml">
+    <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\Feed.xaml">
+    <Page Include="View\Song.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\Login.xaml">
+    <Page Include="View\UserAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\Movie.xaml">
+    <Page Include="View\Book.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\RecoverAcc1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\RecoverAcc2.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Register.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Song.xaml">
+    <Page Include="View\EditAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Forms\UserAcc.xaml">
+    <Page Include="View\NewsFeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Movie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RecoverAcc1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RecoverAcc2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UsersFeed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -184,7 +226,9 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,14 +1,11 @@
 ﻿<Page
-    x:Class="ShEM.Song"
+    x:Class="ShEM.View.BlankPage10"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ShEM"
+    xmlns:local="using:ShEM.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Resources>
-        <Color x:Key="Color1">#FFD32F2E</Color>
-    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Rectangle HorizontalAlignment="Left" Height="254" Stroke="Black" VerticalAlignment="Top" Width="1920">
