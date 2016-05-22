@@ -30,9 +30,32 @@ namespace ShEM.Model
             get { return _collectionID; }
             set
             {
-
+                _collectionID = value;
+                notifyMeWhenPropertyChanged("collectionID");
             }
         }
+
+        public string name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+                notifyMeWhenPropertyChanged("name");
+            }
+        }
+
+        public int userID
+        {
+            get { return _userID; }
+            set
+            {
+                _userID = value;
+                notifyMeWhenPropertyChanged("userID");
+            }
+        }
+
+
 
     }
 }
