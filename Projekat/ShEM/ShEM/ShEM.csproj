@@ -107,6 +107,7 @@
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
+    <Compile Include="BazaPodataka\Static variables\StaticVariablesClass.cs" />
     <Compile Include="BazaPodataka\Views\PictureConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
