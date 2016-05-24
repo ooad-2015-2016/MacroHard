@@ -53,9 +53,5 @@ namespace ShEM.ViewModel
                 await dialog.ShowAsync();
             }
         }
-
-        public User getUser {
-            get { return user; }
-        }
     }
 }

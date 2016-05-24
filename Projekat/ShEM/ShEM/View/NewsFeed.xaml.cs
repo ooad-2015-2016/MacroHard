@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ShEM.ViewModel;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,9 +23,12 @@ namespace ShEM.View
     /// </summary>
     public sealed partial class BlankPage4 : Page
     {
+        NewsFeedViewModel nfvm;
         public BlankPage4()
         {
             this.InitializeComponent();
+            nfvm = new NewsFeedViewModel();
+            nfvm.getAllUsers();
         }
     }
 }
