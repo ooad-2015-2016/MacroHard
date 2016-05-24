@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="ShEM.View.BlankPage8"
+    x:Class="ShEM.View.Register"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ShEM.View"
@@ -7,22 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="771,309,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="400" Height="50" FontSize="25" FontFamily="Verdana"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="771,437,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Width="400" Height="50" FontSize="25" FontFamily="Verdana"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="771,559,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="400" Height="50" FontSize="25" FontFamily="Verdana"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="771,686,0,0" TextWrapping="Wrap" Text="Re-type password" VerticalAlignment="Top" Width="400" Height="50" FontSize="25" FontFamily="Verdana"/>
-        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="850,860,0,0" VerticalAlignment="Top" Width="250" RenderTransformOrigin="-0.07,0.625" FontSize="35" FontFamily="Verdana" Foreground="#FFFDFDFD" Height="70">
-            <Button.Background>
-                <SolidColorBrush Color="#FFD62E2D"/>
-            </Button.Background>
-        </Button>
-        <Rectangle Fill="#D32F2E" HorizontalAlignment="Left" Height="255" Stroke="Black" VerticalAlignment="Top" Width="1920"/>
-        <Button x:Name="button1" Content="Back to login" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="784" Height="122" FontFamily="Verdana" FontSize="50" Foreground="#FFFDFDFD" FontWeight="Bold">
-            <Button.Background>
-                <SolidColorBrush Color="#FFD62E2D"/>
-            </Button.Background>
-        </Button>
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" >
+ 
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" MinHeight="100"/>
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+
+        <TextBox  BorderBrush="#FFE74C3C" TextChanged="usernameBox_Text" x:Name="usernameBox" Grid.Row="1" HorizontalAlignment="Left" Margin="60,100,0,0" TextWrapping="Wrap"  PlaceholderText="Username" VerticalAlignment="Top" Width="400" Height="50" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans"/>
+        <TextBox BorderBrush="#FFE74C3C" x:Name="emailBox" Grid.Row="1" HorizontalAlignment="Left" Margin="60,200,0,0" TextWrapping="Wrap" PlaceholderText="E-mail" VerticalAlignment="Top" Width="400" Height="50" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans"/>
+        <PasswordBox BorderBrush="#FFE74C3C" x:Name="passBox" Grid.Row="1" HorizontalAlignment="Left" Margin="60,300,0,0"  PlaceholderText="Password" VerticalAlignment="Top" Width="400" Height="50" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans"/>
+        <PasswordBox  BorderBrush="#FFE74C3C" x:Name="RepassBox" Grid.Row="1" HorizontalAlignment="Left" Margin="60,400.0,0,0"  PlaceholderText="Re-type password" VerticalAlignment="Top" Width="400" Height="50" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans"/>
+        <Button x:Name="RegisterBtn" Grid.Row="1" Content="Register" HorizontalAlignment="Right" Margin="0,500,60,0" VerticalAlignment="Center" Width="400" RenderTransformOrigin="-0.07,0.625" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" Foreground="#FFFDFDFD" Background="#FFE74C3C" />
+        <Button x:Name="BackBtn" Grid.Row="1" Content="Back" HorizontalAlignment="Right" Margin="0,500,500,0" VerticalAlignment="Center" Width="100" RenderTransformOrigin="-0.07,0.625" FontSize="25"  FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" Foreground="#FFFDFDFD" Background="#FFE74C3C" />
+        <Rectangle  Fill="#e74c3c" Margin="0,0,0,0" Stroke="Black"/>
+        <TextBox x:Name="UserText" Grid.Row="1" HorizontalAlignment="Left" Margin="60,60,0,0"  TextWrapping="Wrap" Text="Username:" FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" VerticalAlignment="Top" BorderThickness="0" Foreground="#FFE74C3C"/>
+        <TextBox  x:Name="Email" Grid.Row="1" HorizontalAlignment="Left" Margin="60,160.0,0,0"  TextWrapping="Wrap" Text="Email:" FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" VerticalAlignment="Top" BorderThickness="0" Foreground="#FFE74C3C"/>
+        <TextBox  x:Name="Password" Grid.Row="1" HorizontalAlignment="Left" Margin="60,260.0,0,0"  TextWrapping="Wrap" Text="Password:" FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" VerticalAlignment="Top" BorderThickness="0" Foreground="#FFE74C3C"/>
+        <TextBox  x:Name="RetypePassowrd" Grid.Row="1" HorizontalAlignment="Left" Margin="60,360.0,0,0"  TextWrapping="Wrap" Text="Re-type password:" FontFamily="Assets/Fonts OpenSans-Regular # Open Sans" VerticalAlignment="Top" BorderThickness="0" Foreground="#FFE74C3C"/>
+        <TextBlock FontFamily="/Assets/Fonts/Calligraffitti-Regular.ttf #Calligraffitti" x:Name="textBlock" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" Text="Register" VerticalAlignment="Center" Foreground="White" FontSize="72"/>
+
+
+
 
     </Grid>
 </Page>

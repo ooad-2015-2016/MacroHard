@@ -1,1 +1,1 @@
-C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\ShEM.csproj;x86
+C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\ShEM.csproj;x86

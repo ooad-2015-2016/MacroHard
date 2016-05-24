@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ShEM.BazaPodataka.Static_variables;
 using System.ComponentModel;
+using Windows.UI.ViewManagement;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -21,11 +22,15 @@ namespace ShEM.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class Login : Page
     {
-        public BlankPage1()
+        public Login()
         {
             this.InitializeComponent();
+            ApplicationView.PreferredLaunchViewSize = new Size(2160, 1440);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+
+
         }
 
         private string userInput;
@@ -35,8 +40,30 @@ namespace ShEM.View
         private void button_Click(object sender, RoutedEventArgs e)
         {
             userInput = textBoxUsername.Text;
-            pass = textBoxPass.Text;
+            pass = textBoxPass.Password;
+        }
+        private void ShowPassClick(object sender, RoutedEventArgs e)
+        {
+            if (textBoxPass.PasswordRevealMode == PasswordRevealMode.Visible)
+            {
+                textBoxPass.PasswordRevealMode = PasswordRevealMode.Hidden;
+            }
+            else
+            {
+                textBoxPass.PasswordRevealMode = PasswordRevealMode.Visible;
+
+            }
         }
 
+        private void SignInFun(object sender, RoutedEventArgs e)
+        {
+            Frame novi = Window.Current.Content as Frame;
+            novi.Navigate(typeof(Register));
+        }
+
+        private void ForgottenPassword_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
