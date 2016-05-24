@@ -4,14 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public class Collection
     {
+        [DataMember]
         public int _collectionID;
+        [DataMember]
         public string _name;
+        [DataMember]
         public int _userID;
+        [DataMember]
         public bool _status;
 
 

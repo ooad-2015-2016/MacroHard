@@ -30,7 +30,7 @@
         <TextBlock x:Name="UsernameBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Foreground="#e74c3c" Text="Username:" VerticalAlignment="Center" Grid.Column="1" Margin="10,251.667,0,414.333" Grid.Row="1" Width="300"/>
         <TextBlock x:Name="PasswordBlock" HorizontalAlignment="Right" TextWrapping="Wrap" Foreground="#e74c3c" Text="Password:" VerticalAlignment="Center" Grid.Column="1" Margin="0,251.667,0,414.333" Grid.Row="1" Width="290" />
         <HyperlinkButton x:Name="RegisterLink" Grid.Column="1" HorizontalAlignment="Right" Margin="0,378.667,0,275.333" Grid.Row="1" Content="Forgotten password?" VerticalAlignment="Center" Foreground="Blue"  BorderThickness="0" Background="Transparent" Click="ForgottenPassword_Click"/>
-        <HyperlinkButton x:Name="ForgottenPassword" Grid.Column="1" HorizontalAlignment="Right" Margin="0,410.667,0,243.333" Grid.Row="1" Content="Sign up!" VerticalAlignment="Center" Foreground="Blue"  BorderThickness="0" Background="Transparent" Click="SignInFun" />
+        <HyperlinkButton x:Name="ForgottenPassword" Grid.Column="1" HorizontalAlignment="Stretch" Margin="905,450,0,282" Grid.Row="1" Content="Sign up!" VerticalAlignment="Center" Foreground="Blue"  BorderThickness="0" Background="Transparent" Click="SignInFun" />
 
 
 

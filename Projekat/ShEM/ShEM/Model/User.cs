@@ -4,16 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Net.Sockets;
+using System.Net.Http;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public class User: INotifyPropertyChanged
     {
+        [DataMember]
         public int _userID;
+        [DataMember]
         public string _username;
+        [DataMember]
         public List<Collection> _collections;
+        [DataMember]
         public string _password;
+        [DataMember]
         public string _email;
+        [DataMember]
         public int _numberOfCollections;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -85,5 +95,6 @@ namespace ShEM.Model
                 notifyMeWhenPropertyChanged("numberOfCollections");
             }
         }
+
     }
 }

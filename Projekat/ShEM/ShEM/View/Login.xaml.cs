@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using ShEM.BazaPodataka.Static_variables;
 using System.ComponentModel;
 using Windows.UI.ViewManagement;
+using ShEM.ViewModel;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -30,18 +31,21 @@ namespace ShEM.View
             ApplicationView.PreferredLaunchViewSize = new Size(2160, 1440);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
-
         }
 
         private string userInput;
         private string pass;
         StaticVariablesClass stc;
+        LoginViewModel loginViewModel;
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             userInput = textBoxUsername.Text;
-            pass = textBoxPass.Password;
+            pass = textBoxPass.Password;           
+            loginViewModel = new LoginViewModel(userInput, pass);
+            loginViewModel.povuciUsera();          
         }
+
         private void ShowPassClick(object sender, RoutedEventArgs e)
         {
             if (textBoxPass.PasswordRevealMode == PasswordRevealMode.Visible)
@@ -51,7 +55,6 @@ namespace ShEM.View
             else
             {
                 textBoxPass.PasswordRevealMode = PasswordRevealMode.Visible;
-
             }
         }
 
@@ -63,7 +66,8 @@ namespace ShEM.View
 
         private void ForgottenPassword_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
+
     }
 }

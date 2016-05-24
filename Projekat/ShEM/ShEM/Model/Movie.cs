@@ -4,13 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public class Movie: Article, INotifyPropertyChanged
     {
+        [DataMember]
         public int _duration;
+        [DataMember]
         public string _synopsys;
+        [DataMember]
         public string _director;
 
         public event PropertyChangedEventHandler PropertyChanged;

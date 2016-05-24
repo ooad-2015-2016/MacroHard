@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public class Book: Article
     {
+        [DataMember]
         public string _author;
+        [DataMember]
         public string _publisher;
 
         public event PropertyChangedEventHandler PropertyChanged;

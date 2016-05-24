@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public abstract class Article: INotifyPropertyChanged
     {
+        [DataMember]
         public int _articleID;
+        [DataMember]
         public string _articleName;
+        [DataMember]
         public string _genre;
+        [DataMember]
         public byte[] _image;
+        [DataMember]
         public int _yearOfRelease;
 
         public event PropertyChangedEventHandler PropertyChanged;

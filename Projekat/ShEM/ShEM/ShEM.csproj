@@ -112,6 +112,7 @@
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
     <Compile Include="BazaPodataka\Static variables\StaticVariablesClass.cs" />
+    <Compile Include="Helpers\ImageConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -124,7 +125,6 @@
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\Collection.cs" />
     <Compile Include="Model\Movie.cs" />
-    <Compile Include="Model\PictureConverter.cs" />
     <Compile Include="Model\Song.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,9 +238,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BazaPodataka\Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

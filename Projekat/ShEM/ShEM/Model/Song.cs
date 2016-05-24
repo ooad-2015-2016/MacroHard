@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace ShEM.Model
 {
+    [DataContract]
     public class Song: Article, INotifyPropertyChanged
     {
+        [DataMember]
         public string _performer;
 
         public event PropertyChangedEventHandler PropertyChanged;
