@@ -19,7 +19,12 @@ namespace ShEM.Model
         public int _userID;
         [DataMember]
         public bool _status;
-
+        [DataMember]
+        List<Book> books;
+        [DataMember]
+        List<Movie> movies;
+        [DataMember]
+        List<Song> songs;
 
         public event PropertyChangedEventHandler PropertyChanged;
 

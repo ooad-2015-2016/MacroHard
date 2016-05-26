@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ShEM.Model;
 using System.Net.Http;
 using System.IO;
@@ -13,9 +10,10 @@ namespace ShEM.ViewModel
 {
     class NewsFeedViewModel
     {
-        List<User> users = new List<User>();
+        public List<User> users { get; set; }
+        public Collection collection { get; set; }
 
-        public async void getAllUsers()
+        public async void getAllFriends()
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage msg = await client.GetAsync("url"); //url

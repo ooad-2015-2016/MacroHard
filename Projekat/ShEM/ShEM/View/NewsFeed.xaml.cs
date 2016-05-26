@@ -28,7 +28,7 @@ namespace ShEM.View
         {
             this.InitializeComponent();
             nfvm = new NewsFeedViewModel();
-            nfvm.getAllUsers();
+            nfvm.getAllFriends();
         }
     }
 }
