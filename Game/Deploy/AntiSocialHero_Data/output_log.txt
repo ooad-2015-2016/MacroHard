@@ -1,64 +1,51 @@
 Initialize engine version: 5.3.5f1 (960ebf59018a)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x126)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
     Vendor:   Intel
-    VRAM:     848 MB
+    VRAM:     2103 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\User\Desktop\AntiSocialHero_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\User\Desktop\AntiSocialHero_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.549 seconds
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\User\Desktop\AntiSocialHero_Data\Managed\System.dll (this message is harmless)
-desktop: 1366x768 50Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Edin\MacroHard\Game\Deploy\AntiSocialHero_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.057109 ms
+UnloadTime: 0.660296 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.982119 ms
+UnloadTime: 0.278402 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 329.
-Total: 0.583107 ms (FindLiveObjects: 0.071090 ms CreateObjectMapping: 0.090404 ms MarkObjects: 0.394902 ms  DeleteObjects: 0.025066 ms)
+Total: 0.154810 ms (FindLiveObjects: 0.016678 ms CreateObjectMapping: 0.016678 ms MarkObjects: 0.114183 ms  DeleteObjects: 0.006842 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Can't add component to object that is being destroyed.
- 
-(Filename:  Line: 88)
-
-UnloadTime: 3.175246 ms
+UnloadTime: 0.579042 ms
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 219.
-Total: 0.486128 ms (FindLiveObjects: 0.036161 ms CreateObjectMapping: 0.039038 ms MarkObjects: 0.350111 ms  DeleteObjects: 0.059584 ms)
+Total: 0.161225 ms (FindLiveObjects: 0.022237 ms CreateObjectMapping: 0.011546 ms MarkObjects: 0.109906 ms  DeleteObjects: 0.017106 ms)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.889249 ms
+UnloadTime: 0.274125 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 359.
-Total: 0.651732 ms (FindLiveObjects: 0.073967 ms CreateObjectMapping: 0.088349 ms MarkObjects: 0.462294 ms  DeleteObjects: 0.025888 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.567272 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 359.
-Total: 0.650089 ms (FindLiveObjects: 0.066981 ms CreateObjectMapping: 0.053009 ms MarkObjects: 0.508729 ms  DeleteObjects: 0.018902 ms)
+Total: 0.211260 ms (FindLiveObjects: 0.021382 ms CreateObjectMapping: 0.016678 ms MarkObjects: 0.164646 ms  DeleteObjects: 0.007697 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Can't add component to object that is being destroyed.
- 
-(Filename:  Line: 88)
-
-UnloadTime: 4.640207 ms
+UnloadTime: 1.064856 ms
 
 Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 233.
-Total: 0.597901 ms (FindLiveObjects: 0.036983 ms CreateObjectMapping: 0.053831 ms MarkObjects: 0.439282 ms  DeleteObjects: 0.066159 ms)
+Total: 0.231360 ms (FindLiveObjects: 0.017961 ms CreateObjectMapping: 0.028225 ms MarkObjects: 0.159514 ms  DeleteObjects: 0.024803 ms)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2578 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3098 -> priority: 1 
+  Thread -> id: 2a20 -> priority: 1 
