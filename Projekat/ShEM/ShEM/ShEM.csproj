@@ -112,7 +112,11 @@
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
     <Compile Include="BazaPodataka\Static variables\StaticVariablesClass.cs" />
+    <Compile Include="Helpers\BookAPIParser.cs" />
     <Compile Include="Helpers\ImageConverter.cs" />
+    <Compile Include="Helpers\MovieAPIParser.cs" />
+    <Compile Include="Helpers\MusicAPIParser.cs" />
+    <Compile Include="Helpers\WebClient.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
