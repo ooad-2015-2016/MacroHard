@@ -405,17 +405,8 @@
     <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\BackGround.jpg">
       <PackagePath>Assets\BackGround.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\Calligraffitti-Regular.ttf">
-      <PackagePath>Assets\Fonts\Calligraffitti-Regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Bold.ttf">
-      <PackagePath>Assets\Fonts\OpenSans-Bold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Regular.ttf">
-      <PackagePath>Assets\Fonts\OpenSans-Regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Italic.ttf">
-      <PackagePath>Assets\Fonts\OpenSans-Italic.ttf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\DefaultUser.png">
+      <PackagePath>Assets\DefaultUser.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\AlbumImage.PNG">
       <PackagePath>Assets\AlbumImage.PNG</PackagePath>
@@ -455,6 +446,18 @@
     <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\Calligraffitti-Regular.ttf">
+      <PackagePath>Assets\Fonts\Calligraffitti-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Bold.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Regular.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Italic.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Italic.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

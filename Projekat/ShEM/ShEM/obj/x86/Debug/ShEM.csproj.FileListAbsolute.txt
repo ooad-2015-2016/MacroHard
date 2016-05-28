@@ -747,8 +747,6 @@ C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Ne
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\NewsFeed.g.cs
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Movie.g.i.cs
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Movie.g.cs
-C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\RecoverAcc2.g.i.cs
-C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\RecoverAcc2.g.cs
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersFeed.g.i.cs
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersFeed.g.cs
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\MainPage.g.i.cs
@@ -762,7 +760,6 @@ C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Bo
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\EditAccount.xaml
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\NewsFeed.xaml
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Movie.xaml
-C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\RecoverAcc2.xaml
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersFeed.xaml
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\MainPage.xaml
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\App.xbf
@@ -773,7 +770,6 @@ C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Bo
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\EditAccount.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\NewsFeed.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\Movie.xbf
-C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\RecoverAcc2.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersFeed.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\MainPage.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\obj\x86\Debug\XamlSaveStateFile.xml
@@ -790,7 +786,6 @@ C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\Bo
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\EditAccount.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\NewsFeed.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\Movie.xbf
-C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\RecoverAcc2.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\View\UsersFeed.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\MainPage.xbf
 C:\Users\Muhamed Delalic\Documents\OOAD\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml
