@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShEM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,12 @@ namespace ShEM.View
     /// </summary>
     public sealed partial class BlankPage5 : Page
     {
+        MovieViewModel mvm;
         public BlankPage5()
         {
             this.InitializeComponent();
+            mvm = new MovieViewModel();
+            mvm.getMovie();
         }
     }
 }
