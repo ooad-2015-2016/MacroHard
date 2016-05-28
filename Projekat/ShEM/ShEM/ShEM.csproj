@@ -94,6 +94,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Assets\BackGround.jpg" />
+    <Content Include="Assets\DefaultUser.png" />
     <Content Include="Assets\Fonts\Calligraffitti-Regular.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Bold.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Regular.ttf" />
@@ -113,7 +114,7 @@
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
-    <Compile Include="BazaPodataka\Static variables\StaticVariablesClass.cs" />
+    <Compile Include="Static variables\StaticVariablesClass.cs" />
     <Compile Include="Helpers\BookAPIParser.cs" />
     <Compile Include="Helpers\ImageConverter.cs" />
     <Compile Include="Helpers\MovieAPIParser.cs" />
@@ -157,9 +158,6 @@
     </Compile>
     <Compile Include="View\Movie.xaml.cs">
       <DependentUpon>Movie.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\RecoverAcc2.xaml.cs">
-      <DependentUpon>RecoverAcc2.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UsersFeed.xaml.cs">
       <DependentUpon>UsersFeed.xaml</DependentUpon>
@@ -217,10 +215,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Movie.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\RecoverAcc2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

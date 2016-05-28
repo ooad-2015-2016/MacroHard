@@ -31,14 +31,22 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{Binding}">
-        <Rectangle HorizontalAlignment="Left" Height="257" Margin="0,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#D32F2E"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="682" Margin="95,330,0,0" VerticalAlignment="Top" Width="1720" FontFamily="Verdana" BorderThickness="2" RequestedTheme="Dark" ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}">
+        <RelativePanel Margin="100">
+            <Image RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" x:Name="ProfilePicture" Source="ms-appx:///Assets/DefaultUser.png" Width="250" Height="250"></Image>
+            <RelativePanel x:Name="SearchContainer" RelativePanel.RightOf="ProfilePicture" RelativePanel.AlignRightWithPanel="True" Height="{Binding ActualHeight, ElementName=ProfilePicture, Mode=OneWay}" >
+                <TextBox x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" TextWrapping="Wrap" PlaceholderText="Search..." VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="1000"/>
+            </RelativePanel>
+            <StackPanel x:Name="Menu" Orientation="Vertical" RelativePanel.Below="ProfilePicture" Width="{Binding ActualWidth, ElementName=ProfilePicture, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="News Feed" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
+                <Button Content="Settings" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
+                <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
+            </StackPanel>
+        </RelativePanel>
+        <ListView x:Name="listView" RelativePanel.RightOf="Menu" RelativePanel.AlignBottomWithPanel="True"  FontFamily="Verdana"  RequestedTheme="Dark" ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="358,345,172,195" Width="1390" Height="540" >
             <ListView.BorderBrush>
                 <SolidColorBrush Color="{StaticResource Color1}"/>
             </ListView.BorderBrush>
         </ListView>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="746,91,0,0" TextWrapping="Wrap" Text="News feed" VerticalAlignment="Top" FontFamily="Verdana" FontSize="75" Foreground="White"/>
-        <Button x:Name="logoutButton" Content="Logout" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="375" Height="83" FontFamily="Verdana" FontSize="35" Background="#D32F2E" Foreground="White"/>
 
     </Grid>
 </Page>
