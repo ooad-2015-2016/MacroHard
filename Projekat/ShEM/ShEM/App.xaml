@@ -4,6 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ShEM"
     RequestedTheme="Light">
-    
+    <Application.Resources>
+        <ImageSource x:Key="BackGround">ms-appx:///Assets/BackGround.jpg</ImageSource>
+        <SolidColorBrush x:Key="MainColor" Color="#FFE74C3C"/>
+        <FontFamily x:Key="OpenSans">/Assets/Fonts/OpenSans-Regular.ttf #OpenSans</FontFamily>
+        <FontFamily x:Key="TitleFont">/Assets/Fonts/Calligraffitti-Regular.ttf #Calligraffitti</FontFamily>
+        <SolidColorBrush x:Key="SecondaryColor" Color="#FF303030"/>
+
+    </Application.Resources>
+
 
 </Application>

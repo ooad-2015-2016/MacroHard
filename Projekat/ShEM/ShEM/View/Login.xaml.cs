@@ -28,8 +28,8 @@ namespace ShEM.View
         public Login()
         {
             this.InitializeComponent();
-            ApplicationView.PreferredLaunchViewSize = new Size(2160, 1440);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            //ApplicationView.PreferredLaunchViewSize = new Size(2160, 1440);
+          //  ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
 
         }
 
@@ -38,7 +38,7 @@ namespace ShEM.View
         StaticVariablesClass stc;
         LoginViewModel loginViewModel;
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void LoginUser(object sender, RoutedEventArgs e)
         {
             userInput = textBoxUsername.Text;
             pass = textBoxPass.Password;           
@@ -60,14 +60,22 @@ namespace ShEM.View
 
         private void SignInFun(object sender, RoutedEventArgs e)
         {
-            Frame novi = Window.Current.Content as Frame;
-            novi.Navigate(typeof(Register));
+            RegisterForm.Visibility = Visibility.Visible;
         }
 
         private void ForgottenPassword_Click(object sender, RoutedEventArgs e)
         {
-            
+            RecoverForm.Visibility = Visibility.Visible;
         }
 
+        private void RegisterUser(object sender, RoutedEventArgs e)
+        {
+       
+        }
+       
+        private void RecoverUser(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

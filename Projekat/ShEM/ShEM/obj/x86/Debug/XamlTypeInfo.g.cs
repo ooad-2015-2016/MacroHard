@@ -132,7 +132,7 @@ namespace ShEM.ShEM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[25];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "ShEM.View.Login";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -153,13 +153,11 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeNameTable[17] = "ShEM.Model.Collection";
             _typeNameTable[18] = "ShEM.View.BlankPage4";
             _typeNameTable[19] = "ShEM.View.BlankPage5";
-            _typeNameTable[20] = "ShEM.View.BlankPage6";
-            _typeNameTable[21] = "ShEM.View.BlankPage7";
-            _typeNameTable[22] = "ShEM.View.Register";
-            _typeNameTable[23] = "ShEM.View.BlankPage9";
-            _typeNameTable[24] = "ShEM.MainPage";
+            _typeNameTable[20] = "ShEM.View.BlankPage7";
+            _typeNameTable[21] = "ShEM.View.BlankPage9";
+            _typeNameTable[22] = "ShEM.MainPage";
 
-            _typeTable = new global::System.Type[25];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::ShEM.View.Login);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -180,11 +178,9 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeTable[17] = typeof(global::ShEM.Model.Collection);
             _typeTable[18] = typeof(global::ShEM.View.BlankPage4);
             _typeTable[19] = typeof(global::ShEM.View.BlankPage5);
-            _typeTable[20] = typeof(global::ShEM.View.BlankPage6);
-            _typeTable[21] = typeof(global::ShEM.View.BlankPage7);
-            _typeTable[22] = typeof(global::ShEM.View.Register);
-            _typeTable[23] = typeof(global::ShEM.View.BlankPage9);
-            _typeTable[24] = typeof(global::ShEM.MainPage);
+            _typeTable[20] = typeof(global::ShEM.View.BlankPage7);
+            _typeTable[21] = typeof(global::ShEM.View.BlankPage9);
+            _typeTable[22] = typeof(global::ShEM.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -231,11 +227,9 @@ namespace ShEM.ShEM_XamlTypeInfo
         private object Activate_17_Collection() { return new global::ShEM.Model.Collection(); }
         private object Activate_18_BlankPage4() { return new global::ShEM.View.BlankPage4(); }
         private object Activate_19_BlankPage5() { return new global::ShEM.View.BlankPage5(); }
-        private object Activate_20_BlankPage6() { return new global::ShEM.View.BlankPage6(); }
-        private object Activate_21_BlankPage7() { return new global::ShEM.View.BlankPage7(); }
-        private object Activate_22_Register() { return new global::ShEM.View.Register(); }
-        private object Activate_23_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
-        private object Activate_24_MainPage() { return new global::ShEM.MainPage(); }
+        private object Activate_20_BlankPage7() { return new global::ShEM.View.BlankPage7(); }
+        private object Activate_21_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
+        private object Activate_22_MainPage() { return new global::ShEM.MainPage(); }
         private void VectorAdd_12_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.User>)instance;
@@ -394,37 +388,23 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  ShEM.View.BlankPage6
+            case 20:   //  ShEM.View.BlankPage7
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_BlankPage6;
+                userType.Activator = Activate_20_BlankPage7;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  ShEM.View.BlankPage7
+            case 21:   //  ShEM.View.BlankPage9
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_BlankPage7;
+                userType.Activator = Activate_21_BlankPage9;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  ShEM.View.Register
+            case 22:   //  ShEM.MainPage
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_Register;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 23:   //  ShEM.View.BlankPage9
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_BlankPage9;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 24:   //  ShEM.MainPage
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_MainPage;
+                userType.Activator = Activate_22_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -91,7 +91,9 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
+    <Content Include="Assets\BackGround.jpg" />
     <Content Include="Assets\Fonts\Calligraffitti-Regular.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Bold.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Regular.ttf" />
@@ -156,14 +158,8 @@
     <Compile Include="View\Movie.xaml.cs">
       <DependentUpon>Movie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\RecoverAcc1.xaml.cs">
-      <DependentUpon>RecoverAcc1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\RecoverAcc2.xaml.cs">
       <DependentUpon>RecoverAcc2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UsersFeed.xaml.cs">
       <DependentUpon>UsersFeed.xaml</DependentUpon>
@@ -180,7 +176,9 @@
     <Content Include="Assets\BookCover.PNG" />
     <Content Include="Assets\ShEMUser.PNG" />
     <Content Include="Assets\user.PNG" />
-    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Properties\Default.rd.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -222,15 +220,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\RecoverAcc1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\RecoverAcc2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
