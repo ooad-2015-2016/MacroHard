@@ -114,6 +114,7 @@
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
+    <Compile Include="Helpers\CameraHelper.cs" />
     <Compile Include="Static variables\StaticVariablesClass.cs" />
     <Compile Include="Helpers\BookAPIParser.cs" />
     <Compile Include="Helpers\ImageConverter.cs" />
