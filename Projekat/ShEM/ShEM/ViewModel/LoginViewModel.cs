@@ -11,6 +11,7 @@ using System.Runtime.Serialization.Json;
 using System.IO;
 using Newtonsoft.Json.Serialization;
 using Windows.Data.Json;
+using ShEM.BazaPodataka.Static_variables;
 
 namespace ShEM.ViewModel
 {
@@ -19,6 +20,7 @@ namespace ShEM.ViewModel
         private string userInfo;
         private string pass;
         User user = new User();
+        StaticVariablesClass statika = new StaticVariablesClass();
 
         public LoginViewModel(string info, string pass)
         {
@@ -38,7 +40,7 @@ namespace ShEM.ViewModel
         public async void povuciUsera()
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage msg = await client.GetAsync("http://localhost:5000/"); //treba dodati korektan url
+            HttpResponseMessage msg = await client.GetAsync(statika.getIP+statika.getPort.ToString()); //treba dodati korektan url
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
             if (msg.IsSuccessStatusCode)
             {

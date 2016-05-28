@@ -9,7 +9,7 @@ namespace ShEM.BazaPodataka.Static_variables
     public class StaticVariablesClass
     {
         private static int port = 3000;
-        private static string ipAddress = "192.168.0.106";
+        private static string ipAddress = "192.168.0.106:";
         private static string movieAPI= "http://www.omdbapi.com/?t=";
         private static string movieAPIAdditions = "&y=&plot=short&r=json";
 
