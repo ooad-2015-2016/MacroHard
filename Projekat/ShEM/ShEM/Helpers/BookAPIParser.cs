@@ -19,7 +19,7 @@ namespace ShEM.Helpers
             {
 
                 var client = new HttpClient();
-                var address = new Uri("https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=" + term);
+                var address = new Uri("https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=" + search);
                 HttpResponseMessage response = await client.GetAsync(address);
                 String stream = await response.Content.ReadAsStringAsync();
                 dynamic dyn = JsonConvert.DeserializeObject(stream);
