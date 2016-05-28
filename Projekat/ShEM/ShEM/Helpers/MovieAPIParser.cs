@@ -18,12 +18,11 @@ namespace ShEM.Helpers
         {
             try
             {
-                
-                WebClient client = new WebClient();
-                // Download string.
-                string query = "http://www.omdbapi.com/?t=" + search + "&y=&plot=short&r=json";
-                string value = client.DownloadString(query);
-                dynamic dyn = JsonConvert.DeserializeObject(value);
+                var client = new HttpClient();
+                var address = new Uri("http://www.omdbapi.com/?t=" + search + "&y=&plot=short&r=json");
+                HttpResponseMessage response = await client.GetAsync(address);
+                String stream = await response.Content.ReadAsStringAsync();
+                dynamic dyn = JsonConvert.DeserializeObject(stream);
                 if (dyn != null)
                 {
                     film.articleName = dyn.Title.ToString();
