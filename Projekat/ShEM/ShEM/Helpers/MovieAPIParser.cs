@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ShEM.BazaPodataka.Static_variables;
 using ShEM.Model;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,13 @@ namespace ShEM.Helpers
    public class MovieAPIParser
     {
         Movie film;
+        StaticVariablesClass statika;
         public async void getMovie(string search)
         {
             try
             {
                 var client = new HttpClient();
-                var address = new Uri("http://www.omdbapi.com/?t=" + search + "&y=&plot=short&r=json");
+                var address = new Uri(statika.MovieAPI + search + statika.MovieAPIAdditions);
                 HttpResponseMessage response = await client.GetAsync(address);
                 String stream = await response.Content.ReadAsStringAsync();
                 dynamic dyn = JsonConvert.DeserializeObject(stream);

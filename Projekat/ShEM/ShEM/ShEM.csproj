@@ -99,6 +99,7 @@
     <Content Include="Assets\Fonts\OpenSans-Bold.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Regular.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Italic.ttf" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -120,7 +121,6 @@
     <Compile Include="Helpers\ImageConverter.cs" />
     <Compile Include="Helpers\MovieAPIParser.cs" />
     <Compile Include="Helpers\MusicAPIParser.cs" />
-    <Compile Include="Helpers\WebClient.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

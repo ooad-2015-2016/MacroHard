@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0d08c055-59c0-4ae9-b90a-eb381308083f</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>42E4318256D8630C31DC6B69C50D8677C3F66025CA0FF1D282642A4E04540AC9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F842C2276F6F523BDCC8CBB8E56F1BBB75BA69A6AD6EBBE11F109DAF44597B95</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0d08c055-59c0-4ae9-b90a-eb381308083f_1.0.0.0_x86__sy67vvsfwhma0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0d08c055-59c0-4ae9-b90a-eb381308083f_sy67vvsfwhma0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0d08c055-59c0-4ae9-b90a-eb381308083f</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-28T07:09:05.602</Modified>
+      <Modified>2016-05-28T15:21:48.835</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
       <PackagePath>entrypoint\ShEM.exe</PackagePath>
-      <Modified>2016-05-28T07:08:50.254</Modified>
+      <Modified>2016-05-28T15:21:41.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -626,7 +626,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
       <PackagePath>ShEM.xr.xml</PackagePath>
-      <Modified>2016-05-28T06:57:09.684</Modified>
+      <Modified>2016-05-28T08:45:07.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -634,11 +634,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-28T07:09:01.776</Modified>
+      <Modified>2016-05-28T15:21:47.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\Core\ShEM.exe">
       <PackagePath>ShEM.exe</PackagePath>
-      <Modified>2016-05-28T07:09:05.532</Modified>
+      <Modified>2016-05-28T15:21:48.819</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
