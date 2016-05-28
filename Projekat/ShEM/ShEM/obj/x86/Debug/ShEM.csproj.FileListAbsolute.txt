@@ -1478,6 +1478,7 @@ C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\System.Xml.Reader
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\ShEM.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\App.g.i.cs
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\App.g.cs
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\View\Login.g.i.cs
@@ -1595,4 +1596,3 @@ C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\qualifiers.txt
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\ShEM.csprojResolveAssemblyReference.cache
