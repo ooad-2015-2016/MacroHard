@@ -21,14 +21,35 @@ namespace ShEM.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage4 : Page
+    public sealed partial class NewsFeed : Page
     {
         NewsFeedViewModel nfvm;
-        public BlankPage4()
+        public NewsFeed()
         {
             this.InitializeComponent();
             nfvm = new NewsFeedViewModel();
             nfvm.getAllFriends();
+        }
+
+        private void PeopleCheck(object sender, RoutedEventArgs e)
+        {
+
+
+        }
+
+        private void BooksCheck(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SongsCheck(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MoviesCheck(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

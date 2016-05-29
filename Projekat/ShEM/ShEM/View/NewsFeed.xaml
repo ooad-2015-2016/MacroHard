@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:ShEM.ViewModel"
-    x:Class="ShEM.View.BlankPage4"
+    x:Class="ShEM.View.NewsFeed"
     mc:Ignorable="d">
     <Page.Resources>
         <DataTemplate x:Key="UserTemplate">
@@ -30,24 +30,70 @@
         <ViewModel:NewsFeedViewModel/>
     </Page.DataContext>
 
-    <Grid Background="{StaticResource MainColor}" DataContext="{Binding}">
-        <RelativePanel Margin="100" Background="White" >
-            <Image RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" x:Name="ProfilePicture" Source="ms-appx:///Assets/DefaultUser.png" Width="250" Height="250"></Image>
+    <Grid DataContext="{Binding}">
+        <Grid.Background>
+            <ImageBrush ImageSource="{StaticResource BackGround}"></ImageBrush>
+        </Grid.Background>
+        <RelativePanel Margin="100" Background="#B2FFFFFF"  >
+            <Image  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" x:Name="ProfilePicture" Source="ms-appx:///Assets/DefaultUser.png" Width="250" Height="250"></Image>
             <RelativePanel x:Name="SearchContainer" RelativePanel.RightOf="ProfilePicture" RelativePanel.AlignRightWithPanel="True" Height="{Binding ActualHeight, ElementName=ProfilePicture, Mode=OneWay}" >
-                <TextBox x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" TextWrapping="Wrap" PlaceholderText="Search..." VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="1000"/>
+                <AutoSuggestBox  x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"  PlaceholderText="Search..." VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="1000" />
+                <StackPanel RelativePanel.Below="Search" RelativePanel.AlignHorizontalCenterWith="Search" Orientation="Horizontal">
+                    <CheckBox x:Name="PeopleCheckBox" Checked="PeopleCheck" Margin="0,0,20,0" IsChecked="True">People</CheckBox>
+                    <CheckBox x:Name="BooksCheckBox"  Checked="BooksCheck" Margin="0,0,20,0">Books</CheckBox>
+                    <CheckBox x:Name="MoviesCheckBox" Checked="MoviesCheck" Margin="0,0,20,0">Movies</CheckBox>
+                    <CheckBox x:Name="SongsCheckBox" Checked="SongsCheck"  Margin="0,0,20,0">Songs</CheckBox>
+                </StackPanel>
             </RelativePanel>
-            <StackPanel x:Name="Menu" Orientation="Vertical" RelativePanel.Below="ProfilePicture" Width="{Binding ActualWidth, ElementName=ProfilePicture, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Content="News Feed" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
-                <Button Content="My Collections" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
-                <Button Content="Settings" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
-                <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,20,0,0"></Button>
+            <StackPanel x:Name="Menu" Orientation="Vertical" RelativePanel.Below="ProfilePicture" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="251">
+                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" Background="{x:Null}" Padding="8,10" BorderThickness="0">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Home"></SymbolIcon>
+                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0">News Feed</TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </Button.ContentTemplate>
+                </Button>
+                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}"  Background="{x:Null}" BorderThickness="0" Padding="8,10">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Pictures"></SymbolIcon>
+                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0">My Collections</TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </Button.ContentTemplate>
+                </Button>
+                <Button Content="Settings" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" BorderBrush="{x:Null}" Background="{x:Null}" Padding="8,10" BorderThickness="0">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" >
+                                <SymbolIcon Symbol="Setting"></SymbolIcon>
+                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0"> Settings</TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </Button.ContentTemplate>
+                </Button>
+                <Button Content="Log Out" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" Background="{x:Null}" BorderBrush="{x:Null}" Padding="8,10">
+                    <Button.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" >
+                                <SymbolIcon Symbol="Clear"></SymbolIcon>
+                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0"> Log out</TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </Button.ContentTemplate>
+                </Button>
             </StackPanel>
+            <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.RightOf="Menu" RelativePanel.Below="SearchContainer" FontFamily="Verdana"  ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" >
+                <ListView.BorderBrush>
+                    <SolidColorBrush Color="{StaticResource Color1}"/>
+                </ListView.BorderBrush>
+            </ListView>
         </RelativePanel>
-        <ListView x:Name="listView" RelativePanel.RightOf="Menu" RelativePanel.AlignBottomWithPanel="True"  FontFamily="Verdana"  RequestedTheme="Dark" ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="358,345,172,195" Width="1390" Height="540" >
-            <ListView.BorderBrush>
-                <SolidColorBrush Color="{StaticResource Color1}"/>
-            </ListView.BorderBrush>
-        </ListView>
+
 
     </Grid>
 </Page>

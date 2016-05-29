@@ -12,6 +12,11 @@ using System.IO;
 using Newtonsoft.Json.Serialization;
 using Windows.Data.Json;
 using ShEM.BazaPodataka.Static_variables;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml;
+using ShEM.View;
 
 namespace ShEM.ViewModel
 {
@@ -41,15 +46,25 @@ namespace ShEM.ViewModel
         public async void povuciUsera()
         {
             HttpClient client = new HttpClient();
+
+            String query = "login?" + "username=" + userInfo.Replace(' ','+') + "&password=" + pass.Replace(' ','+');
+            System.Diagnostics.Debug.WriteLine(query);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
             try {
-                HttpResponseMessage msg = await client.GetAsync(statika.getIP + statika.getPort.ToString()); //treba dodati korektan url
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+                HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
+
+              //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
                 if (msg.IsSuccessStatusCode)
                 {
-                    MemoryStream ms = new MemoryStream();
-                    DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(User));
-                    serializer.WriteObject(ms, msg);
-                    user = (User)serializer.ReadObject(ms);
+                    String stream = await msg.Content.ReadAsStringAsync();
+                    dynamic dyn = JsonConvert.DeserializeObject(stream);
+                    statika.userID = dyn["id"];
+                    statika.username = dyn["USERNAME"];
+                    statika.email = dyn["EMAIL"];
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    rootFrame.Navigate(typeof(NewsFeed));
                 }
                 else
                 {

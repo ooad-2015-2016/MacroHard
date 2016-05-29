@@ -15,6 +15,7 @@ namespace ShEM.ViewModel
 
         public async void getAllFriends()
         {
+            /*
             HttpClient client = new HttpClient();
             HttpResponseMessage msg = await client.GetAsync("url"); //url
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
@@ -31,6 +32,7 @@ namespace ShEM.ViewModel
                 var dialog = new MessageDialog("Your access data is not valid, please try again");
                 await dialog.ShowAsync();
             }
+            */
         }
     }
 }
