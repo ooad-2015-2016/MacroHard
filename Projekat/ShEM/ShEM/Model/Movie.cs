@@ -18,13 +18,18 @@ namespace ShEM.Model
         [DataMember]
         public string _director;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public Movie()
+        {
+
+        }
+
+        public event PropertyChangedEventHandler propertyChanged;
 
         private void notifyMeWhenPropertyChanged(string info)
         {
-            if (PropertyChanged != null)
+            if (propertyChanged != null)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(info));
+                propertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
 

@@ -251,6 +251,7 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="ShEM.View.BlankPage5" />
+    <RootType FullName="ShEM.View.UsersCollections" />
     <RootType FullName="ShEM.View.BlankPage9" />
     <RootType FullName="ShEM.MainPage" />
   </Roots.RootTypes>

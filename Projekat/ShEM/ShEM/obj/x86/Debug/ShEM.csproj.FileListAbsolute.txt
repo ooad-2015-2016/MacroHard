@@ -1581,3 +1581,8 @@ C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\qualifiers.txt
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\bin\x86\Debug\View\UsersCollections.xbf
+C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersCollections.g.i.cs
+C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersCollections.g.cs
+C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersCollections.xaml
+C:\Users\Edin\MacroHard\Projekat\ShEM\ShEM\obj\x86\Debug\View\UsersCollections.xbf

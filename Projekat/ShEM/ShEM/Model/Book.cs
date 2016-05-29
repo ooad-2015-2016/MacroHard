@@ -16,6 +16,11 @@ namespace ShEM.Model
         [DataMember]
         public string _publisher;
 
+        public Book()
+        {
+
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void notifyMeWhenPropertyChanged(string info)
