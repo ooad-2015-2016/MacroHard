@@ -12,7 +12,7 @@ namespace ShEM.Helpers
 {
     public class BookAPIParser
     {
-        Book book;
+        Book book = new Book();
         public async void getBook(string search)
         {
             try
@@ -50,7 +50,7 @@ namespace ShEM.Helpers
             }
             catch (Exception e)
             {
-                var dialog = new MessageDialog("Nothing has been found. Please try again!");
+                var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
             }
 

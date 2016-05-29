@@ -115,6 +115,7 @@
     <Compile Include="BazaPodataka\Models\Korisnik.cs" />
     <Compile Include="BazaPodataka\Models\DBContext.cs" />
     <Compile Include="BazaPodataka\Models\Pjesma.cs" />
+    <Compile Include="Helpers\BluetoothCommunication.cs" />
     <Compile Include="Helpers\CameraHelper.cs" />
     <Compile Include="Static variables\StaticVariablesClass.cs" />
     <Compile Include="Helpers\BookAPIParser.cs" />
@@ -137,10 +138,11 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\BookViewModel.cs" />
+    <Compile Include="ViewModel\EditAccountViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MovieViewModel.cs" />
+    <Compile Include="ViewModel\MyCollectionsViewModel.cs" />
     <Compile Include="ViewModel\NewsFeedViewModel.cs" />
-    <Compile Include="ViewModel\ObservableObject.cs" />
     <Compile Include="ViewModel\SongViewModel.cs" />
     <Compile Include="ViewModel\UsersFeedViewModel.cs" />
     <Compile Include="View\Login.xaml.cs">
@@ -163,6 +165,9 @@
     </Compile>
     <Compile Include="View\Movie.xaml.cs">
       <DependentUpon>Movie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsersCollections.xaml.cs">
+      <DependentUpon>UsersCollections.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UsersFeed.xaml.cs">
       <DependentUpon>UsersFeed.xaml</DependentUpon>
@@ -220,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Movie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UsersCollections.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

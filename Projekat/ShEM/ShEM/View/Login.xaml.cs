@@ -16,7 +16,6 @@ using ShEM.BazaPodataka.Static_variables;
 using System.ComponentModel;
 using Windows.UI.ViewManagement;
 using ShEM.ViewModel;
-using ShEM.BazaPodataka.Static_variables;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -36,7 +35,6 @@ namespace ShEM.View
 
         private string userInput;
         private string pass;
-        StaticVariablesClass stc;
         LoginViewModel loginViewModel;
         StaticVariablesClass statika = new StaticVariablesClass();
 

@@ -16,8 +16,7 @@ namespace ShEM.Helpers
 {
    public class MovieAPIParser
     {
-        
-        StaticVariablesClass statika;
+        StaticVariablesClass statika = new StaticVariablesClass();
         public async Task<Movie> getMovie(string search)
         {
             Movie film = new Movie();
@@ -48,7 +47,7 @@ namespace ShEM.Helpers
             }
             catch (Exception e)
             {
-                var dialog = new MessageDialog("Nothing has been found. Please try again!");
+                var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
             }
             return film;

@@ -15,7 +15,7 @@
         </Rectangle>
         <Button x:Name="button" Content="Back to feed" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="40" Foreground="White" Background="#FFD32F2E"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="450" Margin="1086,254,0,0" VerticalAlignment="Top" Width="450" Source="ms-appx:///Assets/user.PNG" />
-        <Button x:Name="button1" Content="+Upload profile picture" HorizontalAlignment="Left" Margin="1147,714,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="25" Background="#D32F2E" Foreground="White"/>
+        <Button x:Name="button1" Content="+Upload profile picture" HorizontalAlignment="Left" Margin="1147,714,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="25" Background="#D32F2E" Foreground="White" Click="button1_Click"/>
         <Button x:Name="button2" Content="Change password" HorizontalAlignment="Left" Margin="371,714,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="25" Background="#D32F2E" Foreground="White"/>
         <TextBox x:Name="textBox" Height="50" HorizontalAlignment="Left" Margin="371,479,0,0" TextWrapping="Wrap" Text="Old password" VerticalAlignment="Top" FontFamily="Verdana" FontSize="25" Width="350"/>
         <TextBox x:Name="textBox1" Height="50" HorizontalAlignment="Left" Margin="371,592,0,0" TextWrapping="Wrap" Text="New password" VerticalAlignment="Top" FontFamily="Verdana" FontSize="25" Width="350"/>

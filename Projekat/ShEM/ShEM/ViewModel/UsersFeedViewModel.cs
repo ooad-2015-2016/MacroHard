@@ -15,7 +15,7 @@ namespace ShEM.ViewModel
 {
     public class UsersFeedViewModel
     {
-        private List<User> users;
+        private List<User> users { get; set; }
         StaticVariablesClass statika = new StaticVariablesClass();
         string username;
 

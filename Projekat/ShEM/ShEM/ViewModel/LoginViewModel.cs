@@ -42,13 +42,14 @@ namespace ShEM.ViewModel
         {
             HttpClient client = new HttpClient();
             try {
-                HttpResponseMessage msg = await client.GetAsync(statika.getIP + statika.getPort.ToString()); //treba dodati korektan url
+                HttpResponseMessage msg = await client.GetAsync(new Uri(statika.getIP + statika.getPort.ToString())); //treba dodati korektan url
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
                 if (msg.IsSuccessStatusCode)
                 {
                     MemoryStream ms = new MemoryStream();
+                    StreamWriter sw = new StreamWriter(ms);
                     DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(User));
-                    serializer.WriteObject(ms, msg);
+                    await sw.WriteAsync(msg.ToString());
                     user = (User)serializer.ReadObject(ms);
                 }
                 else
@@ -56,7 +57,12 @@ namespace ShEM.ViewModel
                     var dialog = new MessageDialog("Your access data is not valid, please try again");
                     await dialog.ShowAsync();
                 }
-                this.assignUser();
+
+                if(user != null)
+                {
+                    this.assignUser();
+                }
+                
             }
             catch (HttpRequestException e)
             {
