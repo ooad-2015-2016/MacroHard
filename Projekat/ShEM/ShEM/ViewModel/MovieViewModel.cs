@@ -25,25 +25,29 @@ namespace ShEM.ViewModel
         public MovieViewModel()
         {
             movie = new Movie();
-            api = new  MovieAPIParser();
+            api = new MovieAPIParser();
         }
 
-        public async void getMovie()
+        public async Task getMovie()
         {
             movie = await api.getMovie(naziv);
-            if (movie.image != null)
-                 await LoadImageAsync();
+            await LoadImageAsync();
+
         }
+
 
         private async Task LoadImageAsync()
         {
             using (InMemoryRandomAccessStream ms = new InMemoryRandomAccessStream())
             {
+                // Writes the image byte array in an InMemoryRandomAccessStream
+                // that is needed to set the source of BitmapImage.
                 using (DataWriter writer = new DataWriter(ms.GetOutputStreamAt(0)))
                 {
                     writer.WriteBytes(movie.image);
                     await writer.StoreAsync();
                 }
+
                 var image = new BitmapImage();
                 await image.SetSourceAsync(ms);
                 Poster = image;

@@ -9,18 +9,15 @@ using System.Runtime.Serialization;
 namespace ShEM.Model
 {
     [DataContract]
-    public abstract class Article: INotifyPropertyChanged
+    public abstract class Article : INotifyPropertyChanged
     {
         [DataMember]
         public int _articleID;
         [DataMember]
         public string _articleName;
         [DataMember]
-        public string _genre;
-        [DataMember]
         public byte[] _image;
-        [DataMember]
-        public string _yearOfRelease;
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -39,7 +36,7 @@ namespace ShEM.Model
             {
                 this._articleID = value;
                 notifyMeWhenPropertyChanged("articleID");
-            }   
+            }
         }
 
         public string articleName
@@ -49,16 +46,6 @@ namespace ShEM.Model
             {
                 this._articleName = value;
                 notifyMeWhenPropertyChanged("articleName");
-            }
-        }
-
-        public string genre
-        {
-            get { return _genre; }
-            set
-            {
-                this._genre = value;
-                notifyMeWhenPropertyChanged("genre");
             }
         }
 
@@ -72,14 +59,6 @@ namespace ShEM.Model
             }
         }
 
-        public string yearOfRelease
-        {
-            get { return _yearOfRelease; }
-            set
-            {
-                this._yearOfRelease = value;
-                notifyMeWhenPropertyChanged("yearOfRelease");
-            }
-        }
+
     }
 }

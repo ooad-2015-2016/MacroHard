@@ -20,6 +20,38 @@ namespace ShEM.BazaPodataka.Static_variables
         private static string _email;
         private static int _numberOfCollections;
         private static byte[] _profilePic;
+        private string songAPI = "https://api.spotify.com/v1/search?q=";
+        private string songAPIAdditions= "&type=track&limit=1";
+        private string bookAPI= "https://www.googleapis.com/books/v1/volumes?q=";
+        private string bookAPIAdditions = "&maxResults=1";
+
+        public string BookAPIAdditions
+        {
+            get { return bookAPIAdditions; }
+            set { bookAPIAdditions = value; }
+        }
+
+
+        public string BookAPI
+        {
+            get { return bookAPI; }
+            set { bookAPI = value; }
+        }
+
+
+        public string SongAPIAdditions
+        {
+            get { return songAPIAdditions; }
+            set { songAPIAdditions = value; }
+        }
+
+
+        public string SongAPI
+        {
+            get { return songAPI; }
+            set { songAPI = value; }
+        }
+
 
         public string email
         {

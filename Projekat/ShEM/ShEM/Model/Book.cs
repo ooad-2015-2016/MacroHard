@@ -9,17 +9,14 @@ using System.Runtime.Serialization;
 namespace ShEM.Model
 {
     [DataContract]
-    public class Book: Article
+    public class Book : Article
     {
         [DataMember]
         public string _author;
         [DataMember]
         public string _publisher;
-
-        public Book()
-        {
-
-        }
+        [DataMember]
+        public string _synopsys;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -48,6 +45,15 @@ namespace ShEM.Model
             {
                 _author = value;
                 notifyMeWhenPropertyChanged("author");
+            }
+        }
+        public string synopsys
+        {
+            get { return _synopsys; }
+            set
+            {
+                _synopsys = value;
+                notifyMeWhenPropertyChanged("synopsys");
             }
         }
     }

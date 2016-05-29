@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 namespace ShEM.Model
 {
     [DataContract]
-    public class Song: Article, INotifyPropertyChanged
+    public class Song : Article
     {
         [DataMember]
         public string _performer;
@@ -24,7 +24,7 @@ namespace ShEM.Model
             }
         }
 
-        public string preformer
+        public string performer
         {
             get { return _performer; }
             set

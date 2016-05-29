@@ -28,7 +28,13 @@ namespace ShEM.View
         {
             this.InitializeComponent();
             bvm = new BookViewModel();
-            bvm.getBook();
+            bvm.naziv = "harry potter"; //search string
+            metoda();
+        }
+        public async void metoda()
+        {
+            await bvm.getBook();
+            DataContext = bvm;
         }
     }
 }

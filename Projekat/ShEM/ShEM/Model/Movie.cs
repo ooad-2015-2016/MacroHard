@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 namespace ShEM.Model
 {
     [DataContract]
-    public class Movie: Article, INotifyPropertyChanged
+    public class Movie : Article
     {
         [DataMember]
         public string _duration;
@@ -17,19 +17,16 @@ namespace ShEM.Model
         public string _synopsys;
         [DataMember]
         public string _director;
+        [DataMember]
+        public string _yearOfRelease;
 
-        public Movie()
-        {
-
-        }
-
-        public event PropertyChangedEventHandler propertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void notifyMeWhenPropertyChanged(string info)
         {
-            if (propertyChanged != null)
+            if (PropertyChanged != null)
             {
-                propertyChanged(this, new PropertyChangedEventArgs(info));
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
 
@@ -62,7 +59,15 @@ namespace ShEM.Model
                 notifyMeWhenPropertyChanged("director");
             }
         }
+        public string yearOfRelease
+        {
+            get { return _yearOfRelease; }
+            set
+            {
+                this._yearOfRelease = value;
+                notifyMeWhenPropertyChanged("yearOfRelease");
+            }
+        }
 
-        public byte[] Image { get; internal set; }
     }
 }
