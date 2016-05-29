@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-28T15:21:48.835</Modified>
+      <Modified>2016-05-29T08:51:11.210</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
       <PackagePath>entrypoint\ShEM.exe</PackagePath>
-      <Modified>2016-05-28T15:21:41.100</Modified>
+      <Modified>2016-05-29T08:51:00.488</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -626,7 +626,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
       <PackagePath>ShEM.xr.xml</PackagePath>
-      <Modified>2016-05-28T08:45:07.465</Modified>
+      <Modified>2016-05-29T08:50:54.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -634,11 +634,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-28T15:21:47.225</Modified>
+      <Modified>2016-05-29T08:51:08.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\Desktop\Attempt\Projekat\ShEM\ShEM\bin\x86\Debug\Core\ShEM.exe">
       <PackagePath>ShEM.exe</PackagePath>
-      <Modified>2016-05-28T15:21:48.819</Modified>
+      <Modified>2016-05-29T08:51:11.178</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

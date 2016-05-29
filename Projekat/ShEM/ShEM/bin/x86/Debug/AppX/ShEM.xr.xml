@@ -14,6 +14,7 @@
     <RootPropertyPathName Name="users" />
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="ActualHeight" />
+    <RootPropertyPathName Name="Poster" />
     <RootPropertyPathName Name="movie" />
     <RootPropertyPathName Name="duration" />
     <RootPropertyPathName Name="director" />

@@ -118,7 +118,7 @@
     <Compile Include="Helpers\CameraHelper.cs" />
     <Compile Include="Static variables\StaticVariablesClass.cs" />
     <Compile Include="Helpers\BookAPIParser.cs" />
-    <Compile Include="Helpers\ImageConverter.cs" />
+    <Compile Include="Helpers\PictureConverter.cs" />
     <Compile Include="Helpers\MovieAPIParser.cs" />
     <Compile Include="Helpers\MusicAPIParser.cs" />
     <Compile Include="MainPage.xaml.cs">

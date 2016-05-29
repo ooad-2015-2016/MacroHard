@@ -4,22 +4,25 @@ using ShEM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
 
+
 namespace ShEM.Helpers
 {
    public class MovieAPIParser
     {
-        Movie film;
+        
         StaticVariablesClass statika;
-        public async void getMovie(string search)
+        public async Task<Movie> getMovie(string search)
         {
+            Movie film = new Movie();
             try
-            {
+            {               
                 var client = new HttpClient();
                 var address = new Uri(statika.MovieAPI + search + statika.MovieAPIAdditions);
                 HttpResponseMessage response = await client.GetAsync(address);
@@ -28,21 +31,13 @@ namespace ShEM.Helpers
                 if (dyn != null)
                 {
                     film.articleName = dyn.Title.ToString();
-                    int broj;
-                    Int32.TryParse(dyn.Runtime.ToString(),out broj);
-                    film.duration = broj;
+                    film.duration = dyn.Runtime.ToString();
                     film.synopsys = dyn.Plot.ToString();
                     film.director = dyn.Director.ToString();
                     film.yearOfRelease = dyn.Year.ToString();
                     film.genre = dyn.Genre.ToString();
-                    //  film.articleID = dyn.imdbID.ToString();
-                /*    string slika = dyn.Poster.ToString();
-                    WebClient webClient = new WebClient();
-                    still not sure how to do this
-                       webClient.DownloadFile(slika, film.image);
-                   */  
-
-
+                    HttpClient wc = new HttpClient();
+                    film.Image = wc.GetByteArrayAsync(dyn.Poster.ToString());
                 }
 
                 else
@@ -56,7 +51,7 @@ namespace ShEM.Helpers
                 var dialog = new MessageDialog("Nothing has been found. Please try again!");
                 await dialog.ShowAsync();
             }
-
+            return film;
         }
     }
 }

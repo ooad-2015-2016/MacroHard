@@ -132,7 +132,7 @@ namespace ShEM.ShEM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[29];
+            _typeNameTable = new string[31];
             _typeNameTable[0] = "ShEM.View.Login";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -159,11 +159,13 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeNameTable[23] = "ShEM.View.BlankPage4";
             _typeNameTable[24] = "ShEM.ViewModel.MovieViewModel";
             _typeNameTable[25] = "ShEM.Model.Movie";
-            _typeNameTable[26] = "ShEM.View.BlankPage5";
-            _typeNameTable[27] = "ShEM.View.BlankPage9";
-            _typeNameTable[28] = "ShEM.MainPage";
+            _typeNameTable[26] = "ShEM.Helpers.MovieAPIParser";
+            _typeNameTable[27] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[28] = "ShEM.View.BlankPage5";
+            _typeNameTable[29] = "ShEM.View.BlankPage9";
+            _typeNameTable[30] = "ShEM.MainPage";
 
-            _typeTable = new global::System.Type[29];
+            _typeTable = new global::System.Type[31];
             _typeTable[0] = typeof(global::ShEM.View.Login);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -190,9 +192,11 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeTable[23] = typeof(global::ShEM.View.BlankPage4);
             _typeTable[24] = typeof(global::ShEM.ViewModel.MovieViewModel);
             _typeTable[25] = typeof(global::ShEM.Model.Movie);
-            _typeTable[26] = typeof(global::ShEM.View.BlankPage5);
-            _typeTable[27] = typeof(global::ShEM.View.BlankPage9);
-            _typeTable[28] = typeof(global::ShEM.MainPage);
+            _typeTable[26] = typeof(global::ShEM.Helpers.MovieAPIParser);
+            _typeTable[27] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[28] = typeof(global::ShEM.View.BlankPage5);
+            _typeTable[29] = typeof(global::ShEM.View.BlankPage9);
+            _typeTable[30] = typeof(global::ShEM.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -244,9 +248,10 @@ namespace ShEM.ShEM_XamlTypeInfo
         private object Activate_23_BlankPage4() { return new global::ShEM.View.BlankPage4(); }
         private object Activate_24_MovieViewModel() { return new global::ShEM.ViewModel.MovieViewModel(); }
         private object Activate_25_Movie() { return new global::ShEM.Model.Movie(); }
-        private object Activate_26_BlankPage5() { return new global::ShEM.View.BlankPage5(); }
-        private object Activate_27_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
-        private object Activate_28_MainPage() { return new global::ShEM.MainPage(); }
+        private object Activate_26_MovieAPIParser() { return new global::ShEM.Helpers.MovieAPIParser(); }
+        private object Activate_28_BlankPage5() { return new global::ShEM.View.BlankPage5(); }
+        private object Activate_29_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
+        private object Activate_30_MainPage() { return new global::ShEM.MainPage(); }
         private void VectorAdd_17_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.User>)instance;
@@ -438,6 +443,9 @@ namespace ShEM.ShEM_XamlTypeInfo
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_24_MovieViewModel;
                 userType.AddMemberName("movie");
+                userType.AddMemberName("api");
+                userType.AddMemberName("Poster");
+                userType.AddMemberName("naziv");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -449,23 +457,34 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 26:   //  ShEM.View.BlankPage5
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_BlankPage5;
+            case 26:   //  ShEM.Helpers.MovieAPIParser
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  ShEM.View.BlankPage9
+            case 27:   //  Windows.UI.Xaml.Media.ImageSource
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 28:   //  ShEM.View.BlankPage5
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_BlankPage9;
+                userType.Activator = Activate_28_BlankPage5;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  ShEM.MainPage
+            case 29:   //  ShEM.View.BlankPage9
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_28_MainPage;
+                userType.Activator = Activate_29_BlankPage9;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  ShEM.MainPage
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -654,6 +673,36 @@ namespace ShEM.ShEM_XamlTypeInfo
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             that.movie = (global::ShEM.Model.Movie)Value;
         }
+        private object get_18_MovieViewModel_api(object instance)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            return that.api;
+        }
+        private void set_18_MovieViewModel_api(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            that.api = (global::ShEM.Helpers.MovieAPIParser)Value;
+        }
+        private object get_19_MovieViewModel_Poster(object instance)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            return that.Poster;
+        }
+        private void set_19_MovieViewModel_Poster(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_20_MovieViewModel_naziv(object instance)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            return that.naziv;
+        }
+        private void set_20_MovieViewModel_naziv(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.MovieViewModel)instance;
+            that.naziv = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -769,6 +818,24 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "movie", "ShEM.Model.Movie");
                 xamlMember.Getter = get_17_MovieViewModel_movie;
                 xamlMember.Setter = set_17_MovieViewModel_movie;
+                break;
+            case "ShEM.ViewModel.MovieViewModel.api":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.MovieAPIParser");
+                xamlMember.Getter = get_18_MovieViewModel_api;
+                xamlMember.Setter = set_18_MovieViewModel_api;
+                break;
+            case "ShEM.ViewModel.MovieViewModel.Poster":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
+                xamlMember.Getter = get_19_MovieViewModel_Poster;
+                xamlMember.Setter = set_19_MovieViewModel_Poster;
+                break;
+            case "ShEM.ViewModel.MovieViewModel.naziv":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
+                xamlMember.Getter = get_20_MovieViewModel_naziv;
+                xamlMember.Setter = set_20_MovieViewModel_naziv;
                 break;
             }
             return xamlMember;

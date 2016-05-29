@@ -20,7 +20,7 @@ namespace ShEM.Model
         [DataMember]
         public byte[] _image;
         [DataMember]
-        public int _yearOfRelease;
+        public string _yearOfRelease;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -72,7 +72,7 @@ namespace ShEM.Model
             }
         }
 
-        public int yearOfRelease
+        public string yearOfRelease
         {
             get { return _yearOfRelease; }
             set

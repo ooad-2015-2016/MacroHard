@@ -7,7 +7,6 @@
     xmlns:ViewModel="using:ShEM.ViewModel"
     x:Class="ShEM.View.BlankPage5"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.DataContext>
             <ViewModel:MovieViewModel/>
@@ -15,18 +14,19 @@
         <Rectangle HorizontalAlignment="Left" Height="254" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FFD32F2E"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="130,306,0,0" TextWrapping="Wrap" Text="Movie title" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="130,394,0,0" TextWrapping="Wrap" Text="Director" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="134,603,0,0" TextWrapping="Wrap" Text="Year of release" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="134,492,0,0" TextWrapping="Wrap" Text="Duration" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <Button x:Name="button" Content="Back to feed" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="40" Foreground="White" Background="#FFD32F2E"/>
         <RichTextBlock HorizontalAlignment="Left" Height="255" Margin="134,746,0,0" VerticalAlignment="Top" Width="654" FontFamily="Verdana" FontSize="20" DataContext="{Binding movie.synopsys, Mode=TwoWay}" >
             <Paragraph>
-                <Run Text="Syonpsis:" FontFamily="Verdana" FontSize="25"/>
+                <Run Text="" FontFamily="Verdana" FontSize="25"/>
             </Paragraph>
         </RichTextBlock>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="538,306,0,0" TextWrapping="Wrap" Text="{Binding movie.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="538,394,0,0" TextWrapping="Wrap" Text="{Binding movie.director}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="538,500,0,0" TextWrapping="Wrap" Text="{Binding movie.duration}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.479,1.628" Width="250" RequestedTheme="Dark" SelectionHighlightColor="#FF0078D7" Foreground="Black"/>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="134,603,0,0" TextWrapping="Wrap" Text="Year of release" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="538,603,0,0" TextWrapping="Wrap" Text="{Binding movie.yearOfRelease}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
         <TextBlock x:Name="textBlock6_Copy" HorizontalAlignment="Left" Margin="130,698,0,0" TextWrapping="Wrap" Text="Synopsis" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="698" Margin="900,303,0,0" VerticalAlignment="Top" Width="1020"  Source="{Binding Poster}"/>
     </Grid>
 </Page>

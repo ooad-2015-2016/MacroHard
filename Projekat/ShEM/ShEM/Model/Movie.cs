@@ -12,7 +12,7 @@ namespace ShEM.Model
     public class Movie: Article, INotifyPropertyChanged
     {
         [DataMember]
-        public int _duration;
+        public string _duration;
         [DataMember]
         public string _synopsys;
         [DataMember]
@@ -28,7 +28,7 @@ namespace ShEM.Model
             }
         }
 
-        public int duration
+        public string duration
         {
             get { return _duration; }
             set
@@ -57,5 +57,7 @@ namespace ShEM.Model
                 notifyMeWhenPropertyChanged("director");
             }
         }
+
+        public byte[] Image { get; internal set; }
     }
 }
