@@ -123,7 +123,7 @@
     <Compile Include="Helpers\BookAPIParser.cs" />
     <Compile Include="Helpers\PictureConverter.cs" />
     <Compile Include="Helpers\MovieAPIParser.cs" />
-    <Compile Include="Helpers\MusicAPIParser.cs" />
+    <Compile Include="Helpers\SongAPIParser.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

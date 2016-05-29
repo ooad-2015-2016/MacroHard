@@ -14,14 +14,19 @@ using Windows.UI.Popups;
 
 namespace ShEM.Helpers
 {
-   public class MovieAPIParser
+    public class MovieAPIParser
     {
-        StaticVariablesClass statika = new StaticVariablesClass();
+
+        StaticVariablesClass statika;
+        public MovieAPIParser()
+        {
+            statika = new StaticVariablesClass();
+        }
         public async Task<Movie> getMovie(string search)
         {
             Movie film = new Movie();
             try
-            {               
+            {
                 var client = new HttpClient();
                 var address = new Uri(statika.MovieAPI + search + statika.MovieAPIAdditions);
                 HttpResponseMessage response = await client.GetAsync(address);
@@ -34,9 +39,8 @@ namespace ShEM.Helpers
                     film.synopsys = dyn.Plot.ToString();
                     film.director = dyn.Director.ToString();
                     film.yearOfRelease = dyn.Year.ToString();
-                    film.genre = dyn.Genre.ToString();
-                    HttpClient wc = new HttpClient();
-                    film.Image = wc.GetByteArrayAsync(dyn.Poster.ToString());
+                    HttpClient wClient = new HttpClient();
+                    film.image = await wClient.GetByteArrayAsync(dyn.Poster.ToString());
                 }
 
                 else
@@ -47,7 +51,7 @@ namespace ShEM.Helpers
             }
             catch (Exception e)
             {
-                var dialog = new MessageDialog(e.StackTrace.ToString());
+                var dialog = new MessageDialog(e.Message);
                 await dialog.ShowAsync();
             }
             return film;

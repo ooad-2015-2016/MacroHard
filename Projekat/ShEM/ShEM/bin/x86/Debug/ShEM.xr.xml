@@ -10,15 +10,14 @@
     <RootPropertyPathName Name="articleName" />
     <RootPropertyPathName Name="genre" />
     <RootPropertyPathName Name="book" />
+    <RootPropertyPathName Name="synopsis" />
     <RootPropertyPathName Name="publisher" />
     <RootPropertyPathName Name="author" />
-    <RootPropertyPathName Name="image" />
+    <RootPropertyPathName Name="Poster" />
     <RootPropertyPathName Name="password" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="users" />
-    <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="ActualHeight" />
-    <RootPropertyPathName Name="Poster" />
     <RootPropertyPathName Name="movie" />
     <RootPropertyPathName Name="duration" />
     <RootPropertyPathName Name="director" />
@@ -56,12 +55,20 @@
       <RootMethod Name="SetAlignLeftWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
       <RootMethod Name="SetAlignRightWithPanel" />
-      <RootMethod Name="GetAlignBottomWithPanel" />
-      <RootMethod Name="SetAlignBottomWithPanel" />
-      <RootMethod Name="GetAlignTopWithPanel" />
-      <RootMethod Name="SetAlignTopWithPanel" />
+      <RootMethod Name="GetAlignLeftWith" />
+      <RootMethod Name="SetAlignLeftWith" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignTopWith" />
+      <RootMethod Name="SetAlignTopWith" />
+      <RootMethod Name="GetAlignBottomWith" />
+      <RootMethod Name="SetAlignBottomWith" />
+      <RootMethod Name="GetAlignTopWithPanel" />
+      <RootMethod Name="SetAlignTopWithPanel" />
+      <RootMethod Name="GetAlignBottomWithPanel" />
+      <RootMethod Name="SetAlignBottomWithPanel" />
+      <RootMethod Name="GetAlignHorizontalCenterWith" />
+      <RootMethod Name="SetAlignHorizontalCenterWith" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
       <RootProperty Name="ImageSource" />
@@ -77,9 +84,9 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="TextWrapping" />
@@ -96,6 +103,10 @@
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="MaxLines" />
+      <RootProperty Name="TextTrimming" />
+      <RootProperty Name="TextReadingOrder" />
+      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
@@ -108,7 +119,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Width" />
@@ -122,6 +132,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="BorderBrush" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -139,6 +153,7 @@
       <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="Checked" />
       <RootEvent Name="Unchecked" />
     </RootType>
@@ -198,8 +213,6 @@
       <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="ConverterParameter" />
-      <RootProperty Name="Converter" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Mode" />
     </RootType>
@@ -212,7 +225,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="BorderBrush" />
@@ -221,15 +233,21 @@
     <RootType FullName="ShEM.View.BlankPage11" />
     <RootType FullName="ShEM.BazaPodataka.Views.PictureConverter" />
     <RootType FullName="ShEM.ViewModel.BookViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
-      <RootMethod Name="GetToolTip" />
-      <RootMethod Name="SetToolTip" />
-    </RootType>
     <RootType FullName="ShEM.View.BlankPage2" />
     <RootType FullName="ShEM.View.BlankPage3" />
     <RootType FullName="Windows.UI.Color" />
     <RootType FullName="ShEM.ViewModel.NewsFeedViewModel" />
-    <RootType FullName="ShEM.View.BlankPage4" />
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="ShEM.View.NewsFeed" />
     <RootType FullName="ShEM.ViewModel.MovieViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -251,6 +269,7 @@
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="ShEM.View.BlankPage5" />
+    <RootType FullName="ShEM.View.UsersCollections" />
     <RootType FullName="ShEM.View.BlankPage9" />
     <RootType FullName="ShEM.MainPage" />
   </Roots.RootTypes>

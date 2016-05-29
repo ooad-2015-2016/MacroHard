@@ -11,37 +11,36 @@ using Windows.UI.Popups;
 
 namespace ShEM.Helpers
 {
-    public class BookAPIParser
+    public class SongAPIParser
     {
         StaticVariablesClass statika;
-        public BookAPIParser()
+        public SongAPIParser()
         {
             statika = new StaticVariablesClass();
         }
-        public async Task<Book> getBook(string search)
+        public async Task<Song> getSong(string search)
         {
-            Book book = new Book();
+            Song song = new Song();
             try
             {
                 var client = new HttpClient();
-                var address = new Uri(statika.BookAPI+ search + statika.BookAPIAdditions);
+                var address = new Uri(statika.SongAPI + search + statika.SongAPIAdditions);
                 HttpResponseMessage response = await client.GetAsync(address);
                 String stream = await response.Content.ReadAsStringAsync();
                 dynamic dyn = JsonConvert.DeserializeObject(stream);
-                foreach (var objekat in dyn["items"])
+                dynamic obj = dyn["tracks"];
+                foreach (var objekat in obj["items"])
                 {
-                    var obj = objekat["volumeInfo"];
-                    book.articleName = obj["title"];
-                    string pisci = " ";
-                    foreach (var umjetnik in obj["authors"])
-                        pisci += (umjetnik + (" "));
-                    book.author = pisci;
-                    book.publisher = obj["publisher"];
-                    book.synopsys = obj["description"];
-                    var ob = obj["imageLinks"];
-                    string url = ob["thumbnail"];
+
+                    song.articleName = objekat["name"];
+                    string izvodjaci = " ";
+                    foreach (var umjetnik in objekat["artists"])
+                        izvodjaci += (umjetnik["name"] + (" "));
+                    song.performer = izvodjaci;
+                    var ob = objekat["album"];
+                    string url = ob["images"][0]["url"];
                     HttpClient wClient = new HttpClient();
-                    book.image = await wClient.GetByteArrayAsync(url);
+                    song.image = await wClient.GetByteArrayAsync(url);
                 }
 
             }
@@ -50,7 +49,7 @@ namespace ShEM.Helpers
                 var dialog = new MessageDialog(e.Message);
                 await dialog.ShowAsync();
             }
-            return book;
+            return song;
         }
     }
 }

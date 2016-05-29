@@ -28,7 +28,13 @@ namespace ShEM.View
         {
             this.InitializeComponent();
             mvm = new MovieViewModel();
-            mvm.getMovie();
+            mvm.naziv = "harry potter";
+            metoda();
+        }
+        public async void metoda()
+        {
+            await mvm.getMovie();
+            DataContext = mvm;
         }
     }
 }

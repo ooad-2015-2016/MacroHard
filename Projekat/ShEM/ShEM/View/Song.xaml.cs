@@ -28,7 +28,14 @@ namespace ShEM.View
         {
             this.InitializeComponent();
             svm = new SongViewModel();
-            svm.getSong();
+            svm.naziv = "baby one more time";
+            metoda();
+        }
+        public async void metoda()
+        {
+            await svm.getSong();
+            DataContext = svm;
         }
     }
 }
+
