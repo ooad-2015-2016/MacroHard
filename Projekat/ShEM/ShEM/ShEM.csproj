@@ -95,6 +95,7 @@
     </Content>
     <Content Include="Assets\BackGround.jpg" />
     <Content Include="Assets\DefaultBook.jpg" />
+    <Content Include="Assets\DefaultSong.png" />
     <Content Include="Assets\DefaultUser.png" />
     <Content Include="Assets\Fonts\Calligraffitti-Regular.ttf" />
     <Content Include="Assets\Fonts\OpenSans-Bold.ttf" />
@@ -181,10 +182,6 @@
     <None Include="ShEM_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\AlbumImage.PNG" />
-    <Content Include="Assets\BookCover.PNG" />
-    <Content Include="Assets\ShEMUser.PNG" />
-    <Content Include="Assets\user.PNG" />
     <Content Include="Properties\Default.rd.xml">
       <SubType>Designer</SubType>
     </Content>

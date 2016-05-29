@@ -25,20 +25,18 @@
         </DataTemplate>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="{StaticResource BackGround}"></ImageBrush>
+        </Grid.Background>
         <Grid.DataContext>
             <ViewModel:SongViewModel/>
         </Grid.DataContext>
-        <Rectangle HorizontalAlignment="Left" Height="254" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FFD32F2E"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="134,378,0,0" TextWrapping="Wrap" Text="Song title" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="134,492,0,0" TextWrapping="Wrap" Text="Singer" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="134,615,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <Button x:Name="button" Content="Back to feed" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="40" Foreground="White" Background="#FFD32F2E"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="584" Margin="900,303,0,0" VerticalAlignment="Top" Width="1020" Source="ms-appx:///Assets/AlbumImage.PNG"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="538,623,0,0" TextWrapping="Wrap" Text="{Binding song.genre}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="538,386,0,0" TextWrapping="Wrap" Text="{Binding song.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="538,500,0,537" TextWrapping="Wrap" Text="{Binding song.preformer}" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.479,1.628" Width="250" RequestedTheme="Dark" SelectionHighlightColor="#FF5200D7" Foreground="Black" d:LayoutOverrides="Height, TopPosition, BottomPosition"/>
-        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="134,749,0,0" TextWrapping="Wrap" Text="Year of release" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.682,3.424"/>
-        <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="538,749,0,0" TextWrapping="Wrap" Text="{Binding song.yearOfRelease}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
+        <RelativePanel Margin="100" Background="#B2FFFFFF">
+            <Image x:Name="songImage"   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400"  Source="ms-appx:///Assets/DefaultSong.png"/>
+            <TextBlock x:Name="textBlock3"  Text="{Binding song.genre}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
+            <TextBlock x:Name="songTitle"   Text="{Binding song.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" />
+            <TextBlock x:Name="songPerformer"  Text="{Binding song.preformer}"  FontSize="35" Foreground="Black" />
+        </RelativePanel>
     </Grid>
 </Page>
