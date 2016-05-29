@@ -13,22 +13,27 @@
         <Views:PictureConverter x:Key="PictureConverter"/>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="{StaticResource BackGround}"></ImageBrush>
+        </Grid.Background>
         <Grid.DataContext>
             <ViewModel:BookViewModel/>
         </Grid.DataContext>
-        <Rectangle HorizontalAlignment="Left" Height="254" Stroke="Black" VerticalAlignment="Top" Width="1920" Fill="#FFD32F2E"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="134,378,0,0" TextWrapping="Wrap" Text="Book title" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="134,469,0,0" TextWrapping="Wrap" Text="Author" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="134,564,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <Button x:Name="button" Content="Back to feed" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="40" Foreground="White" Background="#FFD32F2E"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="584" Margin="900,303,0,0" VerticalAlignment="Top" Width="1020" Source="ms-appx:///Assets/BookCover.PNG" DataContext="{Binding book.image[0], ConverterParameter=[0] : (Byte), Converter={StaticResource PictureConverter}}"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="538,572,0,0" TextWrapping="Wrap" Text="{Binding book.genre}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" DataContext="{Binding book.genre}"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="538,477,0,0" TextWrapping="Wrap" Text="{Binding book.author}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" DataContext="{Binding book.author}"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="538,378,0,0" TextWrapping="Wrap" Text="{Binding book.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.479,1.628" Width="250" RequestedTheme="Dark" SelectionHighlightColor="#FF0078D7" Foreground="Black" DataContext="{Binding book.articleName}"/>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="134,658,0,0" TextWrapping="Wrap" Text="Publisher" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="538,666,0,0" TextWrapping="Wrap" Text="{Binding book.publisher}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" ToolTipService.ToolTip="{Binding book.publisher}" DataContext="{Binding book.publisher}"/>
-        <TextBlock x:Name="textBlock6_Copy" HorizontalAlignment="Left" Margin="134,746,0,0" TextWrapping="Wrap" Text="Year of release" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-        <TextBlock x:Name="textBlock7_Copy" HorizontalAlignment="Left" Margin="538,754,0,0" TextWrapping="Wrap" Text="{Binding book.yearOfRelease}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" RenderTransformOrigin="0.545,0.453" DataContext="{Binding book.yearOfRelease}"/>
+        <RelativePanel Margin="100" Background="#B2FFFFFF" >
+        <Image x:Name="bookCover" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400"  Source="ms-appx:///Assets/DefaultBook.jpg" DataContext="{Binding book.image[0], ConverterParameter=[0] : (Byte), Converter={StaticResource PictureConverter}}"/>
+            <StackPanel RelativePanel.AlignLeftWith="bookDescription" Margin="300,40,100,0" RelativePanel.Below="bookDescription" x:Name="bookGenres" Orientation="Horizontal">
+                <TextBlock FontFamily="{StaticResource OpenSans}" DataContext="{Binding book.genre}" FontSize="35">Fantasy</TextBlock>
+            </StackPanel>
+            <TextBlock x:Name="bookAuthor" FontFamily="{StaticResource OpenSans}"  RelativePanel.RightOf="bookCover" RelativePanel.AlignTopWith="bookCover" TextWrapping="Wrap" Text="J. K. Rowling" FontSize="30" Margin="300,0,20,0" DataContext="{Binding book.author}"  />
+            <TextBlock x:Name="bookTitle" FontFamily="{StaticResource OpenSans}"  RelativePanel.Below="bookAuthor" RelativePanel.AlignLeftWith="bookAuthor"  Text="harry potter and the philosopher's stone"   FontSize="45"   Margin="300,20,0,0"  DataContext="{Binding book.articleName}"/>
+            <TextBlock x:Name="bookPublisher" FontFamily="{StaticResource OpenSans}"  RelativePanel.RightOf="bookAuthor" RelativePanel.AlignTopWith="bookCover" Text="Bloomsbury" Margin="40,0,0,0"  FontSize="30" DataContext="{Binding book.publisher}"/>
+            <TextBlock x:Name="bookDescription"   FontFamily="{StaticResource OpenSans}" RelativePanel.Below="bookTitle" RelativePanel.AlignLeftWith="bookTitle" RelativePanel.AlignRightWithPanel="True" Margin="300,40,100,0"  FontSize="25" TextWrapping="Wrap" MaxLines="7" TextTrimming="WordEllipsis" TextReadingOrder="DetectFromContent">
+                Venice, 1734. Castrato soprano Tito Amato has let fame go to his head. Neglecting his vocal practice for dubious pleasures, Tito finds himself demoted to secondary roles and overshadowed by a visiting star. When the murder of scene painter Luca Cavalieri threatens to close the opera house, Tito jumps at the chance to regain his chance to reclaim his status by finding the killer. The hunt for the person who wears the mask of Palantinus carries Tito and Augustus “Gussie” Rumbolt, an Englishman making his Grand Tour, into the treacherous depths of the city dedicated to masquerade and pleasure and reveals many facets of its multiple religious faiths.
+            </TextBlock>
+
+            <TextBlock x:Name="bookYear" FontFamily="{StaticResource OpenSans}"  RelativePanel.AlignRightWith="bookDescription" RelativePanel.Below="bookDescription" Text="19.2.2003" FontSize="35" Margin="0,40,100,0" DataContext="{Binding book.yearOfRelease}"/>
+            <Button RelativePanel.AlignBottomWith="bookCover" RelativePanel.AlignRightWithPanel="True" Margin="0,0,100,0" FontSize="35" FontFamily="{StaticResource OpenSans}" Background="{StaticResource MainColor}" Foreground="White" BorderThickness="0" >Add to Collection</Button>
+        </RelativePanel>
     </Grid>
 </Page>
