@@ -7,6 +7,9 @@
     xmlns:ViewModel="using:ShEM.ViewModel"
     x:Class="ShEM.View.BlankPage5"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <ViewModel:MovieViewModel/>
+    </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.DataContext>
             <ViewModel:MovieViewModel/>
@@ -22,9 +25,9 @@
                 <Run Text="" FontFamily="Verdana" FontSize="25"/>
             </Paragraph>
         </RichTextBlock>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="538,306,0,0" TextWrapping="Wrap" Text="{Binding movie.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="538,394,0,0" TextWrapping="Wrap" Text="{Binding movie.director}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="538,500,0,0" TextWrapping="Wrap" Text="{Binding movie.duration}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.479,1.628" Width="250" RequestedTheme="Dark" SelectionHighlightColor="#FF0078D7" Foreground="Black"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="538,306,0,0" TextWrapping="Wrap" Text="{Binding movie.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" DataContext="{Binding movie.articleName}"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="538,394,0,0" TextWrapping="Wrap" Text="{Binding movie.director}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250" DataContext="{Binding movie.director}"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="538,500,0,0" TextWrapping="Wrap" Text="{Binding movie.duration}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" RenderTransformOrigin="0.479,1.628" Width="250" RequestedTheme="Dark" SelectionHighlightColor="#FF0078D7" Foreground="Black" DataContext="{Binding movie.duration}"/>
         <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="538,603,0,0" TextWrapping="Wrap" Text="{Binding movie.yearOfRelease}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" Width="250"/>
         <TextBlock x:Name="textBlock6_Copy" HorizontalAlignment="Left" Margin="130,698,0,0" TextWrapping="Wrap" Text="Synopsis" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="698" Margin="900,303,0,0" VerticalAlignment="Top" Width="1020"  Source="{Binding Poster}"/>

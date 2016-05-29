@@ -142,6 +142,7 @@
     <Compile Include="ViewModel\NewsFeedViewModel.cs" />
     <Compile Include="ViewModel\ObservableObject.cs" />
     <Compile Include="ViewModel\SongViewModel.cs" />
+    <Compile Include="ViewModel\UsersFeedViewModel.cs" />
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>

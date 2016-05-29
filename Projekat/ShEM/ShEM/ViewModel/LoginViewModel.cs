@@ -22,6 +22,7 @@ namespace ShEM.ViewModel
         User user = new User();
         StaticVariablesClass statika = new StaticVariablesClass();
 
+
         public LoginViewModel(string info, string pass)
         {
             this.userInfo = info;
@@ -40,20 +41,38 @@ namespace ShEM.ViewModel
         public async void povuciUsera()
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage msg = await client.GetAsync(statika.getIP+statika.getPort.ToString()); //treba dodati korektan url
-            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
-            if (msg.IsSuccessStatusCode)
-            {
-                MemoryStream ms = new MemoryStream();
-                DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(User));
-                serializer.WriteObject(ms, msg);
-                user = (User)serializer.ReadObject(ms);
+            try {
+                HttpResponseMessage msg = await client.GetAsync(statika.getIP + statika.getPort.ToString()); //treba dodati korektan url
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+                if (msg.IsSuccessStatusCode)
+                {
+                    MemoryStream ms = new MemoryStream();
+                    DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(User));
+                    serializer.WriteObject(ms, msg);
+                    user = (User)serializer.ReadObject(ms);
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Your access data is not valid, please try again");
+                    await dialog.ShowAsync();
+                }
+                this.assignUser();
             }
-            else
+            catch (HttpRequestException e)
             {
-                var dialog = new MessageDialog("Your access data is not valid, please try again");
+                var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
-            }
+            }            
+        }
+
+        public void assignUser()
+        {
+            statika.userID = user.userID;
+            statika.username = user.username;
+            statika.password = user.password;
+            statika.profilePic = user.profilePic;
+            statika.collections = user.collections;
+            statika.email = user.email;
         }
     }
 }

@@ -25,6 +25,8 @@ namespace ShEM.Model
         public string _email;
         [DataMember]
         public int _numberOfCollections;
+        [DataMember]
+        public byte[] _profilePic;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -36,6 +38,15 @@ namespace ShEM.Model
             }
         }
 
+        public byte[] profilePic
+        {
+            get { return _profilePic; }
+            set
+            {
+                _profilePic = value;
+                notifyMeWhenPropertyChanged("profilePicture");
+            }
+        }
         public int userID
         {
             get { return _userID; }

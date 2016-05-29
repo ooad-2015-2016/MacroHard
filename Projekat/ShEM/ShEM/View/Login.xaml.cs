@@ -16,6 +16,7 @@ using ShEM.BazaPodataka.Static_variables;
 using System.ComponentModel;
 using Windows.UI.ViewManagement;
 using ShEM.ViewModel;
+using ShEM.BazaPodataka.Static_variables;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -37,13 +38,16 @@ namespace ShEM.View
         private string pass;
         StaticVariablesClass stc;
         LoginViewModel loginViewModel;
+        StaticVariablesClass statika = new StaticVariablesClass();
 
         private void LoginUser(object sender, RoutedEventArgs e)
         {
             userInput = textBoxUsername.Text;
             pass = textBoxPass.Password;           
             loginViewModel = new LoginViewModel(userInput, pass);
-            loginViewModel.povuciUsera();          
+            DataContext = loginViewModel;
+            loginViewModel.povuciUsera();
+            statika.username = userInput;      
         }
 
         private void ShowPassClick(object sender, RoutedEventArgs e)
@@ -66,11 +70,12 @@ namespace ShEM.View
         private void ForgottenPassword_Click(object sender, RoutedEventArgs e)
         {
             RecoverForm.Visibility = Visibility.Visible;
+
         }
 
         private void RegisterUser(object sender, RoutedEventArgs e)
         {
-       
+            
         }
        
         private void RecoverUser(object sender, RoutedEventArgs e)

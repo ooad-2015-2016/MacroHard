@@ -15,12 +15,12 @@
         </Rectangle>
         <Image x:Name="image"  HorizontalAlignment="Left" Height="306" Margin="741,146,0,0" VerticalAlignment="Top" Width="409" RenderTransformOrigin="0.519,0.469" Stretch="Fill" Source="ms-appx:///Assets/ShEMUser.PNG"/>
         <Button x:Name="button" Content="+Follow" HorizontalAlignment="Left" Margin="844,503,0,0" VerticalAlignment="Top" Height="66" RenderTransformOrigin="0.532,0.522" Width="200" FontFamily="Verdana" FontSize="25" Background="#D32F2E" Foreground="White"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="442" Margin="461,601,0,0" VerticalAlignment="Top" Width="968">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="442" Margin="155,601,0,0" VerticalAlignment="Top" Width="1580">
             <ListView.Foreground>
                 <SolidColorBrush Color="#D32F2E"/>
             </ListView.Foreground>
         </ListView>
-        <Button x:Name="button1" Content="Back to main page" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="375" Height="83" FontFamily="Verdana" FontSize="35" Background="#D32F2E" Foreground="White"/>
+        <Button x:Name="button1" Content="Back to main page" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="375" Height="83" FontFamily="Verdana" FontSize="35" Background="#D32F2E" Foreground="White" Click="button1_Click"/>
 
     </Grid>
 </Page>

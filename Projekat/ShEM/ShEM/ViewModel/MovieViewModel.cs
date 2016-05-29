@@ -25,7 +25,7 @@ namespace ShEM.ViewModel
         public MovieViewModel()
         {
             movie = new Movie();
-            api =new  MovieAPIParser();
+            api = new  MovieAPIParser();
         }
 
         public async void getMovie()
@@ -34,6 +34,7 @@ namespace ShEM.ViewModel
             if (movie.image != null)
                  await LoadImageAsync();
         }
+
         private async Task LoadImageAsync()
         {
             using (InMemoryRandomAccessStream ms = new InMemoryRandomAccessStream())

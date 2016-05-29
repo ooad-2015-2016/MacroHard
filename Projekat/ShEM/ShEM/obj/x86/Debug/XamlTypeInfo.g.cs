@@ -132,7 +132,7 @@ namespace ShEM.ShEM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[31];
+            _typeNameTable = new string[37];
             _typeNameTable[0] = "ShEM.View.Login";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -142,30 +142,36 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeNameTable[6] = "ShEM.Model.Article";
             _typeNameTable[7] = "ShEM.View.BlankPage10";
             _typeNameTable[8] = "ShEM.View.BlankPage11";
-            _typeNameTable[9] = "ShEM.ViewModel.BookViewModel";
-            _typeNameTable[10] = "ShEM.Model.Book";
-            _typeNameTable[11] = "ShEM.View.BlankPage2";
-            _typeNameTable[12] = "ShEM.View.BlankPage3";
-            _typeNameTable[13] = "Windows.UI.Color";
-            _typeNameTable[14] = "System.ValueType";
-            _typeNameTable[15] = "Byte";
-            _typeNameTable[16] = "ShEM.ViewModel.NewsFeedViewModel";
-            _typeNameTable[17] = "System.Collections.Generic.List`1<ShEM.Model.User>";
-            _typeNameTable[18] = "ShEM.Model.User";
-            _typeNameTable[19] = "Int32";
-            _typeNameTable[20] = "String";
-            _typeNameTable[21] = "System.Collections.Generic.List`1<ShEM.Model.Collection>";
-            _typeNameTable[22] = "ShEM.Model.Collection";
-            _typeNameTable[23] = "ShEM.View.BlankPage4";
-            _typeNameTable[24] = "ShEM.ViewModel.MovieViewModel";
-            _typeNameTable[25] = "ShEM.Model.Movie";
-            _typeNameTable[26] = "ShEM.Helpers.MovieAPIParser";
-            _typeNameTable[27] = "Windows.UI.Xaml.Media.ImageSource";
-            _typeNameTable[28] = "ShEM.View.BlankPage5";
-            _typeNameTable[29] = "ShEM.View.BlankPage9";
-            _typeNameTable[30] = "ShEM.MainPage";
+            _typeNameTable[9] = "ShEM.BazaPodataka.Views.PictureConverter";
+            _typeNameTable[10] = "ShEM.ViewModel.BookViewModel";
+            _typeNameTable[11] = "ShEM.Model.Book";
+            _typeNameTable[12] = "ShEM.View.BlankPage2";
+            _typeNameTable[13] = "ShEM.View.BlankPage3";
+            _typeNameTable[14] = "Windows.UI.Color";
+            _typeNameTable[15] = "System.ValueType";
+            _typeNameTable[16] = "Byte";
+            _typeNameTable[17] = "ShEM.ViewModel.NewsFeedViewModel";
+            _typeNameTable[18] = "System.Collections.Generic.List`1<ShEM.Model.User>";
+            _typeNameTable[19] = "ShEM.Model.User";
+            _typeNameTable[20] = "Byte[]";
+            _typeNameTable[21] = "System.Array";
+            _typeNameTable[22] = "Int32";
+            _typeNameTable[23] = "String";
+            _typeNameTable[24] = "System.Collections.Generic.List`1<ShEM.Model.Collection>";
+            _typeNameTable[25] = "ShEM.Model.Collection";
+            _typeNameTable[26] = "System.Collections.Generic.List`1<ShEM.Model.Book>";
+            _typeNameTable[27] = "System.Collections.Generic.List`1<ShEM.Model.Movie>";
+            _typeNameTable[28] = "ShEM.Model.Movie";
+            _typeNameTable[29] = "System.Collections.Generic.List`1<ShEM.Model.Song>";
+            _typeNameTable[30] = "ShEM.View.BlankPage4";
+            _typeNameTable[31] = "ShEM.ViewModel.MovieViewModel";
+            _typeNameTable[32] = "ShEM.Helpers.MovieAPIParser";
+            _typeNameTable[33] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[34] = "ShEM.View.BlankPage5";
+            _typeNameTable[35] = "ShEM.View.BlankPage9";
+            _typeNameTable[36] = "ShEM.MainPage";
 
-            _typeTable = new global::System.Type[31];
+            _typeTable = new global::System.Type[37];
             _typeTable[0] = typeof(global::ShEM.View.Login);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -175,28 +181,34 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeTable[6] = typeof(global::ShEM.Model.Article);
             _typeTable[7] = typeof(global::ShEM.View.BlankPage10);
             _typeTable[8] = typeof(global::ShEM.View.BlankPage11);
-            _typeTable[9] = typeof(global::ShEM.ViewModel.BookViewModel);
-            _typeTable[10] = typeof(global::ShEM.Model.Book);
-            _typeTable[11] = typeof(global::ShEM.View.BlankPage2);
-            _typeTable[12] = typeof(global::ShEM.View.BlankPage3);
-            _typeTable[13] = typeof(global::Windows.UI.Color);
-            _typeTable[14] = typeof(global::System.ValueType);
-            _typeTable[15] = typeof(global::System.Byte);
-            _typeTable[16] = typeof(global::ShEM.ViewModel.NewsFeedViewModel);
-            _typeTable[17] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.User>);
-            _typeTable[18] = typeof(global::ShEM.Model.User);
-            _typeTable[19] = typeof(global::System.Int32);
-            _typeTable[20] = typeof(global::System.String);
-            _typeTable[21] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.Collection>);
-            _typeTable[22] = typeof(global::ShEM.Model.Collection);
-            _typeTable[23] = typeof(global::ShEM.View.BlankPage4);
-            _typeTable[24] = typeof(global::ShEM.ViewModel.MovieViewModel);
-            _typeTable[25] = typeof(global::ShEM.Model.Movie);
-            _typeTable[26] = typeof(global::ShEM.Helpers.MovieAPIParser);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
-            _typeTable[28] = typeof(global::ShEM.View.BlankPage5);
-            _typeTable[29] = typeof(global::ShEM.View.BlankPage9);
-            _typeTable[30] = typeof(global::ShEM.MainPage);
+            _typeTable[9] = typeof(global::ShEM.BazaPodataka.Views.PictureConverter);
+            _typeTable[10] = typeof(global::ShEM.ViewModel.BookViewModel);
+            _typeTable[11] = typeof(global::ShEM.Model.Book);
+            _typeTable[12] = typeof(global::ShEM.View.BlankPage2);
+            _typeTable[13] = typeof(global::ShEM.View.BlankPage3);
+            _typeTable[14] = typeof(global::Windows.UI.Color);
+            _typeTable[15] = typeof(global::System.ValueType);
+            _typeTable[16] = typeof(global::System.Byte);
+            _typeTable[17] = typeof(global::ShEM.ViewModel.NewsFeedViewModel);
+            _typeTable[18] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.User>);
+            _typeTable[19] = typeof(global::ShEM.Model.User);
+            _typeTable[20] = typeof(global::System.Byte[]);
+            _typeTable[21] = typeof(global::System.Array);
+            _typeTable[22] = typeof(global::System.Int32);
+            _typeTable[23] = typeof(global::System.String);
+            _typeTable[24] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.Collection>);
+            _typeTable[25] = typeof(global::ShEM.Model.Collection);
+            _typeTable[26] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.Book>);
+            _typeTable[27] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.Movie>);
+            _typeTable[28] = typeof(global::ShEM.Model.Movie);
+            _typeTable[29] = typeof(global::System.Collections.Generic.List<global::ShEM.Model.Song>);
+            _typeTable[30] = typeof(global::ShEM.View.BlankPage4);
+            _typeTable[31] = typeof(global::ShEM.ViewModel.MovieViewModel);
+            _typeTable[32] = typeof(global::ShEM.Helpers.MovieAPIParser);
+            _typeTable[33] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[34] = typeof(global::ShEM.View.BlankPage5);
+            _typeTable[35] = typeof(global::ShEM.View.BlankPage9);
+            _typeTable[36] = typeof(global::ShEM.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -236,32 +248,54 @@ namespace ShEM.ShEM_XamlTypeInfo
         private object Activate_5_Song() { return new global::ShEM.Model.Song(); }
         private object Activate_7_BlankPage10() { return new global::ShEM.View.BlankPage10(); }
         private object Activate_8_BlankPage11() { return new global::ShEM.View.BlankPage11(); }
-        private object Activate_9_BookViewModel() { return new global::ShEM.ViewModel.BookViewModel(); }
-        private object Activate_10_Book() { return new global::ShEM.Model.Book(); }
-        private object Activate_11_BlankPage2() { return new global::ShEM.View.BlankPage2(); }
-        private object Activate_12_BlankPage3() { return new global::ShEM.View.BlankPage3(); }
-        private object Activate_16_NewsFeedViewModel() { return new global::ShEM.ViewModel.NewsFeedViewModel(); }
-        private object Activate_17_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.User>(); }
-        private object Activate_18_User() { return new global::ShEM.Model.User(); }
-        private object Activate_21_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.Collection>(); }
-        private object Activate_22_Collection() { return new global::ShEM.Model.Collection(); }
-        private object Activate_23_BlankPage4() { return new global::ShEM.View.BlankPage4(); }
-        private object Activate_24_MovieViewModel() { return new global::ShEM.ViewModel.MovieViewModel(); }
-        private object Activate_25_Movie() { return new global::ShEM.Model.Movie(); }
-        private object Activate_26_MovieAPIParser() { return new global::ShEM.Helpers.MovieAPIParser(); }
-        private object Activate_28_BlankPage5() { return new global::ShEM.View.BlankPage5(); }
-        private object Activate_29_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
-        private object Activate_30_MainPage() { return new global::ShEM.MainPage(); }
-        private void VectorAdd_17_List(object instance, object item)
+        private object Activate_9_PictureConverter() { return new global::ShEM.BazaPodataka.Views.PictureConverter(); }
+        private object Activate_10_BookViewModel() { return new global::ShEM.ViewModel.BookViewModel(); }
+        private object Activate_11_Book() { return new global::ShEM.Model.Book(); }
+        private object Activate_12_BlankPage2() { return new global::ShEM.View.BlankPage2(); }
+        private object Activate_13_BlankPage3() { return new global::ShEM.View.BlankPage3(); }
+        private object Activate_17_NewsFeedViewModel() { return new global::ShEM.ViewModel.NewsFeedViewModel(); }
+        private object Activate_18_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.User>(); }
+        private object Activate_19_User() { return new global::ShEM.Model.User(); }
+        private object Activate_24_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.Collection>(); }
+        private object Activate_25_Collection() { return new global::ShEM.Model.Collection(); }
+        private object Activate_26_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.Book>(); }
+        private object Activate_27_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.Movie>(); }
+        private object Activate_28_Movie() { return new global::ShEM.Model.Movie(); }
+        private object Activate_29_List() { return new global::System.Collections.Generic.List<global::ShEM.Model.Song>(); }
+        private object Activate_30_BlankPage4() { return new global::ShEM.View.BlankPage4(); }
+        private object Activate_31_MovieViewModel() { return new global::ShEM.ViewModel.MovieViewModel(); }
+        private object Activate_32_MovieAPIParser() { return new global::ShEM.Helpers.MovieAPIParser(); }
+        private object Activate_34_BlankPage5() { return new global::ShEM.View.BlankPage5(); }
+        private object Activate_35_BlankPage9() { return new global::ShEM.View.BlankPage9(); }
+        private object Activate_36_MainPage() { return new global::ShEM.MainPage(); }
+        private void VectorAdd_18_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.User>)instance;
             var newItem = (global::ShEM.Model.User)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_List(object instance, object item)
+        private void VectorAdd_24_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.Collection>)instance;
             var newItem = (global::ShEM.Model.Collection)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_26_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.Book>)instance;
+            var newItem = (global::ShEM.Model.Book)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_27_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.Movie>)instance;
+            var newItem = (global::ShEM.Model.Movie)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_29_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ShEM.Model.Song>)instance;
+            var newItem = (global::ShEM.Model.Song)item;
             collection.Add(newItem);
         }
 
@@ -304,13 +338,19 @@ namespace ShEM.ShEM_XamlTypeInfo
 
             case 5:   //  ShEM.Model.Song
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
-                userType.SetIsReturnTypeStub();
+                userType.Activator = Activate_5_Song;
+                userType.AddMemberName("preformer");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 6:   //  ShEM.Model.Article
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("articleID");
+                userType.AddMemberName("articleName");
+                userType.AddMemberName("genre");
+                userType.AddMemberName("image");
+                userType.AddMemberName("yearOfRelease");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -329,36 +369,45 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  ShEM.ViewModel.BookViewModel
+            case 9:   //  ShEM.BazaPodataka.Views.PictureConverter
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_BookViewModel;
+                userType.Activator = Activate_9_PictureConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  ShEM.ViewModel.BookViewModel
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_10_BookViewModel;
                 userType.AddMemberName("book");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  ShEM.Model.Book
+            case 11:   //  ShEM.Model.Book
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
-                userType.SetIsReturnTypeStub();
+                userType.Activator = Activate_11_Book;
+                userType.AddMemberName("publisher");
+                userType.AddMemberName("author");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  ShEM.View.BlankPage2
+            case 12:   //  ShEM.View.BlankPage2
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_BlankPage2;
+                userType.Activator = Activate_12_BlankPage2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ShEM.View.BlankPage3
+            case 13:   //  ShEM.View.BlankPage3
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_BlankPage3;
+                userType.Activator = Activate_13_BlankPage3;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Windows.UI.Color
+            case 14:   //  Windows.UI.Color
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -367,36 +416,36 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.ValueType
+            case 15:   //  System.ValueType
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 15:   //  Byte
+            case 16:   //  Byte
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  ShEM.ViewModel.NewsFeedViewModel
+            case 17:   //  ShEM.ViewModel.NewsFeedViewModel
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_16_NewsFeedViewModel;
+                userType.Activator = Activate_17_NewsFeedViewModel;
                 userType.AddMemberName("users");
                 userType.AddMemberName("collection");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Collections.Generic.List`1<ShEM.Model.User>
+            case 18:   //  System.Collections.Generic.List`1<ShEM.Model.User>
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_17_List;
+                userType.CollectionAdd = VectorAdd_18_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  ShEM.Model.User
+            case 19:   //  ShEM.Model.User
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_User;
+                userType.Activator = Activate_19_User;
+                userType.AddMemberName("profilePic");
                 userType.AddMemberName("userID");
                 userType.AddMemberName("username");
                 userType.AddMemberName("email");
@@ -407,41 +456,87 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Int32
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 20:   //  String
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  System.Collections.Generic.List`1<ShEM.Model.Collection>
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_21_List;
+            case 20:   //  Byte[]
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Array"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  ShEM.Model.Collection
+            case 21:   //  System.Array
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_22_Collection;
+                xamlType = userType;
+                break;
+
+            case 22:   //  Int32
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  String
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 24:   //  System.Collections.Generic.List`1<ShEM.Model.Collection>
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_24_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 25:   //  ShEM.Model.Collection
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_25_Collection;
                 userType.AddMemberName("collectionID");
                 userType.AddMemberName("name");
                 userType.AddMemberName("userID");
+                userType.AddMemberName("books");
+                userType.AddMemberName("movies");
+                userType.AddMemberName("songs");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  ShEM.View.BlankPage4
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_BlankPage4;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 24:   //  ShEM.ViewModel.MovieViewModel
+            case 26:   //  System.Collections.Generic.List`1<ShEM.Model.Book>
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_24_MovieViewModel;
+                userType.CollectionAdd = VectorAdd_26_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 27:   //  System.Collections.Generic.List`1<ShEM.Model.Movie>
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_27_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 28:   //  ShEM.Model.Movie
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
+                userType.Activator = Activate_28_Movie;
+                userType.AddMemberName("duration");
+                userType.AddMemberName("synopsys");
+                userType.AddMemberName("director");
+                userType.AddMemberName("Image");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 29:   //  System.Collections.Generic.List`1<ShEM.Model.Song>
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_29_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 30:   //  ShEM.View.BlankPage4
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_BlankPage4;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  ShEM.ViewModel.MovieViewModel
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_31_MovieViewModel;
                 userType.AddMemberName("movie");
                 userType.AddMemberName("api");
                 userType.AddMemberName("Poster");
@@ -450,41 +545,34 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  ShEM.Model.Movie
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 26:   //  ShEM.Helpers.MovieAPIParser
+            case 32:   //  ShEM.Helpers.MovieAPIParser
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.Media.ImageSource
+            case 33:   //  Windows.UI.Xaml.Media.ImageSource
                 xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  ShEM.View.BlankPage5
+            case 34:   //  ShEM.View.BlankPage5
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_28_BlankPage5;
+                userType.Activator = Activate_34_BlankPage5;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 29:   //  ShEM.View.BlankPage9
+            case 35:   //  ShEM.View.BlankPage9
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_BlankPage9;
+                userType.Activator = Activate_35_BlankPage9;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  ShEM.MainPage
+            case 36:   //  ShEM.MainPage
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_MainPage;
+                userType.Activator = Activate_36_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -563,142 +651,297 @@ namespace ShEM.ShEM_XamlTypeInfo
             var that = (global::ShEM.ViewModel.NewsFeedViewModel)instance;
             that.users = (global::System.Collections.Generic.List<global::ShEM.Model.User>)Value;
         }
-        private object get_7_User_userID(object instance)
+        private object get_7_User_profilePic(object instance)
+        {
+            var that = (global::ShEM.Model.User)instance;
+            return that.profilePic;
+        }
+        private void set_7_User_profilePic(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.User)instance;
+            that.profilePic = (global::System.Byte[])Value;
+        }
+        private object get_8_User_userID(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.userID;
         }
-        private void set_7_User_userID(object instance, object Value)
+        private void set_8_User_userID(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.userID = (global::System.Int32)Value;
         }
-        private object get_8_User_username(object instance)
+        private object get_9_User_username(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.username;
         }
-        private void set_8_User_username(object instance, object Value)
+        private void set_9_User_username(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.username = (global::System.String)Value;
         }
-        private object get_9_User_email(object instance)
+        private object get_10_User_email(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.email;
         }
-        private void set_9_User_email(object instance, object Value)
+        private void set_10_User_email(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.email = (global::System.String)Value;
         }
-        private object get_10_User_password(object instance)
+        private object get_11_User_password(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.password;
         }
-        private void set_10_User_password(object instance, object Value)
+        private void set_11_User_password(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.password = (global::System.String)Value;
         }
-        private object get_11_User_collections(object instance)
+        private object get_12_User_collections(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.collections;
         }
-        private void set_11_User_collections(object instance, object Value)
+        private void set_12_User_collections(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.collections = (global::System.Collections.Generic.List<global::ShEM.Model.Collection>)Value;
         }
-        private object get_12_Collection_collectionID(object instance)
+        private object get_13_Collection_collectionID(object instance)
         {
             var that = (global::ShEM.Model.Collection)instance;
             return that.collectionID;
         }
-        private void set_12_Collection_collectionID(object instance, object Value)
+        private void set_13_Collection_collectionID(object instance, object Value)
         {
             var that = (global::ShEM.Model.Collection)instance;
             that.collectionID = (global::System.Int32)Value;
         }
-        private object get_13_Collection_name(object instance)
+        private object get_14_Collection_name(object instance)
         {
             var that = (global::ShEM.Model.Collection)instance;
             return that.name;
         }
-        private void set_13_Collection_name(object instance, object Value)
+        private void set_14_Collection_name(object instance, object Value)
         {
             var that = (global::ShEM.Model.Collection)instance;
             that.name = (global::System.String)Value;
         }
-        private object get_14_Collection_userID(object instance)
+        private object get_15_Collection_userID(object instance)
         {
             var that = (global::ShEM.Model.Collection)instance;
             return that.userID;
         }
-        private void set_14_Collection_userID(object instance, object Value)
+        private void set_15_Collection_userID(object instance, object Value)
         {
             var that = (global::ShEM.Model.Collection)instance;
             that.userID = (global::System.Int32)Value;
         }
-        private object get_15_User_numberOfCollections(object instance)
+        private object get_16_Collection_books(object instance)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            return that.books;
+        }
+        private void set_16_Collection_books(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            that.books = (global::System.Collections.Generic.List<global::ShEM.Model.Book>)Value;
+        }
+        private object get_17_Book_publisher(object instance)
+        {
+            var that = (global::ShEM.Model.Book)instance;
+            return that.publisher;
+        }
+        private void set_17_Book_publisher(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Book)instance;
+            that.publisher = (global::System.String)Value;
+        }
+        private object get_18_Book_author(object instance)
+        {
+            var that = (global::ShEM.Model.Book)instance;
+            return that.author;
+        }
+        private void set_18_Book_author(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Book)instance;
+            that.author = (global::System.String)Value;
+        }
+        private object get_19_Article_articleID(object instance)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            return that.articleID;
+        }
+        private void set_19_Article_articleID(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            that.articleID = (global::System.Int32)Value;
+        }
+        private object get_20_Article_articleName(object instance)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            return that.articleName;
+        }
+        private void set_20_Article_articleName(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            that.articleName = (global::System.String)Value;
+        }
+        private object get_21_Article_genre(object instance)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            return that.genre;
+        }
+        private void set_21_Article_genre(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            that.genre = (global::System.String)Value;
+        }
+        private object get_22_Article_image(object instance)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            return that.image;
+        }
+        private void set_22_Article_image(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            that.image = (global::System.Byte[])Value;
+        }
+        private object get_23_Article_yearOfRelease(object instance)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            return that.yearOfRelease;
+        }
+        private void set_23_Article_yearOfRelease(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Article)instance;
+            that.yearOfRelease = (global::System.String)Value;
+        }
+        private object get_24_Collection_movies(object instance)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            return that.movies;
+        }
+        private void set_24_Collection_movies(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            that.movies = (global::System.Collections.Generic.List<global::ShEM.Model.Movie>)Value;
+        }
+        private object get_25_Movie_duration(object instance)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            return that.duration;
+        }
+        private void set_25_Movie_duration(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            that.duration = (global::System.String)Value;
+        }
+        private object get_26_Movie_synopsys(object instance)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            return that.synopsys;
+        }
+        private void set_26_Movie_synopsys(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            that.synopsys = (global::System.String)Value;
+        }
+        private object get_27_Movie_director(object instance)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            return that.director;
+        }
+        private void set_27_Movie_director(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            that.director = (global::System.String)Value;
+        }
+        private object get_28_Movie_Image(object instance)
+        {
+            var that = (global::ShEM.Model.Movie)instance;
+            return that.Image;
+        }
+        private object get_29_Collection_songs(object instance)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            return that.songs;
+        }
+        private void set_29_Collection_songs(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Collection)instance;
+            that.songs = (global::System.Collections.Generic.List<global::ShEM.Model.Song>)Value;
+        }
+        private object get_30_Song_preformer(object instance)
+        {
+            var that = (global::ShEM.Model.Song)instance;
+            return that.preformer;
+        }
+        private void set_30_Song_preformer(object instance, object Value)
+        {
+            var that = (global::ShEM.Model.Song)instance;
+            that.preformer = (global::System.String)Value;
+        }
+        private object get_31_User_numberOfCollections(object instance)
         {
             var that = (global::ShEM.Model.User)instance;
             return that.numberOfCollections;
         }
-        private void set_15_User_numberOfCollections(object instance, object Value)
+        private void set_31_User_numberOfCollections(object instance, object Value)
         {
             var that = (global::ShEM.Model.User)instance;
             that.numberOfCollections = (global::System.Int32)Value;
         }
-        private object get_16_NewsFeedViewModel_collection(object instance)
+        private object get_32_NewsFeedViewModel_collection(object instance)
         {
             var that = (global::ShEM.ViewModel.NewsFeedViewModel)instance;
             return that.collection;
         }
-        private void set_16_NewsFeedViewModel_collection(object instance, object Value)
+        private void set_32_NewsFeedViewModel_collection(object instance, object Value)
         {
             var that = (global::ShEM.ViewModel.NewsFeedViewModel)instance;
             that.collection = (global::ShEM.Model.Collection)Value;
         }
-        private object get_17_MovieViewModel_movie(object instance)
+        private object get_33_MovieViewModel_movie(object instance)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             return that.movie;
         }
-        private void set_17_MovieViewModel_movie(object instance, object Value)
+        private void set_33_MovieViewModel_movie(object instance, object Value)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             that.movie = (global::ShEM.Model.Movie)Value;
         }
-        private object get_18_MovieViewModel_api(object instance)
+        private object get_34_MovieViewModel_api(object instance)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             return that.api;
         }
-        private void set_18_MovieViewModel_api(object instance, object Value)
+        private void set_34_MovieViewModel_api(object instance, object Value)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             that.api = (global::ShEM.Helpers.MovieAPIParser)Value;
         }
-        private object get_19_MovieViewModel_Poster(object instance)
+        private object get_35_MovieViewModel_Poster(object instance)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             return that.Poster;
         }
-        private void set_19_MovieViewModel_Poster(object instance, object Value)
+        private void set_35_MovieViewModel_Poster(object instance, object Value)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_20_MovieViewModel_naziv(object instance)
+        private object get_36_MovieViewModel_naziv(object instance)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             return that.naziv;
         }
-        private void set_20_MovieViewModel_naziv(object instance, object Value)
+        private void set_36_MovieViewModel_naziv(object instance, object Value)
         {
             var that = (global::ShEM.ViewModel.MovieViewModel)instance;
             that.naziv = (global::System.String)Value;
@@ -753,89 +996,185 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlMember.Getter = get_6_NewsFeedViewModel_users;
                 xamlMember.Setter = set_6_NewsFeedViewModel_users;
                 break;
+            case "ShEM.Model.User.profilePic":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "profilePic", "Byte[]");
+                xamlMember.Getter = get_7_User_profilePic;
+                xamlMember.Setter = set_7_User_profilePic;
+                break;
             case "ShEM.Model.User.userID":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "userID", "Int32");
-                xamlMember.Getter = get_7_User_userID;
-                xamlMember.Setter = set_7_User_userID;
+                xamlMember.Getter = get_8_User_userID;
+                xamlMember.Setter = set_8_User_userID;
                 break;
             case "ShEM.Model.User.username":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "username", "String");
-                xamlMember.Getter = get_8_User_username;
-                xamlMember.Setter = set_8_User_username;
+                xamlMember.Getter = get_9_User_username;
+                xamlMember.Setter = set_9_User_username;
                 break;
             case "ShEM.Model.User.email":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "email", "String");
-                xamlMember.Getter = get_9_User_email;
-                xamlMember.Setter = set_9_User_email;
+                xamlMember.Getter = get_10_User_email;
+                xamlMember.Setter = set_10_User_email;
                 break;
             case "ShEM.Model.User.password":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "password", "String");
-                xamlMember.Getter = get_10_User_password;
-                xamlMember.Setter = set_10_User_password;
+                xamlMember.Getter = get_11_User_password;
+                xamlMember.Setter = set_11_User_password;
                 break;
             case "ShEM.Model.User.collections":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "collections", "System.Collections.Generic.List`1<ShEM.Model.Collection>");
-                xamlMember.Getter = get_11_User_collections;
-                xamlMember.Setter = set_11_User_collections;
+                xamlMember.Getter = get_12_User_collections;
+                xamlMember.Setter = set_12_User_collections;
                 break;
             case "ShEM.Model.Collection.collectionID":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "collectionID", "Int32");
-                xamlMember.Getter = get_12_Collection_collectionID;
-                xamlMember.Setter = set_12_Collection_collectionID;
+                xamlMember.Getter = get_13_Collection_collectionID;
+                xamlMember.Setter = set_13_Collection_collectionID;
                 break;
             case "ShEM.Model.Collection.name":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "name", "String");
-                xamlMember.Getter = get_13_Collection_name;
-                xamlMember.Setter = set_13_Collection_name;
+                xamlMember.Getter = get_14_Collection_name;
+                xamlMember.Setter = set_14_Collection_name;
                 break;
             case "ShEM.Model.Collection.userID":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "userID", "Int32");
-                xamlMember.Getter = get_14_Collection_userID;
-                xamlMember.Setter = set_14_Collection_userID;
+                xamlMember.Getter = get_15_Collection_userID;
+                xamlMember.Setter = set_15_Collection_userID;
+                break;
+            case "ShEM.Model.Collection.books":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "books", "System.Collections.Generic.List`1<ShEM.Model.Book>");
+                xamlMember.Getter = get_16_Collection_books;
+                xamlMember.Setter = set_16_Collection_books;
+                break;
+            case "ShEM.Model.Book.publisher":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Book");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "publisher", "String");
+                xamlMember.Getter = get_17_Book_publisher;
+                xamlMember.Setter = set_17_Book_publisher;
+                break;
+            case "ShEM.Model.Book.author":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Book");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "author", "String");
+                xamlMember.Getter = get_18_Book_author;
+                xamlMember.Setter = set_18_Book_author;
+                break;
+            case "ShEM.Model.Article.articleID":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Article");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "articleID", "Int32");
+                xamlMember.Getter = get_19_Article_articleID;
+                xamlMember.Setter = set_19_Article_articleID;
+                break;
+            case "ShEM.Model.Article.articleName":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Article");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "articleName", "String");
+                xamlMember.Getter = get_20_Article_articleName;
+                xamlMember.Setter = set_20_Article_articleName;
+                break;
+            case "ShEM.Model.Article.genre":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Article");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "genre", "String");
+                xamlMember.Getter = get_21_Article_genre;
+                xamlMember.Setter = set_21_Article_genre;
+                break;
+            case "ShEM.Model.Article.image":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Article");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "image", "Byte[]");
+                xamlMember.Getter = get_22_Article_image;
+                xamlMember.Setter = set_22_Article_image;
+                break;
+            case "ShEM.Model.Article.yearOfRelease":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Article");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "yearOfRelease", "String");
+                xamlMember.Getter = get_23_Article_yearOfRelease;
+                xamlMember.Setter = set_23_Article_yearOfRelease;
+                break;
+            case "ShEM.Model.Collection.movies":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "movies", "System.Collections.Generic.List`1<ShEM.Model.Movie>");
+                xamlMember.Getter = get_24_Collection_movies;
+                xamlMember.Setter = set_24_Collection_movies;
+                break;
+            case "ShEM.Model.Movie.duration":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Movie");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "duration", "String");
+                xamlMember.Getter = get_25_Movie_duration;
+                xamlMember.Setter = set_25_Movie_duration;
+                break;
+            case "ShEM.Model.Movie.synopsys":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Movie");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "synopsys", "String");
+                xamlMember.Getter = get_26_Movie_synopsys;
+                xamlMember.Setter = set_26_Movie_synopsys;
+                break;
+            case "ShEM.Model.Movie.director":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Movie");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "director", "String");
+                xamlMember.Getter = get_27_Movie_director;
+                xamlMember.Setter = set_27_Movie_director;
+                break;
+            case "ShEM.Model.Movie.Image":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Movie");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Image", "Byte[]");
+                xamlMember.Getter = get_28_Movie_Image;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "ShEM.Model.Collection.songs":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Collection");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "songs", "System.Collections.Generic.List`1<ShEM.Model.Song>");
+                xamlMember.Getter = get_29_Collection_songs;
+                xamlMember.Setter = set_29_Collection_songs;
+                break;
+            case "ShEM.Model.Song.preformer":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.Song");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "preformer", "String");
+                xamlMember.Getter = get_30_Song_preformer;
+                xamlMember.Setter = set_30_Song_preformer;
                 break;
             case "ShEM.Model.User.numberOfCollections":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.Model.User");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "numberOfCollections", "Int32");
-                xamlMember.Getter = get_15_User_numberOfCollections;
-                xamlMember.Setter = set_15_User_numberOfCollections;
+                xamlMember.Getter = get_31_User_numberOfCollections;
+                xamlMember.Setter = set_31_User_numberOfCollections;
                 break;
             case "ShEM.ViewModel.NewsFeedViewModel.collection":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.NewsFeedViewModel");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "collection", "ShEM.Model.Collection");
-                xamlMember.Getter = get_16_NewsFeedViewModel_collection;
-                xamlMember.Setter = set_16_NewsFeedViewModel_collection;
+                xamlMember.Getter = get_32_NewsFeedViewModel_collection;
+                xamlMember.Setter = set_32_NewsFeedViewModel_collection;
                 break;
             case "ShEM.ViewModel.MovieViewModel.movie":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "movie", "ShEM.Model.Movie");
-                xamlMember.Getter = get_17_MovieViewModel_movie;
-                xamlMember.Setter = set_17_MovieViewModel_movie;
+                xamlMember.Getter = get_33_MovieViewModel_movie;
+                xamlMember.Setter = set_33_MovieViewModel_movie;
                 break;
             case "ShEM.ViewModel.MovieViewModel.api":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.MovieAPIParser");
-                xamlMember.Getter = get_18_MovieViewModel_api;
-                xamlMember.Setter = set_18_MovieViewModel_api;
+                xamlMember.Getter = get_34_MovieViewModel_api;
+                xamlMember.Setter = set_34_MovieViewModel_api;
                 break;
             case "ShEM.ViewModel.MovieViewModel.Poster":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
-                xamlMember.Getter = get_19_MovieViewModel_Poster;
-                xamlMember.Setter = set_19_MovieViewModel_Poster;
+                xamlMember.Getter = get_35_MovieViewModel_Poster;
+                xamlMember.Setter = set_35_MovieViewModel_Poster;
                 break;
             case "ShEM.ViewModel.MovieViewModel.naziv":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MovieViewModel");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
-                xamlMember.Getter = get_20_MovieViewModel_naziv;
-                xamlMember.Setter = set_20_MovieViewModel_naziv;
+                xamlMember.Getter = get_36_MovieViewModel_naziv;
+                xamlMember.Setter = set_36_MovieViewModel_naziv;
                 break;
             }
             return xamlMember;
