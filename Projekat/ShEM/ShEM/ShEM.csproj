@@ -95,6 +95,7 @@
     </Content>
     <Content Include="Assets\BackGround.jpg" />
     <Content Include="Assets\DefaultBook.jpg" />
+    <Content Include="Assets\DefaultMovie.jpg" />
     <Content Include="Assets\DefaultSong.png" />
     <Content Include="Assets\DefaultUser.png" />
     <Content Include="Assets\Fonts\Calligraffitti-Regular.ttf" />
@@ -171,9 +172,6 @@
     <Compile Include="View\UsersCollections.xaml.cs">
       <DependentUpon>UsersCollections.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\UsersFeed.xaml.cs">
-      <DependentUpon>UsersFeed.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -227,10 +225,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UsersCollections.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\UsersFeed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

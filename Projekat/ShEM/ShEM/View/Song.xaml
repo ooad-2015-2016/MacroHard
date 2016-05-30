@@ -34,9 +34,8 @@
         </Grid.DataContext>
         <RelativePanel Margin="100" Background="#B2FFFFFF">
             <Image x:Name="songImage"   RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400"  Source="ms-appx:///Assets/DefaultSong.png"/>
-            <TextBlock x:Name="textBlock3"  Text="{Binding song.genre}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35"/>
-            <TextBlock x:Name="songTitle"   Text="{Binding song.articleName}" VerticalAlignment="Top" FontFamily="Verdana" FontSize="35" />
-            <TextBlock x:Name="songPerformer"  Text="{Binding song.preformer}"  FontSize="35" Foreground="Black" />
+            <TextBlock x:Name="songTitle"  RelativePanel.AlignTopWith="songImage" RelativePanel.RightOf="songImage"  Margin="300,0,0,0" Text="The Parting" FontFamily="{StaticResource OpenSans}" FontSize="45" />
+            <TextBlock x:Name="songPerformer" RelativePanel.Below="songTitle" RelativePanel.AlignLeftWith="songTitle"  Margin="320,0,0,0" Text="by Katatonia"  FontSize="35" Foreground="Black" />
         </RelativePanel>
     </Grid>
 </Page>
