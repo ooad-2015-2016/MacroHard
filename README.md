@@ -53,3 +53,4 @@ Korisnik usluga: Osoba koja kreira vlastiti account i ima mogućnost pretrage po
 
 Admin: Osoba koja ažurira podatke, održava bazu podataka kao i reguliše sadržaj korisnika. 
 
+![Alt text](relative/BanishingMicrosoft.jpg "Banish it!")
