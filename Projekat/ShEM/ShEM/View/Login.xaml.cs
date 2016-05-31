@@ -37,8 +37,13 @@ namespace ShEM.View
 
         private string userInput;
         private string pass;
+        private string registerUsername;
+        private string registerEmail;
+        private string registerPassword;
+        private string registerRepassword;
         //StaticVariablesClass stc;
         LoginViewModel loginViewModel;
+        RegisterViewModel registerViewModel;
         StaticVariablesClass statika = new StaticVariablesClass();
 
         private void LoginUser(object sender, RoutedEventArgs e)
@@ -49,7 +54,16 @@ namespace ShEM.View
             DataContext = loginViewModel;
             loginViewModel.povuciUsera();  
         }
+        private void RegisterUser(object sender, RoutedEventArgs e)
+        {
+            registerUsername = textBoxRegisterUsername.Text;
+            registerEmail = emailBoxRegisterUsername.Text;
+            registerPassword = textBoxRegisterPass.Password;
+            registerRepassword = textBoxRegisterRePass.Password;
+            registerViewModel = new RegisterViewModel(registerUsername, registerEmail, registerPassword);
+            registerViewModel.RegistrujUsera();
 
+        }
         private void ShowPassClick(object sender, RoutedEventArgs e)
         {
             if (textBoxPass.PasswordRevealMode == PasswordRevealMode.Visible)
@@ -73,11 +87,7 @@ namespace ShEM.View
 
         }
 
-        private void RegisterUser(object sender, RoutedEventArgs e)
-        {
-            
-        }
-       
+
         private void RecoverUser(object sender, RoutedEventArgs e)
         {
 

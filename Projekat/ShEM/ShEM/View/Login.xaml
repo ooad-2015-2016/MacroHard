@@ -27,7 +27,7 @@
             </RelativePanel>
         </StackPanel>
         <!--<Rectangle x:Name="LoginFormOverlay" Visibility="Collapsed" RelativePanel.AlignHorizontalCenterWith="LoginForm" RelativePanel.AlignVerticalCenterWith="LoginForm" Height="{Binding ActualHeight, ElementName=LoginForm, Mode=OneWay}" Width="{Binding ActualWidth, ElementName=LoginForm, Mode=OneWay}" Fill="#FF6A6A6A" Opacity="0.5"/>-->
-        <StackPanel x:Name="RegisterForm" Visibility="Collapsed" RelativePanel.RightOf="LoginForm" RelativePanel.AlignVerticalCenterWithPanel="True"  Background="White" Opacity="0.7" Padding="15,15,15,20" BorderBrush="#FF3E3E3E"  Margin="20,0,0,0">
+        <StackPanel x:Name="RegisterForm" Visibility="Visible" RelativePanel.RightOf="LoginForm" RelativePanel.AlignVerticalCenterWithPanel="True"  Background="White" Opacity="0.7" Padding="15,15,15,20" BorderBrush="#FF3E3E3E"  Margin="20,0,0,0">
             <TextBlock x:Name="UsernameRegisterBlock"  TextWrapping="Wrap" Foreground="#e74c3c" Text="Username:" Margin="10,10,0,0" FontFamily="{StaticResource OpenSans}"  />
             <TextBox x:Name="textBoxRegisterUsername"  Width="300" TextWrapping="Wrap" Text=""  BorderBrush="{StaticResource MainColor}"  />
             <TextBlock x:Name="EmailRegisterBlock"  TextWrapping="Wrap" Foreground="#e74c3c" Text="Email:" Margin="10,10,0,0" FontFamily="{StaticResource OpenSans}"  />
