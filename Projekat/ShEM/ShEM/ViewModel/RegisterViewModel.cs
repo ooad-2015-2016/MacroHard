@@ -19,7 +19,7 @@ namespace ShEM.ViewModel
         private string username;
         private string password;
         private string email;
-        private StaticVariablesClass statika;
+        private StaticVariablesClass statika = new StaticVariablesClass();
         public RegisterViewModel(string username, string email, string password)
         {
             this.username = username;
@@ -34,7 +34,7 @@ namespace ShEM.ViewModel
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
-            String query = "register?" + "username=" + username.Replace(' ', '+') + "&email=" + password.Replace(' ','+') + "&password=" + password.Replace(' ', '+');
+            String query = "register?" + "username=" + username.Replace(' ', '+') + "&email=" + email.Replace(' ','+') + "&password=" + password.Replace(' ', '+');
             try
             {
                 HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
@@ -44,7 +44,7 @@ namespace ShEM.ViewModel
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
                     dynamic dyn = JsonConvert.DeserializeObject(stream);
-        
+                    var dialog = new MessageDialog(stream);
                     Frame rootFrame = Window.Current.Content as Frame;
                     rootFrame.Navigate(typeof(NewsFeed));
                 }
