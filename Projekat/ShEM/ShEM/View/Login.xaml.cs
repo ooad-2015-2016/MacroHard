@@ -43,7 +43,7 @@ namespace ShEM.View
         private string registerRepassword;
         //StaticVariablesClass stc;
         LoginViewModel loginViewModel;
-        RegisterViewModel registerViewModel;
+        //RegisterViewModel registerViewModel;
         StaticVariablesClass statika = new StaticVariablesClass();
 
         private void LoginUser(object sender, RoutedEventArgs e)
@@ -60,8 +60,8 @@ namespace ShEM.View
             registerEmail = emailBoxRegisterUsername.Text;
             registerPassword = textBoxRegisterPass.Password;
             registerRepassword = textBoxRegisterRePass.Password;
-            registerViewModel = new RegisterViewModel(registerUsername, registerEmail, registerPassword);
-            registerViewModel.RegistrujUsera();
+          //  registerViewModel = new RegisterViewModel(registerUsername, registerEmail, registerPassword);
+            //registerViewModel.RegistrujUsera();
 
         }
         private void ShowPassClick(object sender, RoutedEventArgs e)
