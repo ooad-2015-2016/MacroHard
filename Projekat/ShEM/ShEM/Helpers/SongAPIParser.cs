@@ -33,6 +33,7 @@ namespace ShEM.Helpers
                 {
 
                     song.articleName = objekat["name"];
+                    song.preview = objekat["preview_url"];
                     string izvodjaci = " ";
                     foreach (var umjetnik in objekat["artists"])
                         izvodjaci += (umjetnik["name"] + (" "));

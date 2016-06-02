@@ -5,23 +5,23 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="song" />
-    <RootPropertyPathName Name="yearOfRelease" />
-    <RootPropertyPathName Name="preformer" />
+    <RootPropertyPathName Name="preview" />
+    <RootPropertyPathName Name="performer" />
     <RootPropertyPathName Name="articleName" />
-    <RootPropertyPathName Name="genre" />
+    <RootPropertyPathName Name="Poster" />
     <RootPropertyPathName Name="book" />
     <RootPropertyPathName Name="synopsis" />
     <RootPropertyPathName Name="publisher" />
     <RootPropertyPathName Name="author" />
-    <RootPropertyPathName Name="Poster" />
     <RootPropertyPathName Name="password" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="users" />
     <RootPropertyPathName Name="ActualHeight" />
     <RootPropertyPathName Name="movie" />
+    <RootPropertyPathName Name="yearOfRelease" />
     <RootPropertyPathName Name="duration" />
-    <RootPropertyPathName Name="director" />
     <RootPropertyPathName Name="synopsys" />
+    <RootPropertyPathName Name="director" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -55,12 +55,12 @@
       <RootMethod Name="SetAlignLeftWithPanel" />
       <RootMethod Name="GetAlignRightWithPanel" />
       <RootMethod Name="SetAlignRightWithPanel" />
-      <RootMethod Name="GetAlignLeftWith" />
-      <RootMethod Name="SetAlignLeftWith" />
-      <RootMethod Name="GetBelow" />
-      <RootMethod Name="SetBelow" />
       <RootMethod Name="GetAlignTopWith" />
       <RootMethod Name="SetAlignTopWith" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignLeftWith" />
+      <RootMethod Name="SetAlignLeftWith" />
       <RootMethod Name="GetAlignBottomWith" />
       <RootMethod Name="SetAlignBottomWith" />
       <RootMethod Name="GetAlignTopWithPanel" />
@@ -98,10 +98,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Style" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="MaxLines" />
       <RootProperty Name="TextTrimming" />
@@ -128,10 +124,10 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Padding" />
       <RootProperty Name="ContentTemplate" />
@@ -194,16 +190,34 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Stretch" />
-      <RootProperty Name="DataContext" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="ShEM.ViewModel.SongViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="AutoPlay" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="ShEM.View.BlankPage10" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -212,11 +226,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Fill" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Mode" />
-    </RootType>
-    <RootType FullName="ShEM.View.BlankPage10" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
@@ -228,7 +237,6 @@
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="BorderBrush" />
-      <RootProperty Name="DataContext" />
     </RootType>
     <RootType FullName="ShEM.View.BlankPage11" />
     <RootType FullName="ShEM.BazaPodataka.Views.PictureConverter" />
@@ -237,9 +245,6 @@
     <RootType FullName="ShEM.View.BlankPage3" />
     <RootType FullName="Windows.UI.Color" />
     <RootType FullName="ShEM.ViewModel.NewsFeedViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
-      <RootProperty Name="Symbol" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="VerticalAlignment" />
@@ -249,28 +254,12 @@
     </RootType>
     <RootType FullName="ShEM.View.NewsFeed" />
     <RootType FullName="ShEM.ViewModel.MovieViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="Blocks" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
-      <RootProperty Name="Inlines" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-      <RootProperty Name="FontFamily" />
-      <RootProperty Name="FontSize" />
-    </RootType>
     <RootType FullName="ShEM.View.BlankPage5" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="ShEM.View.UsersCollections" />
-    <RootType FullName="ShEM.View.BlankPage9" />
     <RootType FullName="ShEM.MainPage" />
   </Roots.RootTypes>
 </Roots>

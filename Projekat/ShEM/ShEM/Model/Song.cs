@@ -13,6 +13,9 @@ namespace ShEM.Model
     {
         [DataMember]
         public string _performer;
+        [DataMember]
+        public string _preview;
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -31,6 +34,15 @@ namespace ShEM.Model
             {
                 _performer = value;
                 notifyMeWhenPropertyChanged("performer");
+            }
+        }
+        public string preview
+        {
+            get { return _preview; }
+            set
+            {
+                _preview = value;
+                notifyMeWhenPropertyChanged("preview");
             }
         }
     }
