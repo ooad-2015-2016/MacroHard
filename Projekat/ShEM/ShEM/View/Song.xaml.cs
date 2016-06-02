@@ -36,6 +36,21 @@ namespace ShEM.View
             await svm.getSong();
             DataContext = svm;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Play();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Stop();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            mediaElement1.Pause();
+        }
     }
 }
 
