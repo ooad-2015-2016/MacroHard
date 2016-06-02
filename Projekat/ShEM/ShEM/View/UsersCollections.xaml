@@ -85,8 +85,8 @@
                     <ScrollViewer Height="100" Width="100"/>
                 </Button>
             </StackPanel>
-            <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.RightOf="Menu" RelativePanel.Below="SearchContainer" FontFamily="Verdana" >
-
+            <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.RightOf="Menu" RelativePanel.Below="SearchContainer" FontFamily="Verdana" ItemTemplate="{StaticResource collectionItem}">
+    
             </ListView>
         </RelativePanel>
     </Grid>

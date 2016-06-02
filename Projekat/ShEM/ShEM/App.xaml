@@ -10,7 +10,21 @@
         <FontFamily x:Key="OpenSans">/Assets/Fonts/OpenSans-Regular.ttf #OpenSans</FontFamily>
         <FontFamily x:Key="TitleFont">/Assets/Fonts/Calligraffitti-Regular.ttf #Calligraffitti</FontFamily>
         <SolidColorBrush x:Key="SecondaryColor" Color="#FF303030"/>
-
+        <DataTemplate x:Key="collectionItem" >
+            <RelativePanel Background="White">
+                <TextBlock x:Name="collectionName">TiTle</TextBlock>
+                <StackPanel Orientation="Vertical" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="Segoe MDL2 Assets"></TextBlock>
+                        <TextBlock x:Name="numOfLikes"> </TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" ></StackPanel>
+                        <TextBlock FontFamily="Segoe MDL2 Assets"></TextBlock>
+                        <TextBlock x:Name="numOfComments"></TextBlock>
+                </StackPanel>
+            </RelativePanel>
+            
+        </DataTemplate>
     </Application.Resources>
 
 

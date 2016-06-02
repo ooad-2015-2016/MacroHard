@@ -20,11 +20,8 @@ namespace ShEM.Model
         [DataMember]
         public bool _status;
         [DataMember]
-        List<Book> _books;
-        [DataMember]
-        List<Movie> _movies;
-        [DataMember]
-        List<Song> _songs;
+        List<Article> _articles;
+      
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -66,33 +63,13 @@ namespace ShEM.Model
             }
         }
 
-        public List<Book> books
+        public List<Article> articles
         {
-            get { return _books; }
+            get { return _articles; }
             set
             {
-                _books = value;
+                _articles = value;
                 notifyMeWhenPropertyChanged("books");
-            }
-        }
-
-        public List<Movie> movies
-        {
-            get { return _movies; }
-            set
-            {
-                _movies = value;
-                notifyMeWhenPropertyChanged("movies");
-            }
-        }
-
-        public List<Song> songs
-        {
-            get { return _songs; }
-            set
-            {
-                _songs = value;
-                notifyMeWhenPropertyChanged("songs");
             }
         }
 
