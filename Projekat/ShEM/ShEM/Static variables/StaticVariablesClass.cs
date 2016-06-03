@@ -15,7 +15,7 @@ namespace ShEM.BazaPodataka.Static_variables
         private static string movieAPIAdditions = "&y=&plot=short&r=json";
         private static string _username;
         private static int _userID;
-        private static List<Collection> _collections;
+        private static List<Collection> _collections = new List<Collection> ();
         private static string _email;
         private static int _numberOfCollections;
         private static byte[] _profilePic;

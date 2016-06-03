@@ -18,20 +18,31 @@ namespace ShEM.Model
         [DataMember]
         public bool _status;
         [DataMember]
+        public string _description;
+        [DataMember]
         List<Article> _articles;
       
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public Collection(int _collectionID, string _name, bool _status)
+        public Collection(int _collectionID, string _name, string _description, bool _status)
         {
             this._collectionID = _collectionID;
             this._name = _name;
+            this._description = _description;
             this._status = _status;
             _articles = new List<Article>();
         }
 
-
+        public string description
+        {
+            get { return _description; }
+            set
+            {
+                _description = value;
+                notifyMeWhenPropertyChanged("description");
+            }
+        }
 
         private void notifyMeWhenPropertyChanged(string info)
         {

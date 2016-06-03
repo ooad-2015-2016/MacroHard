@@ -41,11 +41,15 @@ namespace ShEM.ViewModel
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
                     dynamic dyn = JsonConvert.DeserializeObject(stream);
-                    
+                    int id = int.Parse( dyn["id"]);
+                    String name = dyn["collection_name"];
+                    String description = (dyn["description"] == null)? "": dyn["description"];
+                    Boolean visible = (dyn["visible"] == 1) ? true : false;
+                    statika.collections.Add(new Collection(id, name, description, visible));
                 }
                 else
                 {
-                    var dialog = new MessageDialog("Your access data is not valid, please try again");
+                    var dialog = new MessageDialog("Server error");
                     await dialog.ShowAsync();
                 }
             }
