@@ -60,6 +60,9 @@ namespace ShEM.ViewModel
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
                     dynamic dyn = JsonConvert.DeserializeObject(stream);
+                    user.userID = dyn["id"];
+                    user.email = dyn["email"];
+                    user.username = dyn["username"];
                     Frame rootFrame = Window.Current.Content as Frame;
                     rootFrame.Navigate(typeof(NewsFeed));
                 }
@@ -82,7 +85,6 @@ namespace ShEM.ViewModel
         {
             statika.userID = user.userID;
             statika.username = user.username;
-            statika.password = user.password;
             statika.profilePic = user.profilePic;
             statika.collections = user.collections;
             statika.email = user.email;

@@ -36,17 +36,17 @@
         </Grid.Background>
         <RelativePanel Margin="100" Background="#B2FFFFFF"  >
             <Image  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" x:Name="ProfilePicture" Source="ms-appx:///Assets/DefaultUser.png" Width="250" Height="250"></Image>
-            <RelativePanel x:Name="SearchContainer" RelativePanel.RightOf="ProfilePicture" RelativePanel.AlignRightWithPanel="True" Height="{Binding ActualHeight, ElementName=ProfilePicture, Mode=OneWay}" >
-                <AutoSuggestBox  x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"  PlaceholderText="Search..." VerticalAlignment="Top" Height="33" HorizontalAlignment="Center" Width="1000" />
+            <RelativePanel x:Name="SearchContainer" RelativePanel.RightOf="ProfilePicture" RelativePanel.AlignRightWithPanel="True" Height="250" >
+                <AutoSuggestBox  x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"  PlaceholderText="Search..." Height="33"  Width="1000" />
                 <StackPanel RelativePanel.Below="Search" RelativePanel.AlignHorizontalCenterWith="Search" Orientation="Horizontal">
-                    <CheckBox x:Name="PeopleCheckBox" Checked="PeopleCheck" Margin="0,0,20,0" IsChecked="True">People</CheckBox>
-                    <CheckBox x:Name="BooksCheckBox"  Checked="BooksCheck" Margin="0,0,20,0">Books</CheckBox>
-                    <CheckBox x:Name="MoviesCheckBox" Checked="MoviesCheck" Margin="0,0,20,0">Movies</CheckBox>
-                    <CheckBox x:Name="SongsCheckBox" Checked="SongsCheck"  Margin="0,0,20,0">Songs</CheckBox>
+                    <CheckBox x:Name="PeopleCheckBox"  Margin="0,0,20,0" IsChecked="True">People</CheckBox>
+                    <CheckBox x:Name="BooksCheckBox"   Margin="0,0,20,0">Books</CheckBox>
+                    <CheckBox x:Name="MoviesCheckBox"  Margin="0,0,20,0">Movies</CheckBox>
+                    <CheckBox x:Name="SongsCheckBox"   Margin="0,0,20,0">Songs</CheckBox>
                 </StackPanel>
             </RelativePanel>
             <StackPanel x:Name="Menu" Orientation="Vertical" RelativePanel.Below="ProfilePicture" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="251">
-                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" Background="{x:Null}" Padding="8,10" BorderThickness="0">
+                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" Background="{x:Null}" Padding="8,10" BorderThickness="0" Click="NewsFeedClick">
                     <Button.ContentTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -56,7 +56,7 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                 </Button>
-                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}"  Background="{x:Null}" BorderThickness="0" Padding="8,10">
+                <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}"  Background="{x:Null}" BorderThickness="0" Padding="8,10" Click="MyCollectionsClick">
                     <Button.ContentTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -76,7 +76,7 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                 </Button>
-                <Button Content="Log Out" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" Background="{x:Null}" BorderBrush="{x:Null}" Padding="8,10">
+                <Button Content="Log Out" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" Background="{x:Null}" BorderBrush="{x:Null}" Padding="8,10" BorderThickness="0" Click="LogoutClick">
                     <Button.ContentTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" >
@@ -87,11 +87,25 @@
                     </Button.ContentTemplate>
                 </Button>
             </StackPanel>
-            <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.RightOf="Menu" RelativePanel.Below="SearchContainer" FontFamily="Verdana"  ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" >
-                <ListView.BorderBrush>
-                    <SolidColorBrush Color="{StaticResource Color1}"/>
-                </ListView.BorderBrush>
-            </ListView>
+            <RelativePanel x:Name="NewsFeedPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Visible">
+                <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True"  RelativePanel.AlignLeftWithPanel="True"  RelativePanel.AlignTopWithPanel="True" ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" >
+                    <ListView.BorderBrush>
+                        <SolidColorBrush Color="{StaticResource Color1}"/>
+                    </ListView.BorderBrush>
+                </ListView>
+            </RelativePanel>
+            <RelativePanel x:Name="MyCollectionsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
+                <ListView x:Name="CollectionlistView" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"  ItemTemplate="{StaticResource collectionItem}">
+                    <ListView.Resources>
+                        
+                    </ListView.Resources>
+                </ListView>
+                <RelativePanel x:Name="NewCollectionItem" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="100">
+                    <Button Content="New Collection" FontFamily="{StaticResource OpenSans}" Foreground="White" FontSize="22" Background="{StaticResource MainColor}" Width="300" Height="50" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,0,40,0" ></Button>
+                </RelativePanel>
+                <TextBlock x:Name="NoItems"></TextBlock>
+            </RelativePanel>
+
         </RelativePanel>
 
 

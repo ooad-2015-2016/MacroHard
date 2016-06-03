@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ShEM.ViewModel;
-
+using ShEM.BazaPodataka.Static_variables;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -23,7 +23,10 @@ namespace ShEM.View
     /// </summary>
     public sealed partial class NewsFeed : Page
     {
+        
         NewsFeedViewModel nfvm;
+        int state = 1;
+        StaticVariablesClass statika = new StaticVariablesClass();
         public NewsFeed()
         {
             this.InitializeComponent();
@@ -49,6 +52,28 @@ namespace ShEM.View
 
         private void MoviesCheck(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void LogoutClick(object sender, RoutedEventArgs e)
+        {
+            statika.userID = -1;
+            statika.email = null;
+            statika.username = null;
+            Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(Login));
+
+        }
+
+        private void NewsFeedClick(object sender, RoutedEventArgs e)
+        {
+            MyCollectionsPanel.Visibility = Visibility.Collapsed;
+            NewsFeedPanel.Visibility = Visibility.Visible;
+        }
+        private void MyCollectionsClick(object sender, RoutedEventArgs e)
+        {
+            NewsFeedPanel.Visibility = Visibility.Collapsed;
+            MyCollectionsPanel.Visibility = Visibility.Visible;
 
         }
     }

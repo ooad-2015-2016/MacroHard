@@ -10,13 +10,12 @@ namespace ShEM.BazaPodataka.Static_variables
     public class StaticVariablesClass
     {
         private static int port = 3000;
-        private static string ipAddress = "192.168.1.5:";
+        private static string ipAddress = "192.168.1.6:";
         private static string movieAPI= "http://www.omdbapi.com/?t=";
         private static string movieAPIAdditions = "&y=&plot=short&r=json";
         private static string _username;
         private static int _userID;
         private static List<Collection> _collections;
-        private static string _password;
         private static string _email;
         private static int _numberOfCollections;
         private static byte[] _profilePic;
@@ -62,14 +61,7 @@ namespace ShEM.BazaPodataka.Static_variables
             }
         }
 
-        public string password
-        {
-            get { return _password; }
-            set
-            {
-                _password = value;
-            }
-        }
+
 
         public List<Collection> collections
         {

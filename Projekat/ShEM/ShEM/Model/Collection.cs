@@ -16,14 +16,22 @@ namespace ShEM.Model
         [DataMember]
         public string _name;
         [DataMember]
-        public int _userID;
-        [DataMember]
         public bool _status;
         [DataMember]
         List<Article> _articles;
       
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public Collection(int _collectionID, string _name, bool _status)
+        {
+            this._collectionID = _collectionID;
+            this._name = _name;
+            this._status = _status;
+            _articles = new List<Article>();
+        }
+
+
 
         private void notifyMeWhenPropertyChanged(string info)
         {
@@ -53,15 +61,7 @@ namespace ShEM.Model
             }
         }
 
-        public int userID
-        {
-            get { return _userID; }
-            set
-            {
-                _userID = value;
-                notifyMeWhenPropertyChanged("userID");
-            }
-        }
+
 
         public List<Article> articles
         {

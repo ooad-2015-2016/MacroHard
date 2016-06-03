@@ -78,7 +78,8 @@ namespace ShEM.View
 
         private void SignInFun(object sender, RoutedEventArgs e)
         {
-            RegisterForm.Visibility = Visibility.Visible;
+            //RegisterForm.Visibility = Visibility.Visible;
+            SlideInRegister.Begin();
         }
 
         private void ForgottenPassword_Click(object sender, RoutedEventArgs e)

@@ -11,7 +11,7 @@ namespace ShEM.ViewModel
     class NewsFeedViewModel
     {
         public List<User> users { get; set; }
-        public Collection collection { get; set; }
+        public List<Collection> collection { get; set; }
 
         public async void getAllFriends()
         {
