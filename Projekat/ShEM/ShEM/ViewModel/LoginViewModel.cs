@@ -43,41 +43,43 @@ namespace ShEM.ViewModel
             }
         }
 
-        public async void povuciUsera()
+        public  void povuciUsera()
         {
-            HttpClient client = new HttpClient();
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(NewsFeed));
+            //HttpClient client = new HttpClient();
 
-            String query = "login?" + "username=" + userInfo.Replace(' ','+') + "&password=" + pass.Replace(' ','+');
-            System.Diagnostics.Debug.WriteLine(query);
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
-            try {
-                HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
+            //String query = "login?" + "username=" + userInfo.Replace(' ','+') + "&password=" + pass.Replace(' ','+');
+            //System.Diagnostics.Debug.WriteLine(query);
+            //client.DefaultRequestHeaders.Accept.Clear();
+            //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            //client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
+            //try {
+            //    HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
 
-              //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
-                if (msg.IsSuccessStatusCode)
-                {
-                    String stream = await msg.Content.ReadAsStringAsync();
-                    dynamic dyn = JsonConvert.DeserializeObject(stream);
-                    user.userID = dyn["id"];
-                    user.email = dyn["email"];
-                    user.username = dyn["username"];
-                    Frame rootFrame = Window.Current.Content as Frame;
-                    rootFrame.Navigate(typeof(NewsFeed));
-                }
-                else
-                {
-                    var dialog = new MessageDialog("Your access data is not valid, please try again");
-                    await dialog.ShowAsync();
-                }
-                this.assignUser();
-            }
-            catch (HttpRequestException e)
-            {
-                var dialog = new MessageDialog(e.StackTrace.ToString());
-                await dialog.ShowAsync();
-            }            
+            //  //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+            //    if (msg.IsSuccessStatusCode)
+            //    {
+            //        String stream = await msg.Content.ReadAsStringAsync();
+            //        dynamic dyn = JsonConvert.DeserializeObject(stream);
+            //        user.userID = dyn["id"];
+            //        user.email = dyn["email"];
+            //        user.username = dyn["username"];
+            //        Frame rootFrame = Window.Current.Content as Frame;
+            //        rootFrame.Navigate(typeof(NewsFeed));
+            //    }
+            //    else
+            //    {
+            //        var dialog = new MessageDialog("Your access data is not valid, please try again");
+            //        await dialog.ShowAsync();
+            //    }
+            //    this.assignUser();
+            //}
+            //catch (HttpRequestException e)
+            //{
+            //    var dialog = new MessageDialog(e.StackTrace.ToString());
+            //    await dialog.ShowAsync();
+            //}            
         }
         
 

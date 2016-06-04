@@ -1,4 +1,5 @@
-﻿using ShEM.ViewModel;
+﻿using ShEM.BazaPodataka.Static_variables;
+using ShEM.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,14 +22,15 @@ namespace ShEM.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage10 : Page
+    public sealed partial class Song : Page
     {
         SongViewModel svm;
-        public BlankPage10()
+        StaticVariablesClass statika = new StaticVariablesClass();
+        public Song()
         {
             this.InitializeComponent();
             svm = new SongViewModel();
-            svm.naziv = "baby one more time";
+            svm.naziv =statika.Search;
             metoda();
         }
         public async void metoda()
@@ -37,17 +39,19 @@ namespace ShEM.View
             DataContext = svm;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             mediaElement1.Play();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             mediaElement1.Stop();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             mediaElement1.Pause();
         }

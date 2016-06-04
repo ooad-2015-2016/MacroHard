@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:ShEM.ViewModel"
-    x:Class="ShEM.View.BlankPage5"
+    x:Class="ShEM.View.Movie"
     mc:Ignorable="d">
     <Page.DataContext>
         <ViewModel:MovieViewModel/>
@@ -18,10 +18,10 @@
             <ViewModel:MovieViewModel/>
         </Grid.DataContext>
         <RelativePanel Margin="100" Background="#B2FFFFFF">
-            <Image x:Name="movieImage" Source="ms-appx:///Assets/DefaultMovie.jpg"  RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400" DataContext="{Binding Poster}"></Image>
+            <Image x:Name="movieImage"  RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400" Source="{Binding Poster}"></Image>
             <TextBlock x:Name="movieDirector" RelativePanel.RightOf="movieImage" RelativePanel.AlignTopWith="movieImage" Margin="300,0,0,0" FontSize="35" Text="{Binding movie.director}"/>
             <TextBlock x:Name="movieTitle" RelativePanel.Below="movieDirector" RelativePanel.AlignLeftWith="movieDirector" Margin="300,40,0,0" FontSize="45" Text="{Binding movie.articleName}"/>
-           <TextBlock x:Name="movieDescription"   FontFamily="{StaticResource OpenSans}" RelativePanel.Below="movieTitle" RelativePanel.AlignLeftWith="movieTitle" Text="{Binding Mode=OneWay}" RelativePanel.AlignRightWithPanel="True" Margin="300,40,100,0"  FontSize="25" TextWrapping="Wrap" MaxLines="7" TextTrimming="WordEllipsis" TextReadingOrder="DetectFromContent" DataContext = "{Binding movie.synopsys}"/>
+            <TextBlock x:Name="movieDescription"   FontFamily="{StaticResource OpenSans}" RelativePanel.Below="movieTitle" RelativePanel.AlignLeftWith="movieTitle" Text="{Binding movie.synopsys}" RelativePanel.AlignRightWithPanel="True" Margin="300,40,100,0"  FontSize="25" TextWrapping="Wrap" MaxLines="7" TextTrimming="WordEllipsis" TextReadingOrder="DetectFromContent" />
             <TextBlock x:Name="movieDuration" RelativePanel.Below="movieDescription" RelativePanel.AlignLeftWith="movieDescription" Margin="300,40,0,0" FontSize="35"  FontFamily="{StaticResource OpenSans}" Text="{Binding movie.duration}"/>
             <TextBlock x:Name="movieYear" RelativePanel.Below="movieDescription" RelativePanel.AlignRightWithPanel="True" Margin="0,40,100,0" FontSize="35"  FontFamily="{StaticResource OpenSans}" Text="{Binding movie.yearOfRelease}"/>
         </RelativePanel>

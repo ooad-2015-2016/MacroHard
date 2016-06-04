@@ -23,6 +23,14 @@ namespace ShEM.BazaPodataka.Static_variables
         private string songAPIAdditions= "&type=track&limit=1";
         private string bookAPI= "https://www.googleapis.com/books/v1/volumes?q=";
         private string bookAPIAdditions = "&maxResults=1";
+        private static string search;
+
+        public string Search
+        {
+            get { return search; }
+            set { search = value; }
+        }
+
 
         public string BookAPIAdditions
         {

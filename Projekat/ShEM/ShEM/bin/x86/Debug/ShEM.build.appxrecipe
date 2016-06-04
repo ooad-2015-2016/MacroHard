@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0d08c055-59c0-4ae9-b90a-eb381308083f</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.exe">
       <PackagePath>entrypoint\ShEM.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
@@ -399,64 +399,64 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\BackGround.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\BackGround.jpg">
       <PackagePath>Assets\BackGround.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\DefaultBook.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\DefaultBook.jpg">
       <PackagePath>Assets\DefaultBook.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\DefaultMovie.jpg">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\DefaultMovie.jpg">
       <PackagePath>Assets\DefaultMovie.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\DefaultSong.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\DefaultSong.png">
       <PackagePath>Assets\DefaultSong.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\DefaultUser.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\DefaultUser.png">
       <PackagePath>Assets\DefaultUser.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Fonts\Calligraffitti-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Fonts\Calligraffitti-Regular.ttf">
       <PackagePath>Assets\Fonts\Calligraffitti-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Bold.ttf">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Bold.ttf">
       <PackagePath>Assets\Fonts\OpenSans-Bold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Regular.ttf">
       <PackagePath>Assets\Fonts\OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Italic.ttf">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Assets\Fonts\OpenSans-Italic.ttf">
       <PackagePath>Assets\Fonts\OpenSans-Italic.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
@@ -465,16 +465,16 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\bin\x86\Debug\ShEM.xr.xml">
       <PackagePath>ShEM.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Desktop\Sassenach\Projekat\ShEM\ShEM\bin\x86\Debug\Core\ShEM.exe">
+    <AppxPackagedFile Include="C:\Users\User\Desktop\McFassy\Projekat\ShEM\ShEM\bin\x86\Debug\Core\ShEM.exe">
       <PackagePath>ShEM.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

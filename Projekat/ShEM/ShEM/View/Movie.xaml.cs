@@ -1,4 +1,5 @@
-﻿using ShEM.ViewModel;
+﻿using ShEM.BazaPodataka.Static_variables;
+using ShEM.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,14 +22,15 @@ namespace ShEM.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage5 : Page
+    public sealed partial class Movie : Page
     {
         MovieViewModel mvm;
-        public BlankPage5()
+        StaticVariablesClass statika = new StaticVariablesClass();
+        public Movie()
         {
             this.InitializeComponent();
             mvm = new MovieViewModel();
-            mvm.naziv = "harry potter";
+            mvm.naziv = statika.Search;
             metoda();
         }
         public async void metoda()

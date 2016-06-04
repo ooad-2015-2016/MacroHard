@@ -38,11 +38,12 @@
             <RelativePanel x:Name="SearchContainer" RelativePanel.RightOf="ProfilePicture" RelativePanel.AlignRightWithPanel="True" Height="250" >
                 <AutoSuggestBox  x:Name="Search" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" QueryIcon="Find" PlaceholderText="Search..." Height="33"  Width="1000" />
                 <StackPanel RelativePanel.Below="Search" RelativePanel.AlignHorizontalCenterWith="Search" Orientation="Horizontal">
-                    <CheckBox x:Name="PeopleCheckBox"  Margin="0,0,20,0" IsChecked="True">People</CheckBox>
-                    <CheckBox x:Name="BooksCheckBox"   Margin="0,0,20,0">Books</CheckBox>
-                    <CheckBox x:Name="MoviesCheckBox"  Margin="0,0,20,0">Movies</CheckBox>
-                    <CheckBox x:Name="SongsCheckBox"   Margin="0,0,20,0">Songs</CheckBox>
+                    <CheckBox x:Name="PeopleCheckBox"  Margin="0,0,20,0" IsChecked="True" Checked="PeopleCheck">People</CheckBox>
+                    <CheckBox x:Name="BooksCheckBox"   Margin="0,0,20,0" Checked="BooksCheck">Books</CheckBox>
+                    <CheckBox x:Name="MoviesCheckBox"  Margin="0,0,20,0" Checked="MoviesCheck">Movies</CheckBox>
+                    <CheckBox x:Name="SongsCheckBox"   Margin="0,0,20,0" Checked="SongsCheck">Songs</CheckBox>
                 </StackPanel>
+                <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="46" Margin="79,96,-95,-110" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.556,0.446" Click="button_Click"/>
             </RelativePanel>
             <StackPanel x:Name="Menu" Orientation="Vertical" RelativePanel.Below="ProfilePicture" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="251">
                 <Button  HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" Background="{x:Null}" Padding="8,10" BorderThickness="0" Click="NewsFeedClick">

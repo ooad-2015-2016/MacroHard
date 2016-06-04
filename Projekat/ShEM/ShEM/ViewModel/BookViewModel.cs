@@ -31,7 +31,6 @@ namespace ShEM.ViewModel
         {
             book = await api.getBook(naziv);
             await LoadImageAsync();
-
         }
 
 

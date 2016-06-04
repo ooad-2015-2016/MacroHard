@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:ShEM.ViewModel"
     xmlns:Views="using:ShEM.BazaPodataka.Views"
-    x:Class="ShEM.View.BlankPage2"
+    x:Class="ShEM.View.Book"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -21,7 +21,8 @@
         </Grid.Background>
         
         <RelativePanel Margin="100" Background="#B2FFFFFF" >
-        <Image x:Name="bookCover" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400"  Source="ms-appx:///Assets/DefaultBook.jpg" DataContext="{Binding Poster}"/>
+            <Image x:Name="bookCover" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0" Width="400"  Source="{Binding Poster}" />
+            
             <StackPanel RelativePanel.AlignLeftWith="bookDescription" Margin="300,40,100,0" RelativePanel.Below="bookDescription" x:Name="bookGenres" Orientation="Horizontal">
             </StackPanel>
             <TextBlock x:Name="bookAuthor" FontFamily="{StaticResource OpenSans}"  RelativePanel.RightOf="bookCover" RelativePanel.AlignTopWith="bookCover" TextWrapping="Wrap" Text="{Binding Mode=OneWay}" FontSize="30" Margin="300,0,20,0" DataContext="{Binding book.author}"  />

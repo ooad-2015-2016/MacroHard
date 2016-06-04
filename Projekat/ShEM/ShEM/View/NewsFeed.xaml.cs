@@ -42,21 +42,34 @@ namespace ShEM.View
         private void PeopleCheck(object sender, RoutedEventArgs e)
         {
 
-
+            //SongsCheckBox.IsChecked = false;
+            //BooksCheckBox.IsChecked = false;
+            //MoviesCheckBox.IsChecked = false;
         }
 
         private void BooksCheck(object sender, RoutedEventArgs e)
         {
-
+            //SongsCheckBox.s
+            //SongsCheckBox.IsChecked = false;
+            //PeopleCheckBox.IsChecked = false;
+            //MoviesCheckBox.IsChecked = false;
         }
 
         private void SongsCheck(object sender, RoutedEventArgs e)
         {
-
+            //SongsCheckBox.IsChecked = true;
+            //BooksCheckBox.IsChecked = false;
+            //PeopleCheckBox.IsChecked = false;
+            //MoviesCheckBox.IsChecked = false;
         }
 
         private void MoviesCheck(object sender, RoutedEventArgs e)
         {
+
+            //SongsCheckBox.IsChecked = false;
+            //BooksCheckBox.IsChecked = false;
+            //PeopleCheckBox.IsChecked = false;
+            //MoviesCheckBox.IsChecked = true;
 
         }
 
@@ -82,6 +95,27 @@ namespace ShEM.View
             mcvm.povuciKolekcije();
 
             
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            statika.Search = Search.Text.ToString();
+            if (BooksCheckBox.IsChecked == true)
+            {                
+                Frame currentFrame = Window.Current.Content as Frame;
+                currentFrame.Navigate(typeof(Book));
+            }
+            else if (MoviesCheckBox.IsChecked == true)
+            {
+                Frame currentFrame = Window.Current.Content as Frame;
+                currentFrame.Navigate(typeof(Movie));
+            }
+            else if (SongsCheckBox.IsChecked == true)
+            {
+                Frame currentFrame = Window.Current.Content as Frame;
+                currentFrame.Navigate(typeof(Song));
+            }
+            else { }
         }
     }
 }
