@@ -12,23 +12,27 @@ using Newtonsoft.Json;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Popups;
 using Windows.Data.Json;
+using System.Collections.ObjectModel;
 
 namespace ShEM.ViewModel
 {
     public class MyCollectionsViewModel
     {
-        public List<Collection> Mycollections {  get; set; }
+       // public List<Collection> Mycollections {  get; set; }
+        public ObservableCollection<Collection> Mycollections { get; set; }
+
         private StaticVariablesClass statika = new StaticVariablesClass();
 
         public MyCollectionsViewModel()
         {
-           
+            // Mycollections = new List<Collection>();
+            Mycollections = new ObservableCollection<Collection>();
         }
-        public async Task<List<Collection>> povuciKolekcije()
+        public async void povuciKolekcije()
         {
             HttpClient client = new HttpClient();
 
-            String query = "UserCollections?" + "id=" + statika.userID;
+            String query = "UserCollections?" + "id=" + statika.userID.ToString();
             System.Diagnostics.Debug.WriteLine(query);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -46,24 +50,35 @@ namespace ShEM.ViewModel
                     {
                         int id = (int)CollectionData.GetObjectAt(i).GetNamedNumber("id");
                         String name = CollectionData.GetObjectAt(i).GetNamedString("collection_name");
-                        String description = CollectionData.GetObjectAt(i).GetNamedString("description", "");
-                        Boolean visible  = CollectionData.GetObjectAt(i).GetNamedBoolean("visible",true);
+                        IJsonValue nullalbedescription = CollectionData.GetObjectAt(i).GetNamedValue("description");
+                        String description = "";
+                        if (nullalbedescription.ValueType != JsonValueType.Null)
+                        {
+                            description = nullalbedescription.GetString();
+                        }          
+                        int visibleinteger  = (int)CollectionData.GetObjectAt(i).GetNamedNumber("visible");
+                        Boolean visible = false;
+                        if (visibleinteger == 1)
+                        {
+                            visible = true;
+                        }
                         Mycollections.Add(new Collection(id, name, description, visible));
                     }
-                    return Mycollections;
+                  //  return Mycollections;
 
                 }
                 else
                 {
                     var dialog = new MessageDialog("Server error");
                     await dialog.ShowAsync();
-                    return new List<Collection>();                }
+                    //  return new List<Collection>();            
+                }
             }
             catch (HttpRequestException e)
             {
                 var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
-                return new List<Collection>();
+               // return new List<Collection>();
             }
 
         }

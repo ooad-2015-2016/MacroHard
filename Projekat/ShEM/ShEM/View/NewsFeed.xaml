@@ -28,9 +28,6 @@
         <Color x:Key="Color1">#FFD32F2E</Color>
     </Page.Resources>
 
-    <Page.DataContext>
-        <ViewModel:NewsFeedViewModel/>
-    </Page.DataContext>
 
     <Grid DataContext="{Binding}">
         <Grid.Background>
@@ -97,11 +94,14 @@
                 </ListView>
             </RelativePanel>
             <RelativePanel x:Name="MyCollectionsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
-                <ListView x:Name="CollectionlistView" ItemsSource="{Binding MyCollections}" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"  >
+                <RelativePanel.DataContext>
+                    <ViewModel:MyCollectionsViewModel/>
+                </RelativePanel.DataContext>
+                    <ListView x:Name="CollectionlistView" ItemsSource="{Binding Mycollections}"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" >
                     <ListView.ItemTemplate >
                         <DataTemplate x:DataType="data:Collection">
-                            <RelativePanel>
-                                <TextBlock x:Name="Title" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="0,40,0,0" ></TextBlock> 
+                            <RelativePanel Height="100" Width="600" Background="White">
+                                <TextBlock x:Name="Title" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="0,40,0,0" Text="{Binding name}" ></TextBlock> 
                             </RelativePanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>

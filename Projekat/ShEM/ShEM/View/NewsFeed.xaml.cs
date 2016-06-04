@@ -79,7 +79,7 @@ namespace ShEM.View
         {
             NewsFeedPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Visible;
-            MyCollections = new List<Collection>(await mcvm.povuciKolekcije());
+            mcvm.povuciKolekcije();
 
             
         }
