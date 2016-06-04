@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ShEM.ViewModel;
 using ShEM.BazaPodataka.Static_variables;
+using ShEM.Model;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -25,13 +26,17 @@ namespace ShEM.View
     {
         
         NewsFeedViewModel nfvm;
+        MyCollectionsViewModel mcvm;
+        List<Collection> MyCollections;
         int state = 1;
         StaticVariablesClass statika = new StaticVariablesClass();
         public NewsFeed()
         {
             this.InitializeComponent();
             nfvm = new NewsFeedViewModel();
+            mcvm = new MyCollectionsViewModel();
             nfvm.getAllFriends();
+            MyCollections = new List<Collection>();
         }
 
         private void PeopleCheck(object sender, RoutedEventArgs e)
@@ -70,11 +75,13 @@ namespace ShEM.View
             MyCollectionsPanel.Visibility = Visibility.Collapsed;
             NewsFeedPanel.Visibility = Visibility.Visible;
         }
-        private void MyCollectionsClick(object sender, RoutedEventArgs e)
+        private async void MyCollectionsClick(object sender, RoutedEventArgs e)
         {
             NewsFeedPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Visible;
+            MyCollections = new List<Collection>(await mcvm.povuciKolekcije());
 
+            
         }
     }
 }

@@ -17,14 +17,14 @@ namespace ShEM.ViewModel
 {
     public class MyCollectionsViewModel
     {
-        public List<Collection> collections {  get; set; }
+        public List<Collection> Mycollections {  get; set; }
         private StaticVariablesClass statika = new StaticVariablesClass();
 
         public MyCollectionsViewModel()
         {
-            collections = statika.collections;
+           
         }
-        public async void povuciKolekcije()
+        public async Task<List<Collection>> povuciKolekcije()
         {
             HttpClient client = new HttpClient();
 
@@ -41,29 +41,32 @@ namespace ShEM.ViewModel
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
                     JsonArray CollectionData = JsonValue.Parse(stream).GetArray();
-                    statika.collections.Clear();
+                    Mycollections.Clear();
                     for (uint i = 0; i < CollectionData.Count; i++)
                     {
                         int id = (int)CollectionData.GetObjectAt(i).GetNamedNumber("id");
                         String name = CollectionData.GetObjectAt(i).GetNamedString("collection_name");
                         String description = CollectionData.GetObjectAt(i).GetNamedString("description", "");
                         Boolean visible  = CollectionData.GetObjectAt(i).GetNamedBoolean("visible",true);
-                        statika.collections.Add(new Collection(id, name, description, visible));
-
+                        Mycollections.Add(new Collection(id, name, description, visible));
                     }
+                    return Mycollections;
 
                 }
                 else
                 {
                     var dialog = new MessageDialog("Server error");
                     await dialog.ShowAsync();
-                }
+                    return new List<Collection>();                }
             }
             catch (HttpRequestException e)
             {
                 var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
+                return new List<Collection>();
             }
+
         }
     }
-}
+    }
+
