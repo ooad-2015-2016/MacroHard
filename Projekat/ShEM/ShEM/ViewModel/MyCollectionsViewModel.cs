@@ -11,6 +11,7 @@ using Windows.UI.Xaml;
 using Newtonsoft.Json;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Popups;
+using Windows.Data.Json;
 
 namespace ShEM.ViewModel
 {
@@ -27,7 +28,7 @@ namespace ShEM.ViewModel
         {
             HttpClient client = new HttpClient();
 
-            String query = "mycollections?" + "ID=" + statika.userID;
+            String query = "UserCollections?" + "id=" + statika.userID;
             System.Diagnostics.Debug.WriteLine(query);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -35,17 +36,22 @@ namespace ShEM.ViewModel
             try
             {
                 HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
-
                 //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
                 if (msg.IsSuccessStatusCode)
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
-                    dynamic dyn = JsonConvert.DeserializeObject(stream);
-                    int id = int.Parse( dyn["id"]);
-                    String name = dyn["collection_name"];
-                    String description = (dyn["description"] == null)? "": dyn["description"];
-                    Boolean visible = (dyn["visible"] == 1) ? true : false;
-                    statika.collections.Add(new Collection(id, name, description, visible));
+                    JsonArray CollectionData = JsonValue.Parse(stream).GetArray();
+                    statika.collections.Clear();
+                    for (uint i = 0; i < CollectionData.Count; i++)
+                    {
+                        int id = (int)CollectionData.GetObjectAt(i).GetNamedNumber("id");
+                        String name = CollectionData.GetObjectAt(i).GetNamedString("collection_name");
+                        String description = CollectionData.GetObjectAt(i).GetNamedString("description", "");
+                        Boolean visible  = CollectionData.GetObjectAt(i).GetNamedBoolean("visible",true);
+                        statika.collections.Add(new Collection(id, name, description, visible));
+
+                    }
+
                 }
                 else
                 {
