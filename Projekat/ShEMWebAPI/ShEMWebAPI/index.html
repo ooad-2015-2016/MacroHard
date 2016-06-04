@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ShEMWebAPI</title>
+</head>
+<body>
+
+    <div>
+        <h2>All Users</h2>
+        <ul id="users" />
+    </div>
+    <div>
+        <h2>Search Collections by UserID</h2>
+        <input type="text" id="userID" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+    </div>
+    <div>
+        <p id="collection" />
+        <h2>Collections</h2>
+        <ul id="collections" />
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+    var uri = 'api/users';
+
+    $(document).ready(function () {
+   
+      $.getJSON(uri)
+          .done(function (data) {
+
+            $.each(data, function (key, item) {
+              
+              $('<li>', { text: formatItem(item) }).appendTo($('#users'));
+            });
+          });
+    });
+
+    function formatItem(item) {
+      return item.UserID + '. ' + item.Username + ': ' + item.Email;
+    }
+    var uril = 'api/collections';
+
+    function formatItem1(item) {
+        return item.Name + ': ' +  item.Description;
+    }
+
+    function find() {
+        var id = $('#userID').val();
+        $('#collection').empty();
+        $('#collections').empty();
+        $.getJSON(uril + '/' + id)
+            .done(function (data) {
+                $.each(data, function (key, item) {
+                    $('<ul>', { text: formatItem1(item) }).appendTo($('#collections'));
+                });
+            })
+            .fail(function (jqXHR, textStatus, err) {
+                $('#collection').text('Error: ' + err);
+            });
+    }
+    </script>
+</body>
+</html>

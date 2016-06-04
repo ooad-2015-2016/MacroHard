@@ -15,7 +15,7 @@ Procesi
 
 	• Korisnik kreira vlastiti račun. U procesu kreiranja vlastitog računa, on mora unijeti sljedeće podatke: ime, prezime, username, e-mail adresa, šifra, sigurnosna provjera šifre (case sensitive) i caption check. Pored ovoga korisnik može, ali ne mora upload-ovati profilnu fotografiju. Korisnik će dobiti mail za verifikaciju računa.
 
-	• Korisniku je omogućena pretraga muzike, filmova, serija i knjiga. Korisnik može pretraživati multimediju i bazu preko search textbox-a i raznim mogućnostima filtriranja podataka, kao i QR kodom.
+	• Korisniku je omogućena pretraga muzike, filmova, serija i knjiga. Korisnik može pretraživati multimediju i bazu preko search textbox-a i raznim mogućnostima filtriranja podataka.
 
 	• Korisniku je omogućena pretraga drugih korisnika, preko search textbox-a, te dodavanja korisnika u following.
 
@@ -41,8 +41,6 @@ Funkcionalnosti:
 	• Mogućnost share-ovanja via bluetooth
 
 	• Mogućnost upload-ovanja slika, i korištenja kamere za instant upload (za profile picture)
-
-	• Mogućnost QR skeniranja
 
 	• Mogućnost pristupa statističkim podacima
 
