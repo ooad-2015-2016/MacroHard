@@ -75,3 +75,6 @@ Web servis koji pružamo klijentu je ShEMWebAPI
 https://github.com/ooad-2015-2016/MacroHard/tree/master/Projekat/ShEMWebAPI
 //dela trebaš dodati kod
 	
+# ShEM-Napomena
+
+S obzirom na problem s BhTelecom i host-anjem, preporuka je da se baza downloaduje lokalno i koristi. U slučajnu nemogućnosti istih akcija, članovi tima su spremni prikazati rad projekta uživo. S obzirom na to da su članovi tima prikazali rad baze, nadaju se da ponovno pokazivanje neće biti potrebno.
