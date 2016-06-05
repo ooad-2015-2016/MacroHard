@@ -133,27 +133,27 @@ namespace ShEM.ShEM_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[35];
-            _typeNameTable[0] = "ShEM.View.Login";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ShEM.ViewModel.SongViewModel";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "ShEM.Model.Song";
-            _typeNameTable[6] = "ShEM.Model.Article";
-            _typeNameTable[7] = "ShEM.Helpers.SongAPIParser";
-            _typeNameTable[8] = "Windows.UI.Xaml.Media.ImageSource";
-            _typeNameTable[9] = "String";
-            _typeNameTable[10] = "ShEM.View.Song";
-            _typeNameTable[11] = "ShEM.View.BlankPage11";
-            _typeNameTable[12] = "ShEM.BazaPodataka.Views.PictureConverter";
-            _typeNameTable[13] = "ShEM.ViewModel.BookViewModel";
-            _typeNameTable[14] = "ShEM.Model.Book";
-            _typeNameTable[15] = "ShEM.Helpers.BookAPIParser";
-            _typeNameTable[16] = "ShEM.View.Book";
-            _typeNameTable[17] = "ShEM.View.BlankPage3";
-            _typeNameTable[18] = "Windows.UI.Color";
-            _typeNameTable[19] = "System.ValueType";
-            _typeNameTable[20] = "Byte";
+            _typeNameTable[0] = "Windows.UI.Color";
+            _typeNameTable[1] = "System.ValueType";
+            _typeNameTable[2] = "Object";
+            _typeNameTable[3] = "Byte";
+            _typeNameTable[4] = "ShEM.View.Help";
+            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "ShEM.View.Login";
+            _typeNameTable[8] = "ShEM.ViewModel.SongViewModel";
+            _typeNameTable[9] = "ShEM.Model.Song";
+            _typeNameTable[10] = "ShEM.Model.Article";
+            _typeNameTable[11] = "ShEM.Helpers.SongAPIParser";
+            _typeNameTable[12] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[13] = "String";
+            _typeNameTable[14] = "ShEM.View.Song";
+            _typeNameTable[15] = "ShEM.View.BlankPage11";
+            _typeNameTable[16] = "ShEM.BazaPodataka.Views.PictureConverter";
+            _typeNameTable[17] = "ShEM.ViewModel.BookViewModel";
+            _typeNameTable[18] = "ShEM.Model.Book";
+            _typeNameTable[19] = "ShEM.Helpers.BookAPIParser";
+            _typeNameTable[20] = "ShEM.View.Book";
             _typeNameTable[21] = "ShEM.ViewModel.MyCollectionsViewModel";
             _typeNameTable[22] = "System.Collections.ObjectModel.ObservableCollection`1<ShEM.Model.Collection>";
             _typeNameTable[23] = "System.Collections.ObjectModel.Collection`1<ShEM.Model.Collection>";
@@ -170,27 +170,27 @@ namespace ShEM.ShEM_XamlTypeInfo
             _typeNameTable[34] = "ShEM.MainPage";
 
             _typeTable = new global::System.Type[35];
-            _typeTable[0] = typeof(global::ShEM.View.Login);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ShEM.ViewModel.SongViewModel);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::ShEM.Model.Song);
-            _typeTable[6] = typeof(global::ShEM.Model.Article);
-            _typeTable[7] = typeof(global::ShEM.Helpers.SongAPIParser);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
-            _typeTable[9] = typeof(global::System.String);
-            _typeTable[10] = typeof(global::ShEM.View.Song);
-            _typeTable[11] = typeof(global::ShEM.View.BlankPage11);
-            _typeTable[12] = typeof(global::ShEM.BazaPodataka.Views.PictureConverter);
-            _typeTable[13] = typeof(global::ShEM.ViewModel.BookViewModel);
-            _typeTable[14] = typeof(global::ShEM.Model.Book);
-            _typeTable[15] = typeof(global::ShEM.Helpers.BookAPIParser);
-            _typeTable[16] = typeof(global::ShEM.View.Book);
-            _typeTable[17] = typeof(global::ShEM.View.BlankPage3);
-            _typeTable[18] = typeof(global::Windows.UI.Color);
-            _typeTable[19] = typeof(global::System.ValueType);
-            _typeTable[20] = typeof(global::System.Byte);
+            _typeTable[0] = typeof(global::Windows.UI.Color);
+            _typeTable[1] = typeof(global::System.ValueType);
+            _typeTable[2] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::System.Byte);
+            _typeTable[4] = typeof(global::ShEM.View.Help);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::ShEM.View.Login);
+            _typeTable[8] = typeof(global::ShEM.ViewModel.SongViewModel);
+            _typeTable[9] = typeof(global::ShEM.Model.Song);
+            _typeTable[10] = typeof(global::ShEM.Model.Article);
+            _typeTable[11] = typeof(global::ShEM.Helpers.SongAPIParser);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[13] = typeof(global::System.String);
+            _typeTable[14] = typeof(global::ShEM.View.Song);
+            _typeTable[15] = typeof(global::ShEM.View.BlankPage11);
+            _typeTable[16] = typeof(global::ShEM.BazaPodataka.Views.PictureConverter);
+            _typeTable[17] = typeof(global::ShEM.ViewModel.BookViewModel);
+            _typeTable[18] = typeof(global::ShEM.Model.Book);
+            _typeTable[19] = typeof(global::ShEM.Helpers.BookAPIParser);
+            _typeTable[20] = typeof(global::ShEM.View.Book);
             _typeTable[21] = typeof(global::ShEM.ViewModel.MyCollectionsViewModel);
             _typeTable[22] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ShEM.Model.Collection>);
             _typeTable[23] = typeof(global::System.Collections.ObjectModel.Collection<global::ShEM.Model.Collection>);
@@ -239,18 +239,18 @@ namespace ShEM.ShEM_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_Login() { return new global::ShEM.View.Login(); }
-        private object Activate_3_SongViewModel() { return new global::ShEM.ViewModel.SongViewModel(); }
-        private object Activate_5_Song() { return new global::ShEM.Model.Song(); }
-        private object Activate_7_SongAPIParser() { return new global::ShEM.Helpers.SongAPIParser(); }
-        private object Activate_10_Song() { return new global::ShEM.View.Song(); }
-        private object Activate_11_BlankPage11() { return new global::ShEM.View.BlankPage11(); }
-        private object Activate_12_PictureConverter() { return new global::ShEM.BazaPodataka.Views.PictureConverter(); }
-        private object Activate_13_BookViewModel() { return new global::ShEM.ViewModel.BookViewModel(); }
-        private object Activate_14_Book() { return new global::ShEM.Model.Book(); }
-        private object Activate_15_BookAPIParser() { return new global::ShEM.Helpers.BookAPIParser(); }
-        private object Activate_16_Book() { return new global::ShEM.View.Book(); }
-        private object Activate_17_BlankPage3() { return new global::ShEM.View.BlankPage3(); }
+        private object Activate_4_Help() { return new global::ShEM.View.Help(); }
+        private object Activate_7_Login() { return new global::ShEM.View.Login(); }
+        private object Activate_8_SongViewModel() { return new global::ShEM.ViewModel.SongViewModel(); }
+        private object Activate_9_Song() { return new global::ShEM.Model.Song(); }
+        private object Activate_11_SongAPIParser() { return new global::ShEM.Helpers.SongAPIParser(); }
+        private object Activate_14_Song() { return new global::ShEM.View.Song(); }
+        private object Activate_15_BlankPage11() { return new global::ShEM.View.BlankPage11(); }
+        private object Activate_16_PictureConverter() { return new global::ShEM.BazaPodataka.Views.PictureConverter(); }
+        private object Activate_17_BookViewModel() { return new global::ShEM.ViewModel.BookViewModel(); }
+        private object Activate_18_Book() { return new global::ShEM.Model.Book(); }
+        private object Activate_19_BookAPIParser() { return new global::ShEM.Helpers.BookAPIParser(); }
+        private object Activate_20_Book() { return new global::ShEM.View.Book(); }
         private object Activate_21_MyCollectionsViewModel() { return new global::ShEM.ViewModel.MyCollectionsViewModel(); }
         private object Activate_22_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ShEM.Model.Collection>(); }
         private object Activate_23_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ShEM.Model.Collection>(); }
@@ -290,128 +290,7 @@ namespace ShEM.ShEM_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ShEM.View.Login
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_Login;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  ShEM.ViewModel.SongViewModel
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_SongViewModel;
-                userType.AddMemberName("song");
-                userType.AddMemberName("api");
-                userType.AddMemberName("Poster");
-                userType.AddMemberName("naziv");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Object
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  ShEM.Model.Song
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  ShEM.Model.Article
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.AddMemberName("articleID");
-                userType.AddMemberName("articleName");
-                userType.AddMemberName("image");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  ShEM.Helpers.SongAPIParser
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  Windows.UI.Xaml.Media.ImageSource
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  String
-                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  ShEM.View.Song
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Song;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 11:   //  ShEM.View.BlankPage11
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_BlankPage11;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 12:   //  ShEM.BazaPodataka.Views.PictureConverter
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_PictureConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  ShEM.ViewModel.BookViewModel
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_BookViewModel;
-                userType.AddMemberName("book");
-                userType.AddMemberName("api");
-                userType.AddMemberName("Poster");
-                userType.AddMemberName("naziv");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  ShEM.Model.Book
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 15:   //  ShEM.Helpers.BookAPIParser
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  ShEM.View.Book
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_Book;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 17:   //  ShEM.View.BlankPage3
-                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_BlankPage3;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 18:   //  Windows.UI.Color
+            case 0:   //  Windows.UI.Color
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -420,13 +299,134 @@ namespace ShEM.ShEM_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  System.ValueType
+            case 1:   //  System.ValueType
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 20:   //  Byte
+            case 2:   //  Object
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Byte
                 userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 4:   //  ShEM.View.Help
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Help;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  ShEM.View.Login
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  ShEM.ViewModel.SongViewModel
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_SongViewModel;
+                userType.AddMemberName("song");
+                userType.AddMemberName("api");
+                userType.AddMemberName("Poster");
+                userType.AddMemberName("naziv");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  ShEM.Model.Song
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  ShEM.Model.Article
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("articleID");
+                userType.AddMemberName("articleName");
+                userType.AddMemberName("image");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  ShEM.Helpers.SongAPIParser
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Windows.UI.Xaml.Media.ImageSource
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  String
+                xamlType = new global::ShEM.ShEM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  ShEM.View.Song
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_Song;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  ShEM.View.BlankPage11
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_BlankPage11;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  ShEM.BazaPodataka.Views.PictureConverter
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_16_PictureConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  ShEM.ViewModel.BookViewModel
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_17_BookViewModel;
+                userType.AddMemberName("book");
+                userType.AddMemberName("api");
+                userType.AddMemberName("Poster");
+                userType.AddMemberName("naziv");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  ShEM.Model.Book
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ShEM.Model.Article"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  ShEM.Helpers.BookAPIParser
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  ShEM.View.Book
+                userType = new global::ShEM.ShEM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_Book;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -534,125 +534,125 @@ namespace ShEM.ShEM_XamlTypeInfo
         }
 
 
-        private object get_0_SongViewModel_song(object instance)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            return that.song;
-        }
-        private void set_0_SongViewModel_song(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            that.song = (global::ShEM.Model.Song)Value;
-        }
-        private object get_1_SongViewModel_api(object instance)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            return that.api;
-        }
-        private void set_1_SongViewModel_api(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            that.api = (global::ShEM.Helpers.SongAPIParser)Value;
-        }
-        private object get_2_SongViewModel_Poster(object instance)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            return that.Poster;
-        }
-        private void set_2_SongViewModel_Poster(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
-        }
-        private object get_3_SongViewModel_naziv(object instance)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            return that.naziv;
-        }
-        private void set_3_SongViewModel_naziv(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.SongViewModel)instance;
-            that.naziv = (global::System.String)Value;
-        }
-        private object get_4_BookViewModel_book(object instance)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            return that.book;
-        }
-        private void set_4_BookViewModel_book(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            that.book = (global::ShEM.Model.Book)Value;
-        }
-        private object get_5_BookViewModel_api(object instance)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            return that.api;
-        }
-        private void set_5_BookViewModel_api(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            that.api = (global::ShEM.Helpers.BookAPIParser)Value;
-        }
-        private object get_6_BookViewModel_Poster(object instance)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            return that.Poster;
-        }
-        private void set_6_BookViewModel_Poster(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
-        }
-        private object get_7_BookViewModel_naziv(object instance)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            return that.naziv;
-        }
-        private void set_7_BookViewModel_naziv(object instance, object Value)
-        {
-            var that = (global::ShEM.ViewModel.BookViewModel)instance;
-            that.naziv = (global::System.String)Value;
-        }
-        private object get_8_Color_A(object instance)
+        private object get_0_Color_A(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.A;
         }
-        private void set_8_Color_A(object instance, object Value)
+        private void set_0_Color_A(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.A = (global::System.Byte)Value;
         }
-        private object get_9_Color_B(object instance)
+        private object get_1_Color_B(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.B;
         }
-        private void set_9_Color_B(object instance, object Value)
+        private void set_1_Color_B(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.B = (global::System.Byte)Value;
         }
-        private object get_10_Color_G(object instance)
+        private object get_2_Color_G(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.G;
         }
-        private void set_10_Color_G(object instance, object Value)
+        private void set_2_Color_G(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.G = (global::System.Byte)Value;
         }
-        private object get_11_Color_R(object instance)
+        private object get_3_Color_R(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.R;
         }
-        private void set_11_Color_R(object instance, object Value)
+        private void set_3_Color_R(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.R = (global::System.Byte)Value;
+        }
+        private object get_4_SongViewModel_song(object instance)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            return that.song;
+        }
+        private void set_4_SongViewModel_song(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            that.song = (global::ShEM.Model.Song)Value;
+        }
+        private object get_5_SongViewModel_api(object instance)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            return that.api;
+        }
+        private void set_5_SongViewModel_api(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            that.api = (global::ShEM.Helpers.SongAPIParser)Value;
+        }
+        private object get_6_SongViewModel_Poster(object instance)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            return that.Poster;
+        }
+        private void set_6_SongViewModel_Poster(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_7_SongViewModel_naziv(object instance)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            return that.naziv;
+        }
+        private void set_7_SongViewModel_naziv(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.SongViewModel)instance;
+            that.naziv = (global::System.String)Value;
+        }
+        private object get_8_BookViewModel_book(object instance)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            return that.book;
+        }
+        private void set_8_BookViewModel_book(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            that.book = (global::ShEM.Model.Book)Value;
+        }
+        private object get_9_BookViewModel_api(object instance)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            return that.api;
+        }
+        private void set_9_BookViewModel_api(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            that.api = (global::ShEM.Helpers.BookAPIParser)Value;
+        }
+        private object get_10_BookViewModel_Poster(object instance)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            return that.Poster;
+        }
+        private void set_10_BookViewModel_Poster(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            that.Poster = (global::Windows.UI.Xaml.Media.ImageSource)Value;
+        }
+        private object get_11_BookViewModel_naziv(object instance)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            return that.naziv;
+        }
+        private void set_11_BookViewModel_naziv(object instance, object Value)
+        {
+            var that = (global::ShEM.ViewModel.BookViewModel)instance;
+            that.naziv = (global::System.String)Value;
         }
         private object get_12_MyCollectionsViewModel_Mycollections(object instance)
         {
@@ -782,77 +782,77 @@ namespace ShEM.ShEM_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "ShEM.ViewModel.SongViewModel.song":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "song", "ShEM.Model.Song");
-                xamlMember.Getter = get_0_SongViewModel_song;
-                xamlMember.Setter = set_0_SongViewModel_song;
-                break;
-            case "ShEM.ViewModel.SongViewModel.api":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.SongAPIParser");
-                xamlMember.Getter = get_1_SongViewModel_api;
-                xamlMember.Setter = set_1_SongViewModel_api;
-                break;
-            case "ShEM.ViewModel.SongViewModel.Poster":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
-                xamlMember.Getter = get_2_SongViewModel_Poster;
-                xamlMember.Setter = set_2_SongViewModel_Poster;
-                break;
-            case "ShEM.ViewModel.SongViewModel.naziv":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
-                xamlMember.Getter = get_3_SongViewModel_naziv;
-                xamlMember.Setter = set_3_SongViewModel_naziv;
-                break;
-            case "ShEM.ViewModel.BookViewModel.book":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "book", "ShEM.Model.Book");
-                xamlMember.Getter = get_4_BookViewModel_book;
-                xamlMember.Setter = set_4_BookViewModel_book;
-                break;
-            case "ShEM.ViewModel.BookViewModel.api":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.BookAPIParser");
-                xamlMember.Getter = get_5_BookViewModel_api;
-                xamlMember.Setter = set_5_BookViewModel_api;
-                break;
-            case "ShEM.ViewModel.BookViewModel.Poster":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
-                xamlMember.Getter = get_6_BookViewModel_Poster;
-                xamlMember.Setter = set_6_BookViewModel_Poster;
-                break;
-            case "ShEM.ViewModel.BookViewModel.naziv":
-                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
-                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
-                xamlMember.Getter = get_7_BookViewModel_naziv;
-                xamlMember.Setter = set_7_BookViewModel_naziv;
-                break;
             case "Windows.UI.Color.A":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "A", "Byte");
-                xamlMember.Getter = get_8_Color_A;
-                xamlMember.Setter = set_8_Color_A;
+                xamlMember.Getter = get_0_Color_A;
+                xamlMember.Setter = set_0_Color_A;
                 break;
             case "Windows.UI.Color.B":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "B", "Byte");
-                xamlMember.Getter = get_9_Color_B;
-                xamlMember.Setter = set_9_Color_B;
+                xamlMember.Getter = get_1_Color_B;
+                xamlMember.Setter = set_1_Color_B;
                 break;
             case "Windows.UI.Color.G":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "G", "Byte");
-                xamlMember.Getter = get_10_Color_G;
-                xamlMember.Setter = set_10_Color_G;
+                xamlMember.Getter = get_2_Color_G;
+                xamlMember.Setter = set_2_Color_G;
                 break;
             case "Windows.UI.Color.R":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "R", "Byte");
-                xamlMember.Getter = get_11_Color_R;
-                xamlMember.Setter = set_11_Color_R;
+                xamlMember.Getter = get_3_Color_R;
+                xamlMember.Setter = set_3_Color_R;
+                break;
+            case "ShEM.ViewModel.SongViewModel.song":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "song", "ShEM.Model.Song");
+                xamlMember.Getter = get_4_SongViewModel_song;
+                xamlMember.Setter = set_4_SongViewModel_song;
+                break;
+            case "ShEM.ViewModel.SongViewModel.api":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.SongAPIParser");
+                xamlMember.Getter = get_5_SongViewModel_api;
+                xamlMember.Setter = set_5_SongViewModel_api;
+                break;
+            case "ShEM.ViewModel.SongViewModel.Poster":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
+                xamlMember.Getter = get_6_SongViewModel_Poster;
+                xamlMember.Setter = set_6_SongViewModel_Poster;
+                break;
+            case "ShEM.ViewModel.SongViewModel.naziv":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.SongViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
+                xamlMember.Getter = get_7_SongViewModel_naziv;
+                xamlMember.Setter = set_7_SongViewModel_naziv;
+                break;
+            case "ShEM.ViewModel.BookViewModel.book":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "book", "ShEM.Model.Book");
+                xamlMember.Getter = get_8_BookViewModel_book;
+                xamlMember.Setter = set_8_BookViewModel_book;
+                break;
+            case "ShEM.ViewModel.BookViewModel.api":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "api", "ShEM.Helpers.BookAPIParser");
+                xamlMember.Getter = get_9_BookViewModel_api;
+                xamlMember.Setter = set_9_BookViewModel_api;
+                break;
+            case "ShEM.ViewModel.BookViewModel.Poster":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "Poster", "Windows.UI.Xaml.Media.ImageSource");
+                xamlMember.Getter = get_10_BookViewModel_Poster;
+                xamlMember.Setter = set_10_BookViewModel_Poster;
+                break;
+            case "ShEM.ViewModel.BookViewModel.naziv":
+                userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.BookViewModel");
+                xamlMember = new global::ShEM.ShEM_XamlTypeInfo.XamlMember(this, "naziv", "String");
+                xamlMember.Getter = get_11_BookViewModel_naziv;
+                xamlMember.Setter = set_11_BookViewModel_naziv;
                 break;
             case "ShEM.ViewModel.MyCollectionsViewModel.Mycollections":
                 userType = (global::ShEM.ShEM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShEM.ViewModel.MyCollectionsViewModel");

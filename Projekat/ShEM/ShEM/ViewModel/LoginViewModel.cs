@@ -43,46 +43,87 @@ namespace ShEM.ViewModel
             }
         }
 
-        public async  void povuciUsera()
+        public async void povuciUsera()
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(NewsFeed));
             HttpClient client = new HttpClient();
 
-            String query = "login?" + "username=" + userInfo.Replace(' ', '+') + "&password=" + pass.Replace(' ', '+');
+            if (userInfo != null && pass != null && userInfo != "" && pass != "" && userInfo != " " && pass != " ")
+            {
+                String query = "login?" + "username=" + userInfo.Replace(' ', '+') + "&password=" + pass.Replace(' ', '+');
+                System.Diagnostics.Debug.WriteLine(query);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
+                try
+                {
+                    HttpResponseMessage msg = await client.GetAsync(query);
+                    if (msg.IsSuccessStatusCode)
+                    {
+                        String stream = await msg.Content.ReadAsStringAsync();
+                        dynamic dyn = JsonConvert.DeserializeObject(stream);
+                        user.userID = dyn["id"];
+                        user.email = dyn["email"];
+                        user.username = dyn["username"];
+                        Frame rFrame = Window.Current.Content as Frame;
+                        rFrame.Navigate(typeof(NewsFeed));
+                    }
+                    else
+                    {
+                        //Vec gotova validacija na konto cinjenice da nece biti povuceni podaci o korisniku iz baze,
+                        //vec ce se ispisati poruka o nepravilnosti unijetih podataka
+                        var dialog = new MessageDialog("Your access data is not valid, please try again");
+                        await dialog.ShowAsync();
+                    }
+                    this.assignUser();
+                }
+                catch (HttpRequestException e)
+                {
+                    var dialog = new MessageDialog(e.StackTrace.ToString());
+                    await dialog.ShowAsync();
+                }
+            }
+
+            else
+            {
+                //validacija na konto cinjenice da se moze desiti da korisnik posalje zahtjev za login
+                //medjutim nije unio sve potrebne podatke
+                var dialog = new MessageDialog("There is some input data missing, please try again!");
+                await dialog.ShowAsync();
+            }
+        }
+
+        string retStr;
+        public async Task<string> validirajEmailUsera(string _email)
+        {
+            HttpClient client = new HttpClient();
+
+            String query = "login?" + "username=" + _email;
             System.Diagnostics.Debug.WriteLine(query);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
             try
             {
-                HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
-
-                //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+                HttpResponseMessage msg = await client.GetAsync(query);
                 if (msg.IsSuccessStatusCode)
                 {
                     String stream = await msg.Content.ReadAsStringAsync();
                     dynamic dyn = JsonConvert.DeserializeObject(stream);
-                    user.userID = dyn["id"];
-                    user.email = dyn["email"];
-                    user.username = dyn["username"];
-                    Frame rFrame = Window.Current.Content as Frame;
-                    rFrame.Navigate(typeof(NewsFeed));
+                    retStr = dyn["email"];
                 }
                 else
                 {
-                    var dialog = new MessageDialog("Your access data is not valid, please try again");
+                    var dialog = new MessageDialog("No such E-mail, please try again");
                     await dialog.ShowAsync();
                 }
-                this.assignUser();
             }
             catch (HttpRequestException e)
             {
                 var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
             }
+            return retStr;
         }
-        
 
         public void assignUser()
         {
@@ -91,6 +132,6 @@ namespace ShEM.ViewModel
             statika.profilePic = user.profilePic;
             statika.collections = user.collections;
             statika.email = user.email;
-        }
+        }        
     }
 }

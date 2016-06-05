@@ -37,9 +37,7 @@ namespace ShEM.ViewModel
             String query = "register?" + "username=" + username.Replace(' ', '+') + "&email=" + email.Replace(' ','+') + "&password=" + password.Replace(' ', '+');
             try
             {
-                HttpResponseMessage msg = await client.GetAsync(query); //treba dodati korektan url
-
-                //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+                HttpResponseMessage msg = await client.GetAsync(query);
                 if (msg.IsSuccessStatusCode)
                 {
                     String stream = await msg.Content.ReadAsStringAsync();

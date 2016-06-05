@@ -146,8 +146,12 @@
     <Compile Include="ViewModel\MovieViewModel.cs" />
     <Compile Include="ViewModel\MyCollectionsViewModel.cs" />
     <Compile Include="ViewModel\NewsFeedViewModel.cs" />
+    <Compile Include="ViewModel\RegisterViewModel.cs" />
     <Compile Include="ViewModel\SongViewModel.cs" />
     <Compile Include="ViewModel\UsersFeedViewModel.cs" />
+    <Compile Include="View\Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -159,9 +163,6 @@
     </Compile>
     <Compile Include="View\Book.xaml.cs">
       <DependentUpon>Book.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\EditAccount.xaml.cs">
-      <DependentUpon>EditAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\NewsFeed.xaml.cs">
       <DependentUpon>NewsFeed.xaml</DependentUpon>
@@ -193,6 +194,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\Help.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -206,10 +211,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Book.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\EditAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
