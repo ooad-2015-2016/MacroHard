@@ -27,6 +27,7 @@ namespace ShEM.View
 
         NewsFeedViewModel nfvm;
         MyCollectionsViewModel mcvm;
+        SearchResultViewModel srvm;
         List<Collection> MyCollections;
         int state = 1;
         StaticVariablesClass statika = new StaticVariablesClass();
@@ -35,7 +36,7 @@ namespace ShEM.View
             this.InitializeComponent();
             nfvm = new NewsFeedViewModel();
             mcvm = new MyCollectionsViewModel();
-            nfvm.getAllFriends();
+            srvm = new SearchResultViewModel();
             MyCollections = new List<Collection>();
         }
 
@@ -52,16 +53,23 @@ namespace ShEM.View
 
         private void NewsFeedClick(object sender, RoutedEventArgs e)
         {
+            SearchResultsPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Collapsed;
             SettingsPanel.Visibility = Visibility.Collapsed;
             NewsFeedPanel.Visibility = Visibility.Visible;
+            nfvm.getNewsFeed();
+            NewsFeedPanel.DataContext = nfvm;
+
+
         }
         private void MyCollectionsClick(object sender, RoutedEventArgs e)
         {
+            SearchResultsPanel.Visibility = Visibility.Collapsed;
             NewsFeedPanel.Visibility = Visibility.Collapsed;
             SettingsPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Visible;
             mcvm.povuciKolekcije();
+            MyCollectionsPanel.DataContext = mcvm;
         }
         private void HelpCLick(object sender, RoutedEventArgs e)
         {
@@ -71,6 +79,8 @@ namespace ShEM.View
         }
         private void SettingsClick(object sender, RoutedEventArgs e)
         {
+            SearchResultsPanel.Visibility = Visibility.Collapsed;
+
             NewsFeedPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Collapsed;
             SettingsPanel.Visibility = Visibility.Visible;
@@ -121,10 +131,38 @@ namespace ShEM.View
                 Frame currentFrame = Window.Current.Content as Frame;
                 currentFrame.Navigate(typeof(Song));
             }
-            else { }
+            else {
+                MyCollectionsPanel.Visibility = Visibility.Collapsed;
+                SettingsPanel.Visibility = Visibility.Collapsed;
+                NewsFeedPanel.Visibility = Visibility.Collapsed;
+                SearchResultsPanel.Visibility = Visibility.Visible;
+                srvm.Pretrazi(statika.Search);
+                SearchResultsPanel.DataContext = srvm;
+
+
+            }
 
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button mojBTN = (Button)sender;
+            System.Diagnostics.Debug.WriteLine(mojBTN.Tag.ToString());
+            srvm.FollowUsera(mojBTN.Tag.ToString());
+          //  mojBTN.IsEnabled = false;
 
+        }
+
+        private void LikeCollection(object sender, RoutedEventArgs e)
+        {
+            Button mojBTN = (Button)sender;
+            System.Diagnostics.Debug.WriteLine(mojBTN.Tag.ToString());
+            nfvm.LikeCollection(mojBTN.Tag.ToString());
+        }
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

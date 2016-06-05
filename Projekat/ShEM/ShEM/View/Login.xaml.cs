@@ -72,7 +72,9 @@ namespace ShEM.View
 
         private void SignInFun(object sender, RoutedEventArgs e)
         {
-            SlideInRegister.Begin();
+
+            RegisterForm.Visibility = Visibility.Visible;
+
             //this.ValidateUserRegistrationEmail();
         }
 

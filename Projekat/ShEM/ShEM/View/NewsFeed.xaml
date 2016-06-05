@@ -65,6 +65,7 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                 </Button>
+  
                 <Button Content="Settings" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" BorderBrush="{x:Null}" Background="{x:Null}" Padding="8,10" BorderThickness="0" Click="SettingsClick">
                     <Button.ContentTemplate>
                         <DataTemplate>
@@ -95,12 +96,49 @@
                         </DataTemplate>
                     </Button.ContentTemplate>
                 </Button>
+                <HyperlinkButton  NavigateUri="http://localhost:24794/" HorizontalAlignment="Stretch" Margin="0" FontFamily="{StaticResource OpenSans}" >
+                    <HyperlinkButton.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" >
+                                <SymbolIcon Symbol="Link"></SymbolIcon>
+                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0"> Web Service</TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </HyperlinkButton.ContentTemplate>
+                </HyperlinkButton>
             </StackPanel>
-            <RelativePanel x:Name="NewsFeedPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
-                <ListView x:Name="listView" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True"  RelativePanel.AlignLeftWithPanel="True"  RelativePanel.AlignTopWithPanel="True" ItemTemplate="{StaticResource UserTemplate}" ItemsSource="{Binding users}" >
-                    <ListView.BorderBrush>
-                        <SolidColorBrush Color="{StaticResource Color1}"/>
-                    </ListView.BorderBrush>
+            <RelativePanel x:Name="NewsFeedPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Visible">
+                <RelativePanel.DataContext>
+                    <ViewModel:NewsFeedViewModel/>
+                </RelativePanel.DataContext>
+                <ListView x:Name="listView" ItemsSource="{Binding collectionFeed}" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True"  RelativePanel.AlignLeftWithPanel="True"  RelativePanel.AlignTopWithPanel="True"  >
+                    <ListView.ItemTemplate >
+                        <DataTemplate x:DataType="data:Collection">
+                            <RelativePanel Height="Auto"   HorizontalAlignment="Center" Width="{Binding ActualWidth, ElementName=listView, Mode=OneWay}" >
+                                <StackPanel RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Orientation="Horizontal" Margin="20,0,0,0">
+                                    <StackPanel Orientation="Vertical" Margin="0,0,40,0">
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Collection Name:" Margin="10,0,0,0"></TextBlock>
+                                        <TextBlock  FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Title" Text="{Binding name}"></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Description:" Margin="10,0,0,0"></TextBlock>
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Email" Text="{Binding description}"></TextBlock>
+                                    </StackPanel>
+
+                                </StackPanel>
+                                <Button RelativePanel.AlignVerticalCenterWithPanel="True" Tag="{Binding collectionID}"  RelativePanel.AlignRightWithPanel="True" Margin="0,0,20,0" Click="LikeCollection" >
+                                    <Button.ContentTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" >
+                                                <SymbolIcon Symbol="Like"></SymbolIcon>
+                                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0">Like</TextBlock>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </Button.ContentTemplate>
+                                </Button>
+                            </RelativePanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
             </RelativePanel>
             <RelativePanel x:Name="MyCollectionsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
@@ -110,9 +148,19 @@
                 <ListView x:Name="CollectionlistView" ItemsSource="{Binding Mycollections}"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignBottomWithPanel="True" >
                     <ListView.ItemTemplate >
                         <DataTemplate x:DataType="data:Collection">
-                            <RelativePanel Height="100" Width="600" Background="White">
-                                <TextBlock x:Name="Title" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="0,40,0,0" Text="{Binding name}" ></TextBlock>
-                            </RelativePanel>
+                                <RelativePanel Height="Auto"   HorizontalAlignment="Center" Width="{Binding ActualWidth, ElementName=CollectionlistView, Mode=OneWay}" >
+                                    <StackPanel RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Orientation="Horizontal" Margin="20,0,0,0">
+                                        <StackPanel Orientation="Vertical" Margin="0,0,40,0">
+                                            <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Collection Name:" Margin="10,0,0,0"></TextBlock>
+                                            <TextBlock  FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Title" Text="{Binding name}"></TextBlock>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Description:" Margin="10,0,0,0"></TextBlock>
+                                            <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Email" Text="{Binding description}"></TextBlock>
+                                        </StackPanel>
+
+                                    </StackPanel>
+                                </RelativePanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
@@ -121,17 +169,54 @@
                 </RelativePanel>
                 <TextBlock x:Name="NoItems"></TextBlock>
             </RelativePanel>
-            <RelativePanel x:Name="SettingsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Visible">
-                <StackPanel RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="40,0,0,0">
-                  <Image   x:Name="UploadPicture" Source="ms-appx:///Assets/UploadPicture.png" Width="150" Height="150"></Image>
+            <RelativePanel x:Name="SettingsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
+                <StackPanel x:Name="ImageUpload" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="100,0,0,0">
+                    <Image   x:Name="UploadPicture" Source="ms-appx:///Assets/UploadPicture.png" Width="150" Height="150"></Image>
                     <Button Content="Upload Profile Picture" HorizontalAlignment="Stretch" Margin="0" Foreground="{StaticResource MainColor}" FontFamily="{StaticResource OpenSans}" Background="{x:Null}" BorderBrush="{x:Null}" Padding="8,10" BorderThickness="0" />
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBox x:Name="ChangeUsername" Margin="0,0,40,0" Width="300" ></TextBox>
+                <StackPanel RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" Margin="0,0,100,0" Orientation="Vertical">
+                    <TextBlock Text="New Username" Margin="20,0,0,0"></TextBlock>
+                    <TextBox x:Name="ChangeUsername" Margin="0,0,0,0" Width="300" ></TextBox>
+                    <TextBlock Text="New email:" Margin="20,20,0,0"></TextBlock>
                     <TextBox x:Name="ChangeEmail" Width="300"></TextBox>
+                    <Button Content="Sumbit" Margin="0,20,0,0" HorizontalAlignment="Right"></Button>
                 </StackPanel>
 
-            </RelativePanel> 
+            </RelativePanel>
+            <RelativePanel x:Name="SearchResultsPanel" RelativePanel.Below="SearchContainer" RelativePanel.RightOf="Menu" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Visibility="Collapsed">
+                <RelativePanel.DataContext>
+                    <ViewModel:SearchResultViewModel/>
+                </RelativePanel.DataContext>
+                <ListView x:Name="listView1"  ItemsSource="{Binding rezultat}"  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" Margin="40,0,40,0">
+                    <ListView.ItemTemplate >
+                        <DataTemplate x:DataType="data:User">
+                            <RelativePanel Height="Auto"   HorizontalAlignment="Center" Width="{Binding ActualWidth, ElementName=listView1, Mode=OneWay}" >
+                                <StackPanel RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Orientation="Horizontal" Margin="20,0,0,0">
+                                    <StackPanel Orientation="Vertical" Margin="0,0,40,0">
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Username:" Margin="10,0,0,0"></TextBlock>
+                                        <TextBlock  FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Title" Text="{Binding username}"></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  Text="Email:" Margin="10,0,0,0"></TextBlock>
+                                        <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="20"  x:Name="Email" Text="{Binding email}"></TextBlock>
+                                    </StackPanel>
+
+                                </StackPanel>
+                                <Button RelativePanel.AlignVerticalCenterWithPanel="True" Tag="{Binding userID}"  RelativePanel.AlignRightWithPanel="True" Margin="0,0,20,0" Click="Button_Click" >
+                                    <Button.ContentTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" >
+                                                <SymbolIcon Symbol="AddFriend"></SymbolIcon>
+                                                <TextBlock FontFamily="{StaticResource OpenSans}" FontSize="18" Margin="10,1,0,0">Follow</TextBlock>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </Button.ContentTemplate>
+                                </Button>
+                            </RelativePanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </RelativePanel>
         </RelativePanel>
 
 

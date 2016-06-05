@@ -78,7 +78,6 @@ namespace ShEM.ViewModel
             {
                 var dialog = new MessageDialog(e.StackTrace.ToString());
                 await dialog.ShowAsync();
-               // return new List<Collection>();
             }
 
         }

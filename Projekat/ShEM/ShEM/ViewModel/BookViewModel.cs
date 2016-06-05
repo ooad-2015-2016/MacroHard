@@ -61,8 +61,7 @@ namespace ShEM.ViewModel
         {
             HttpClient client = new HttpClient();
 
-            //String query = "AddBook";
-            String query = "AddBook?collection_id=" + id.ToString() + "&name=" + naziv.Replace(' ','+') + "&image=";
+            String query = "AddBook?collection_id=" + id.ToString() + "&name=" + book.articleName.Replace(' ','+') + "&image=";
             if (book.image != null) { query += Convert.ToBase64String(book.image); }
             query += "&author=";
             if(book.author!= null) { query += book.author.Replace(' ','+'); }
@@ -74,34 +73,13 @@ namespace ShEM.ViewModel
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
-            /*
-            JsonObject slanje = new JsonObject();
-            slanje.Add("collection_id", JsonValue.CreateNumberValue(id));
-            slanje.Add("name", JsonValue.CreateStringValue(naziv));
-            slanje.Add("image", JsonValue.CreateStringValue(Convert.ToBase64String( book.image)));
-            slanje.Add("author", JsonValue.CreateStringValue(book.author));
-            slanje.Add("publisher", JsonValue.CreateStringValue(book.publisher));
-                    
-            if (book._synopsys != null)
-            {
-                slanje.Add("synopsys", JsonValue.CreateStringValue(book._synopsys));
-            }
-            else
-            {
-                slanje.Add("synopsys", JsonValue.CreateNullValue());
-            }
-            */
             try
             {
-                // HttpResponseMessage msg = await client.PostAsync(query, new StringContent(slanje.ToString(),Encoding.UTF8, "application/json")); //treba dodati korektan url
                 HttpResponseMessage msg = await client.GetAsync(query);
-                //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
                 if (msg.IsSuccessStatusCode)
                 {
-
                     var dialog = new MessageDialog("Succecfully Sumbited");
                     await dialog.ShowAsync();
-
                 }
                 else
                 {

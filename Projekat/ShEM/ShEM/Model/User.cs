@@ -29,7 +29,14 @@ namespace ShEM.Model
         public byte[] _profilePic;
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+        public User() { }
+        public User(int _userID,string _username, string _email)
+        {
+            this._userID = _userID;
+            this._username = _username;
+            this._email = _email;
+         //   this._profilePic = _profilePic;
+        }
         private void notifyMeWhenPropertyChanged(string info)
         {
             if (PropertyChanged != null)
