@@ -15,7 +15,7 @@ namespace ShEMWebAPI.Controllers
     {
         List<User> users = new List<User>();
 
-        public async Task<List<User>> GetAllUsers()
+        public async Task<IHttpActionResult> GetAllUsers()
         {
            
             HttpClient client = new HttpClient();
@@ -37,8 +37,8 @@ namespace ShEMWebAPI.Controllers
                     {
                         User user = new User();
                         user.UserID = obj["id"];
-                        user.Email = obj["email"];
-                        user.Username = obj["username"];
+                        user.Email = obj["EMAIL"];
+                        user.Username = obj["USERNAME"];
                         users.Add(user);
                     }
                 }
@@ -46,9 +46,9 @@ namespace ShEMWebAPI.Controllers
             }
             catch (HttpRequestException e)
             {
-                //nisam 100% šta treba da ovo vrati
+                return NotFound();
             }
-            return users;
+            return Ok(users);
         }
        
         //public IHttpActionResult GetUser(int id)

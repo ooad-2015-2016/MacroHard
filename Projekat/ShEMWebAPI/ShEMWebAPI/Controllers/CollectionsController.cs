@@ -26,7 +26,7 @@ namespace ShEMWebAPI.Controllers
         {
             HttpClient client = new HttpClient();
 
-            String query = "UserCollections?" + "id=" + id.ToString() ;
+            String query = "userCollections?" + "id=" + id.ToString() ;
             System.Diagnostics.Debug.WriteLine(query);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
