@@ -45,7 +45,15 @@ Admin: Osoba koja ažurira podatke, održava bazu podataka kao i reguliše sadr�
 
 # ShEM HELP 
 
-Sistem ShEM predstavlja sistem interaktivnog kreiranja listi omiljenih filmova, knjiga i muzike. Prilikom pokretanja aplikacije korisnik se može prijaviti, te na taj način pristupiti svom NewsFeed-u. U slučaju da korisnik nema korisnički račun, pritiskom na dugme Register omogućeno mu je kreiranje vlastitog računa. Ako je korisnik zaboravio svoje korisničke podatke omogućeno mu je da povrati iste. Unutar vlastitog NewsFeed-a korisnik može pregledavati liste prijatelja, vlastitu kolekciju. - ovo ne mogu bez app završitiaaaaaa
+Sistem ShEM predstavlja sistem interaktivnog kreiranja listi omiljenih filmova, knjiga i muzike. Prilikom pokretanja aplikacije korisnik se može prijaviti, te na taj način pristupiti svom NewsFeed-u. U slučaju da korisnik nema korisnički račun, pritiskom na dugme Register omogućeno mu je kreiranje vlastitog računa. Ako je korisnik zaboravio svoje korisničke podatke omogućeno mu je da povrati iste. Unutar vlastitog NewsFeed-a korisnik može pregledavati liste prijatelja. Klikom na MyCollections korisniku je omogućeno da vidi vlastitu kolekciju. Klikom na dugme Settings omogućeno je da edit-uje vlastite korisničke podatke. Preko SearchBar-a korisniku je omogućena pretraga filmova, muzike, korisnika i knjiga. Unutar View-a za artikle korisnik može dodavati artikle u svoju kolekciju. Korisniku je omogućeno dodavanje drugih korisnika u prijatelje. Svim korisnicima je omogućen pristup ShEMWebAPI klikom na dugme. Sistem je prilagođen radu na svim Windows platformama. Hvala Vam na korištenju našeg sistema.
+ShEM sistem su razvili članovi tima MacroHard:
+
+	• Šeila Bećirović
+
+	• Edin Cerić
+
+	• Muhamed Delalić
+	
 
 # ShEM-Final info
 Baza koja se koristi je remote i implementirana je na eksternom uređaju Raspberry Pi.
