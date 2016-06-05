@@ -12,6 +12,11 @@ using Windows.Storage.Streams;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using ShEM.BazaPodataka.Static_variables;
+using System.Net.Http.Headers;
+using Windows.Data.Json;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml;
 
 namespace ShEM.ViewModel
 {
@@ -21,6 +26,8 @@ namespace ShEM.ViewModel
         public BookAPIParser api { get; set; }
         public ImageSource Poster { get; set; }
         public string naziv { get; set; }
+        public StaticVariablesClass statika = new StaticVariablesClass();
+
         public BookViewModel()
         {
             book = new Book();
@@ -32,7 +39,6 @@ namespace ShEM.ViewModel
             book = await api.getBook(naziv);
             await LoadImageAsync();
         }
-
 
         private async Task LoadImageAsync()
         {
@@ -51,5 +57,48 @@ namespace ShEM.ViewModel
                 Poster = image;
             }
         }
+        private async void AddToCollection(int id)
+        {
+            HttpClient client = new HttpClient();
+
+            String query = "AddBook";
+            System.Diagnostics.Debug.WriteLine(query);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.BaseAddress = new Uri("http://" + statika.getIP + statika.getPort.ToString() + "/");
+            JsonObject slanje = new JsonObject();
+            slanje.Add("collection_id", JsonValue.CreateNumberValue(id));
+            slanje.Add("name", JsonValue.CreateStringValue(naziv));
+            slanje.Add("image", JsonValue.CreateStringValue(Convert.ToBase64String( book.image)));
+            slanje.Add("author", JsonValue.CreateStringValue(book.publisher));
+            slanje.Add("publisher", JsonValue.CreateStringValue(book.publisher));
+            slanje.Add("synopsys", JsonValue.CreateStringValue(book.synopsys));
+            try
+            {
+                HttpResponseMessage msg = await client.PostAsync(query, new StringContent(slanje.ToString(),Encoding.UTF8, "application/json")); //treba dodati korektan url
+                //  client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("aplication/json"));
+                if (msg.IsSuccessStatusCode)
+                {
+
+                    var dialog = new MessageDialog("Succecfully Sumbited");
+                    await dialog.ShowAsync();
+
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Server error");
+                    await dialog.ShowAsync();
+                    //  return new List<Collection>();            
+                }
+            }
+            catch (HttpRequestException e)
+            {
+                var dialog = new MessageDialog(e.StackTrace.ToString());
+                await dialog.ShowAsync();
+                // return new List<Collection>();
+            }
+
+        }
+
     }
 }

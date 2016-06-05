@@ -24,7 +24,7 @@ namespace ShEM.View
     /// </summary>
     public sealed partial class NewsFeed : Page
     {
-        
+
         NewsFeedViewModel nfvm;
         MyCollectionsViewModel mcvm;
         List<Collection> MyCollections;
@@ -39,39 +39,6 @@ namespace ShEM.View
             MyCollections = new List<Collection>();
         }
 
-        private void PeopleCheck(object sender, RoutedEventArgs e)
-        {
-
-            //SongsCheckBox.IsChecked = false;
-            //BooksCheckBox.IsChecked = false;
-            //MoviesCheckBox.IsChecked = false;
-        }
-
-        private void BooksCheck(object sender, RoutedEventArgs e)
-        {
-            //SongsCheckBox.s
-            //SongsCheckBox.IsChecked = false;
-            //PeopleCheckBox.IsChecked = false;
-            //MoviesCheckBox.IsChecked = false;
-        }
-
-        private void SongsCheck(object sender, RoutedEventArgs e)
-        {
-            //SongsCheckBox.IsChecked = true;
-            //BooksCheckBox.IsChecked = false;
-            //PeopleCheckBox.IsChecked = false;
-            //MoviesCheckBox.IsChecked = false;
-        }
-
-        private void MoviesCheck(object sender, RoutedEventArgs e)
-        {
-
-            //SongsCheckBox.IsChecked = false;
-            //BooksCheckBox.IsChecked = false;
-            //PeopleCheckBox.IsChecked = false;
-            //MoviesCheckBox.IsChecked = true;
-
-        }
 
         private void LogoutClick(object sender, RoutedEventArgs e)
         {
@@ -86,22 +53,61 @@ namespace ShEM.View
         private void NewsFeedClick(object sender, RoutedEventArgs e)
         {
             MyCollectionsPanel.Visibility = Visibility.Collapsed;
+            SettingsPanel.Visibility = Visibility.Collapsed;
             NewsFeedPanel.Visibility = Visibility.Visible;
         }
-        private async void MyCollectionsClick(object sender, RoutedEventArgs e)
+        private void MyCollectionsClick(object sender, RoutedEventArgs e)
         {
             NewsFeedPanel.Visibility = Visibility.Collapsed;
+            SettingsPanel.Visibility = Visibility.Collapsed;
             MyCollectionsPanel.Visibility = Visibility.Visible;
             mcvm.povuciKolekcije();
+        }
+        private void HelpCLick(object sender, RoutedEventArgs e)
+        {
 
-            
+            Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(Help));
+        }
+        private void SettingsClick(object sender, RoutedEventArgs e)
+        {
+            NewsFeedPanel.Visibility = Visibility.Collapsed;
+            MyCollectionsPanel.Visibility = Visibility.Collapsed;
+            SettingsPanel.Visibility = Visibility.Visible;
+
+            ChangeUsername.Text = statika.username;
+            ChangeEmail.Text = statika.email;
+
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void Trazi(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                statika.Search = Search.Text.ToString();
+                if (BooksCheckBox.IsChecked == true)
+                {
+                    Frame currentFrame = Window.Current.Content as Frame;
+                    currentFrame.Navigate(typeof(Book));
+                }
+                else if (MoviesCheckBox.IsChecked == true)
+                {
+                    Frame currentFrame = Window.Current.Content as Frame;
+                    currentFrame.Navigate(typeof(Movie));
+                }
+                else if (SongsCheckBox.IsChecked == true)
+                {
+                    Frame currentFrame = Window.Current.Content as Frame;
+                    currentFrame.Navigate(typeof(Song));
+                }
+            }
+        }
+
+        private void Search_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
             statika.Search = Search.Text.ToString();
             if (BooksCheckBox.IsChecked == true)
-            {                
+            {
                 Frame currentFrame = Window.Current.Content as Frame;
                 currentFrame.Navigate(typeof(Book));
             }
@@ -116,6 +122,9 @@ namespace ShEM.View
                 currentFrame.Navigate(typeof(Song));
             }
             else { }
+
         }
+
+
     }
 }

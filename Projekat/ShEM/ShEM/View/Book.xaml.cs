@@ -38,5 +38,11 @@ namespace ShEM.View
             await bvm.getBook();
             DataContext = bvm;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(NewsFeed));
+        }
     }
 }

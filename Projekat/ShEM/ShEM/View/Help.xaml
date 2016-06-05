@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ShEM.View.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShEM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Color x:Key="Color1">#FFD32F2E</Color>
+    </Page.Resources>
+
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="{StaticResource BackGround}"></ImageBrush>
+        </Grid.Background>
+        <RelativePanel Margin="100" Background="#B2FFFFFF"  >
+            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,100,0,0" FontSize="70" FontFamily="{StaticResource TitleFont}"> Thank you!</TextBlock>
+
+        </RelativePanel>
+
+
+    </Grid>
+</Page>

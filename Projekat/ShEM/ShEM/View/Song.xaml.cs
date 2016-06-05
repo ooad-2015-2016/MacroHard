@@ -55,6 +55,12 @@ namespace ShEM.View
         {
             mediaElement1.Pause();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(NewsFeed));
+        }
     }
 }
 
