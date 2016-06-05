@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShEM.Helpers
 {
-    public class BluetoothCommunication
+    class BluetoothClient
     {
-        
     }
 }
