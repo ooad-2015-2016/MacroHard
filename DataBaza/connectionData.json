@@ -1,0 +1,6 @@
+{
+	"host"	 : "localhost",
+	"user"	 : "master",
+	"password" : "control",
+	"database" : "ShemDB"
+}
