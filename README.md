@@ -56,25 +56,42 @@ ShEM sistem su razvili članovi tima MacroHard:
 	
 
 # ShEM-Final info
+
 Baza koja se koristi je remote i implementirana je na eksternom uređaju Raspberry Pi.
-// git code - po mogućnosti dela mergaj dva repozitorija
+
+https://github.com/ooad-2015-2016/MacroHard/tree/master/DataBaza
 
 Potrebna validacija kod unosa korisničkih podataka:
+
 https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/View/Login.xaml.cs
 
 Eksterni servisi koji se koriste su: Google Books API, OMDB API, Spotify API:
+
 https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/Helpers/MovieAPIParser.cs
 https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/Helpers/BookAPIParser.cs
 https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/Helpers/SongAPIParser.cs
 
 Prilagođavanje mobilnom uređaju je urađeno korištenje adaptivnog layout-a, te korištenjem camere i bluetooth-a
+
 https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/Helpers/CameraHelper.cs
-//ceraaa
+https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/Helpers/BluetoothServer.cs
 
 Web servis koji pružamo klijentu je ShEMWebAPI
+
 https://github.com/ooad-2015-2016/MacroHard/tree/master/Projekat/ShEMWebAPI
-//dela trebaš dodati kod
-	
+
+Video folder
+
+https://github.com/ooad-2015-2016/MacroHard/tree/master/Videos
+
+Igrica Anti-SocialHero
+
+https://github.com/ooad-2015-2016/MacroHard/tree/master/Game
+
+Help
+
+https://github.com/ooad-2015-2016/MacroHard/blob/master/Projekat/ShEM/ShEM/View/Help.xaml
+
 # ShEM-Napomena
 
-S obzirom na problem s BhTelecom i host-anjem, preporuka je da se baza downloaduje lokalno i koristi. U slučajnu nemogućnosti istih akcija, članovi tima su spremni prikazati rad projekta uživo. S obzirom na to da su članovi tima prikazali rad baze, nadaju se da ponovno pokazivanje neće biti potrebno.
+S obzirom na problem s BhTelecom i host-anjem, preporuka je da se baza downloaduje lokalno i koristi. U slučajnu nemogućnosti istih akcija, članovi tima su spremni prikazati rad projekta uživo. S obzirom na to da su članovi tima prikazali rad baze, nadaju se da ponovno pokazivanje neće biti potrebno. Članovi tima također su svjesni da API-ji koje koriste sadrže manje podataka nego oni koji se plaćaju i nadaju se da to neće uticati na konačnu procjenu našeg rada.
