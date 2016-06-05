@@ -17,9 +17,17 @@
             <ImageBrush ImageSource="{StaticResource BackGround}"></ImageBrush>
         </Grid.Background>
         <RelativePanel Margin="100" Background="#B2FFFFFF"  >
-            <TextBlock RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,100,0,0" FontSize="70" FontFamily="{StaticResource TitleFont}"> Thank you!</TextBlock>
+            <TextBlock x:Name="Thanks" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,100,0,0" FontSize="70" FontFamily="{StaticResource TitleFont}"> Thank you!</TextBlock>
+            <TextBlock x:Name="MainText" RelativePanel.Below="Thanks" Width="700" TextWrapping="Wrap" Margin="20" RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="20" >Sistem ShEM predstavlja sistem interaktivnog kreiranja listi omiljenih filmova, knjiga i muzike. Prilikom pokretanja aplikacije korisnik se može prijaviti, te na taj način pristupiti svom NewsFeed-u. U slučaju da korisnik nema korisnički račun, pritiskom na dugme Register omogućeno mu je kreiranje vlastitog računa. Ako je korisnik zaboravio svoje korisničke podatke omogućeno mu je da povrati iste. Unutar vlastitog NewsFeed-a korisnik može pregledavati liste prijatelja. Klikom na MyCollections korisniku je omogućeno da vidi vlastitu kolekciju. Klikom na dugme Settings omogućeno je da edit-uje vlastite korisničke podatke. Preko SearchBar-a korisniku je omogućena pretraga filmova, muzike, korisnika i knjiga. Unutar View-a za artikle korisnik može dodavati artikle u svoju kolekciju. Korisniku je omogućeno dodavanje drugih korisnika u prijatelje. Svim korisnicima je omogućen pristup ShEMWebAPI klikom na dugme. Sistem je prilagođen radu na svim Windows platformama. Hvala Vam na korištenju našeg sistema.</TextBlock>
+            <StackPanel RelativePanel.Below="MainText" RelativePanel.AlignHorizontalCenterWithPanel="True" Orientation="Vertical" Margin="40">
+                <TextBlock FontSize="20" >ShEM sistem su razvili članovi tima MacroHard:</TextBlock>
+                <TextBlock FontSize="20" >	• Šeila Bećirović</TextBlock>
+                <TextBlock FontSize="20" >	• Edin Cerić </TextBlock>
+                <TextBlock FontSize="20" >	• Muhamed Delalić</TextBlock>
 
+            </StackPanel>
         </RelativePanel>
+        
 
 
     </Grid>
