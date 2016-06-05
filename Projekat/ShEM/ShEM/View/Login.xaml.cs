@@ -17,7 +17,9 @@ using System.ComponentModel;
 using Windows.UI.ViewManagement;
 using ShEM.ViewModel;
 using ShEM.View;
-using ShEM.BazaPodataka.Static_variables;
+using System.Text.RegularExpressions;
+using System.Globalization;
+using Windows.UI.Popups;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ShEM.View
@@ -30,9 +32,6 @@ namespace ShEM.View
         public Login()
         {
             this.InitializeComponent();
-            //ApplicationView.PreferredLaunchViewSize = new Size(2160, 1440);
-          //  ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-
         }
 
         private string userInput;
@@ -41,9 +40,7 @@ namespace ShEM.View
         private string registerEmail;
         private string registerPassword;
         private string registerRepassword;
-        //StaticVariablesClass stc;
         LoginViewModel loginViewModel;
-        //RegisterViewModel registerViewModel;
         StaticVariablesClass statika = new StaticVariablesClass();
 
         private void LoginUser(object sender, RoutedEventArgs e)
@@ -60,9 +57,6 @@ namespace ShEM.View
             registerEmail = emailBoxRegisterUsername.Text;
             registerPassword = textBoxRegisterPass.Password;
             registerRepassword = textBoxRegisterRePass.Password;
-          //  registerViewModel = new RegisterViewModel(registerUsername, registerEmail, registerPassword);
-            //registerViewModel.RegistrujUsera();
-
         }
         private void ShowPassClick(object sender, RoutedEventArgs e)
         {
@@ -78,20 +72,125 @@ namespace ShEM.View
 
         private void SignInFun(object sender, RoutedEventArgs e)
         {
-            //RegisterForm.Visibility = Visibility.Visible;
             SlideInRegister.Begin();
+            //this.ValidateUserRegistrationEmail();
         }
 
         private void ForgottenPassword_Click(object sender, RoutedEventArgs e)
         {
             RecoverForm.Visibility = Visibility.Visible;
-
         }
 
+        //validacija za korektno unijeti recovery email
+        private async void ValidateUserRecoveryEmail()
+        {
+            bool valid = true;
+            string mail = EmailRecoverInput.ToString();
+
+            if (String.IsNullOrEmpty(mail)) valid = false;
+
+            try
+            {
+                mail = Regex.Replace(mail, @"(@)(.+)$", this.DomainMapper,
+                                      RegexOptions.None, TimeSpan.FromMilliseconds(200));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                valid = false;
+            }
+
+            try
+            {
+                if(!Regex.IsMatch(mail,
+                @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
+                RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)))
+                {
+                    valid = false;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                valid = false;
+            }
+
+            if (!valid)
+            {
+                var dialog = new MessageDialog("Invalid E-mail format");
+                await dialog.ShowAsync();
+            }
+            if (valid)
+            {
+                await loginViewModel.validirajEmailUsera(EmailRecoverInput.ToString());
+            }
+        }
 
         private void RecoverUser(object sender, RoutedEventArgs e)
         {
+            bool tmp = false;
+            ValidateUserRecoveryEmail();
+            tmp = true;
+            if(tmp)
+            {
+                //loginViewModel.povuciUsera();
+                //posalji mu mail o informacijama
+            }
+        }
 
+        private string DomainMapper(Match match)
+        {
+            IdnMapping idn = new IdnMapping();
+
+            string domainName = match.Groups[2].Value;
+            try
+            {
+                domainName = idn.GetAscii(domainName);
+            }
+            catch (ArgumentException e)
+            {
+                e.Message.ToString();
+            }
+            return match.Groups[1].Value + domainName;
+        }
+
+        //validacija na korektnost registracionog mail-a
+        private async void ValidateUserRegistrationEmail()
+        {
+            bool valid = true;
+            string mail = emailBoxRegisterUsername.ToString();
+
+            if (String.IsNullOrEmpty(mail)) valid = false;
+
+            try
+            {
+                mail = Regex.Replace(mail, @"(@)(.+)$", this.DomainMapper,
+                                      RegexOptions.None, TimeSpan.FromMilliseconds(200));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                valid = false;
+            }
+
+            try
+            {
+                if (!Regex.IsMatch(mail,
+                @"^(?("")("".+?(?<!\\)""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$",
+                RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)))
+                {
+                    valid = false;
+                }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                valid = false;
+            }
+
+            if (!valid)
+            {
+                var dialog = new MessageDialog("Invalid E-mail format");
+                await dialog.ShowAsync();
+            }
         }
     }
 }

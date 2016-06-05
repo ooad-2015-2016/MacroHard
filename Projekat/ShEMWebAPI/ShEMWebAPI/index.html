@@ -4,7 +4,15 @@
     <title>ShEMWebAPI</title>
 </head>
 <body>
-
+    <div>
+        <h2>ShEM WebAPI</h2>
+        <h2>Created by:</h2>
+        <ul>
+            <li>Šeila Bećirović</li>
+            <li>Edin Cerić</li>
+            <li>Muhamed Delalić</li>
+        </ul>
+    </div>
     <div>
         <h2>All Users</h2>
         <ul id="users" />
@@ -25,15 +33,18 @@
     var uri = 'api/users';
 
     $(document).ready(function () {
-   
+        $('#users').text('Searching!');
       $.getJSON(uri)
           .done(function (data) {
-
+              $('#users').empty();
             $.each(data, function (key, item) {
               
               $('<li>', { text: formatItem(item) }).appendTo($('#users'));
             });
-          });
+          })
+           .fail(function (jqXHR, textStatus, err) {
+          $('#users').text('Error: ' + err);
+      });
     });
 
     function formatItem(item) {
@@ -49,8 +60,10 @@
         var id = $('#userID').val();
         $('#collection').empty();
         $('#collections').empty();
+        $('#collection').text('Searching!');
         $.getJSON(uril + '/' + id)
             .done(function (data) {
+                $('#collection').empty();
                 $.each(data, function (key, item) {
                     $('<ul>', { text: formatItem1(item) }).appendTo($('#collections'));
                 });

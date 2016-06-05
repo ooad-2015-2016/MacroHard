@@ -47,7 +47,7 @@
         <StackPanel x:Name="RecoverForm" Visibility="Collapsed" RelativePanel.LeftOf="LoginForm" RelativePanel.AlignVerticalCenterWithPanel="True"  Background="White" Opacity="0.7" Padding="15,15,15,20" BorderBrush="#FF3E3E3E" BorderThickness="0" Margin="0,0,20,0">
             <TextBlock x:Name="EmailRecoverText"  TextWrapping="Wrap" Foreground="#e74c3c" Text="Email for account recovery:" Margin="10,10,0,0" FontFamily="{StaticResource OpenSans}"  />
             <TextBox x:Name="EmailRecoverInput"  Width="300" TextWrapping="Wrap" Text=""  BorderBrush="{StaticResource MainColor}"  />
-            <Button  Width="217" Content="Recover" FontFamily="{StaticResource OpenSans}" Foreground="#FFF" Background="#e74c3c" HorizontalAlignment="Center" Margin="0,50,0,0" Click="RecoverUser"/>
+            <Button x:Name="recoverButton"  Width="217" Content="Recover" FontFamily="{StaticResource OpenSans}" Foreground="#FFF" Background="#e74c3c" HorizontalAlignment="Center" Margin="0,50,0,0" Click="RecoverUser"/>
         </StackPanel>
 
     </RelativePanel>
