@@ -57,7 +57,7 @@ namespace ShEM.ViewModel
                 Poster = image;
             }
         }
-        private async void AddToCollection(int id)
+        public async void AddToCollection(int id)
         {
             HttpClient client = new HttpClient();
 

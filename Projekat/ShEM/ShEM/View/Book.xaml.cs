@@ -44,5 +44,10 @@ namespace ShEM.View
             Frame currentFrame = Window.Current.Content as Frame;
             currentFrame.Navigate(typeof(NewsFeed));
         }
+
+        private void AddToCollection_Click(object sender, RoutedEventArgs e)
+        {
+            bvm.AddToCollection(1);
+        }
     }
 }
